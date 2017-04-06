@@ -2993,16 +2993,6 @@ body._active {
   padding-left: 0;
 }
 
-.modal-order-column._address {
-  width: 100%;
-  max-width: 400px;
-}
-
-.modal-order-column._date {
-  width: 100%;
-  max-width: 200px;
-}
-
 .modal-order-column._half {
   width: 48%;
 }
