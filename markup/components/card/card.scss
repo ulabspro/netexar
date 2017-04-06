@@ -1,0 +1,211 @@
+.card {
+  position: relative;
+
+  box-sizing: border-box;
+  margin-bottom: 30px;
+
+  border: 1px solid rgba(#8e8e8e, .15);
+  background: rgba(#f9f9f9, .5);
+  box-shadow: 0 3px 3px rgba($black, .05);
+
+  @include transition;
+  &:hover {
+    cursor: pointer;
+
+    border: 1px solid rgba(#8e8e8e, .44);
+    box-shadow: 0 23px 23px rgba($black, .18);
+    .card__hovered {
+      visibility: visible;
+
+      opacity: 1;
+    }
+  }
+  &__hovered {
+    font-size: rem-calc(11);
+
+    bottom: 20px;
+
+    visibility: hidden;
+
+    text-align: center;
+
+    opacity: 0;
+    color: rgba($gray, .5);
+
+    @include transition;
+    @include horizontal-center;
+  }
+  &._active {
+    .card__hovered {
+      visibility: hidden;
+
+      opacity: 0;
+    }
+  }
+}
+
+.card-small {
+  display: flex;
+
+  padding: 40px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-map {
+  &__zoom {
+    font-size: rem-calc(11);
+
+    display: block;
+
+    margin-top: 6px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: $gray;
+    &:hover {
+      span {
+        border-bottom: 1px solid $gray;
+      }
+    }
+    span {
+      position: relative;
+
+      padding-bottom: 1px;
+
+      border-bottom: 1px solid $gray + #999;
+      &:before {
+        position: absolute;
+        left: -17px;
+
+        content: '';
+
+        @include bg($zoom);
+      }
+    }
+  }
+}
+
+.card-center {
+  padding-left: 40px;
+}
+
+.card-meta {
+  font-family: $ProximaNova-Regular;
+  font-size: rem-calc(12);
+
+  margin-bottom: 10px;
+
+  color: rgba($gray, .4);
+}
+
+.card-info {
+  font-family: $ProximaNova-Regular;
+  &__item {
+    font-size: rem-calc(16);
+
+    position: relative;
+
+    margin-bottom: 10px;
+    padding-left: 33px;
+
+    color: $blue;
+    &:before {
+      left: 0;
+
+      content: '';
+
+      @include vertical-center;
+    }
+    &._way {
+      color: $green;
+      span {
+        padding-left: 10px;
+      }
+      &:before {
+        @include bg($card-route);
+      }
+    }
+    &._parameters {
+      &:before {
+        left: -1px;
+
+        @include bg($card-param);
+      }
+    }
+    &._time {
+      &:before {
+        @include bg($card-time);
+      }
+    }
+  }
+}
+
+.card-text {
+  font-size: rem-calc(14);
+  line-height: rem-calc(21);
+
+  color: #7b7b7b;
+}
+
+.card-control {
+  padding-left: 20px;
+}
+
+.card-express {
+  font-size: rem-calc(11);
+  line-height: 34px;
+
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 123px;
+  height: 34px;
+  margin: auto;
+  padding-left: 36px;
+
+  color: $white;
+  background: $blue;
+  &:before {
+    left: 12px;
+
+    content: '';
+
+    @include bg($card-fast);
+    @include vertical-center;
+  }
+}
+
+.card-payment {
+  padding: 20px 0;
+
+  text-align: center;
+  &__cost {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(28);
+
+    color: $gray;
+  }
+  &__type {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(10);
+
+    color: #919191;
+  }
+}
+
+.card-response {
+  line-height: 55px;
+
+  display: block;
+
+  width: 165px;
+  height: 55px;
+
+  @extend .button;
+  @extend .button._green;
+}

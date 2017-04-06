@@ -1,0 +1,39 @@
+.tabs-control {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-end;
+  &._main {
+    .tabs-control__item {
+      font-size: rem-calc(18);
+
+      margin-right: 20px;
+      padding: 15px 30px;
+      &:last-child {
+        color: $green;
+        &._active {
+          border-bottom: 2px solid $green;
+        }
+      }
+    }
+  }
+  &._inside {
+    border-bottom: 1px solid $light-gray;
+  }
+  &__item {
+    padding: 10px 25px;
+
+    color: $blue;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      cursor: pointer;
+
+      border-bottom: 2px solid $light-gray;
+
+      @include transition;
+    }
+    &._active {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}

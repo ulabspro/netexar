@@ -1,0 +1,27 @@
+mixin login(data)
+  a(href="#" title="").login Вход в личный кабинет
+
+mixin logined(loginedControl)
+  .logined
+    .logined__avatar
+      img(src="%=static=%images/assets/login/nophoto.png" alt="")
+    .logined__meta
+      .logined__name Александр Петренко (ООО “Сталь”)
+      .logined__group
+        .logined__id ID
+          span 3413900
+        +rating
+        .logined__balance 500 рублей
+
+    .logined-dropdown
+      .logined-dropdown-menu
+        .logined-dropdown-menu__item 
+          a(href="#" title="") Мои заказы
+          span.hint-label 3
+        .logined-dropdown-menu__item 
+          a(href="#" title="") Отзывы
+          span.hint-label 3
+        .logined-dropdown-menu__item 
+          a(href="#" title="") Статистика заказов
+        .logined-dropdown-menu__item 
+          a(href="#" title="") Настройки

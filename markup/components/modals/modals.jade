@@ -1,0 +1,217 @@
+mixin modal-order(data)
+  .modal.modal-order#modal-order
+    .modal__title Разместить новый заказ
+
+    form(method="" action="").form
+      //- Маршрут и время перевозки
+      .modal-order-block
+        .modal-order-block__label Маршрут и время перевозки
+
+        .modal-order-row._start
+          .modal-order-column._address
+            .form-group
+              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field
+          
+          .modal-order-column._date
+            .form-group._iconed._date
+              input(type="text" value="" placeholder="Дата подачи" class="datepicker-here").form-group__field
+          
+          .modal-order-column._date
+            .form-select._iconed._time
+              select.form-select__field
+                option Время подачи
+                - for (var i = 0; i < 10; i++)
+                  option 0#{i}:00
+                - for (var i = 10; i < 24; i++)
+                  option #{i}:00
+
+        .modal-order-row
+          .modal-order-column
+            a(href="#" title="").modal-order__add-address Добавить промежуточный адрес
+
+        .modal-order-row._finish
+          .modal-order-column._address
+            .form-group
+              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field
+          
+          .modal-order-column._date
+            .form-group._iconed._date
+              input(type="text" value="" placeholder="Дата подачи" class="datepicker-here").form-group__field
+          
+          .modal-order-column._date
+            .form-select._iconed._time
+              select.form-select__field
+                option Время подачи
+                - for (var i = 0; i < 10; i++)
+                  option 0#{i}:00
+                - for (var i = 10; i < 24; i++)
+                  option #{i}:00
+
+        .modal-order-row._flex-start
+          .modal-order-column
+            label.form-checkbox._hint
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Трекинг перевозки
+              .form-hint
+                .form-hint__label Здесь подсказка к полю
+
+          .modal-order-column
+            label.form-checkbox._hint
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Срочная заявка
+              .form-hint
+                .form-hint__label Здесь подсказка к полю
+
+        .modal-order-row
+          .modal-order-map(class="jsMapShow")
+            .modal-order-map__overlay(class="jsMapShowOverlay")
+              span Показать маршрут на карте
+            .modal-order-map__layout
+              img(src="%=static=%images/assets/modals/order-map.png" alt="")
+            .modal-order-map__hide(class="jsMapShowHideLink")
+              span Скрыть карту
+
+
+      //- Параметры груза
+      .modal-order-block
+        .modal-order-block__label Параметры груза
+
+        .modal-order-row._box
+          .modal-order-column._address
+            .form-group._textarea
+              textarea(rows="5" placeholder="Опишите свой груз").form-group__field
+          
+          .modal-order-column._address
+            .modal-order-row._inside
+              .modal-order-column._half
+                .form-group
+                  input(type="text" value="" placeholder="Вес груза, тонны").form-group__field
+              .modal-order-column._half
+                .form-group
+                  input(type="text" value="" placeholder="Вес груза, тонны").form-group__field
+
+            .modal-order-row._inside
+              .modal-order-column._crossed
+                .form-group
+                  input(type="text" value="" placeholder="Длина, м").form-group__field
+              .modal-order-column._crossed
+                .form-group
+                  input(type="text" value="" placeholder="Ширина, м").form-group__field
+              .modal-order-column._crossed
+                .form-group
+                  input(type="text" value="" placeholder="Высота, м").form-group__field
+
+
+      //- Требуемый транспорт
+      .modal-order-block
+        .modal-order-block__label Требуемый транспорт
+
+        .modal-order-row._truck
+          .modal-order-column._address
+            .form-select
+              select.form-select__field
+                option 10 тонн
+                option 20 тонн
+
+          .modal-order-column._address
+            .modal-order-row._inside
+              label.form-checkbox
+                input(type="checkbox").form-checkbox__field
+                span.form-checkbox__label Бортовой
+
+              label.form-checkbox
+                input(type="checkbox").form-checkbox__field
+                span.form-checkbox__label Тентованый
+
+              label.form-checkbox
+                input(type="checkbox").form-checkbox__field
+                span.form-checkbox__label Открытый контейнер
+
+          
+        .modal-order-row._stretch
+          .modal-order-column._group
+            .modal-order-column__title Тип загрузки
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Верхняя
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Задняя
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Боковая
+
+          .modal-order-column._group
+            .modal-order-column__title Тип выгрузки
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Верхняя
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Задняя
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Боковая
+
+          .modal-order-column._group
+            .modal-order-column__title Дополнительная атрибутика
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Коники
+
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Ремни
+
+      //- Стоимость и оплата
+      .modal-order-block
+        .modal-order-block__label Стоимость и оплата
+
+        .modal-order-row._payment._stretch
+          .modal-order-column._triple
+            .form-group
+              input(type="text" value="" placeholder="Стоимость, руб").form-group__field
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Договорная
+
+          .modal-order-column._triple
+            .form-select
+              select.form-select__field
+                option Способ оплаты
+                option Наличные / Перевод на карту
+                option Базналичный расчет с НДС
+                option Базналичный расчет без НДС
+            label.form-checkbox
+              input(type="checkbox").form-checkbox__field
+              span.form-checkbox__label Требуется заключение договора
+
+          .modal-order-column._triple
+            .form-select
+              select.form-select__field
+                option Порядок оплаты
+                option Предоплата
+                option Частичная предоплата
+                option На выгрузке
+                option Отсрочка
+
+      //- Стоимость и оплата
+      .modal-order-block
+        .modal-order-block__label Дополнительный комментарий
+
+        .modal-order-row._comment
+          .modal-order-column._full
+            .form-group._textarea
+              textarea(rows="5" placeholder="Комментарий").form-group__field
+
+      .modal-order-control-block
+        input(type="submit" value="Разместить заказ").modal-order__submit
+        input(type="reset" value="Отменить").modal-order__dismiss
+        .modal__privacy._order Нажимая на кнопку «Разместить заказ», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>

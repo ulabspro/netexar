@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  &__item {
+    &._full {
+      @include bg($rating-full);
+    }
+    &._empty {
+      @include bg($rating-empty);
+    }
+  }
+}

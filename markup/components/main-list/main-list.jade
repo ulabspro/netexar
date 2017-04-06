@@ -1,0 +1,28 @@
+mixin main-list(data)
+  .main-list(class="jsTabs")
+    .main-list__top
+      .main-list__wrapper
+        //- tabs
+        .tabs-control(class="jsTabsControl")._main
+          .tabs-control__item(class="jsTabsControlItem")._active Грузоперевоздчик
+          .tabs-control__item(class="jsTabsControlItem") Заказчик
+        //- sort
+        +sort()._main
+
+    .main-list__bottom
+      .tabs-content(class="jsTabsContent")
+        .tabs-content__item(class="jsTabsContentItem")
+          //- card
+          - var cardControl = {state: "logined", time: "express"}
+          +card(cardControl)
+          //- card
+          - var cardControl = {state: "logined", time: "express"}
+          +card(cardControl)
+          //- card
+          - var cardControl = {state: "notlogined", time: ""}
+          +card(cardControl)
+          //- card
+          - var cardControl = {state: "notlogined", time: ""}
+          +card(cardControl)
+
+          a(href="#" title="").show-more Загрузить еще

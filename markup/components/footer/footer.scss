@@ -1,0 +1,233 @@
+.footer {
+  // temp
+  // margin-top: 100px;
+  // temp
+  padding-top: 45px;
+  padding-bottom: 100px;
+
+  background: #042f3b;
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    &._top {
+      margin-bottom: 45px;
+      padding-bottom: 35px;
+
+      border-bottom: 1px solid rgba(#066884, .10);
+    }
+  }
+  &__column {
+    &._first {
+      width: 355px;
+    }
+    &._second {
+      width: 280px;
+    }
+    &._third {
+      width: 210px;
+    }
+  }
+  &__logo {
+    margin-bottom: 30px;
+
+    @include bg($logo-footer);
+  }
+  &__copyright {
+    font-size: rem-calc(12);
+    line-height: rem-calc(20);
+
+    color: #c5c3c3;
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__phone {
+    font-size: rem-calc(18);
+
+    position: relative;
+
+    margin-bottom: 40px;
+    padding-left: 40px;
+
+    color: $green;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+
+      @include bg($phone-footer);
+    }
+  }
+  &__address {
+    font-size: rem-calc(13);
+    line-height: rem-calc(18);
+
+    position: relative;
+
+    padding-left: 40px;
+
+    color: $white;
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+
+      color: $green;
+      border-bottom: 1px solid rgba($green, .5);
+
+      @include transition;
+      &:hover {
+        border-bottom: 1px solid $green;
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+
+      @include bg($place-footer);
+    }
+  }
+  &__email {
+    font-size: rem-calc(18);
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 40px;
+    padding-left: 40px;
+
+    text-decoration: none;
+
+    color: $white;
+    &:before {
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      content: '';
+
+      @include bg($email-footer);
+    }
+  }
+  &__text {
+    @extend .footer__copyright;
+    a {
+      text-decoration: none;
+
+      color: $green;
+      border-bottom: 1px solid rgba($green, .5);
+
+      @include transition;
+      &:hover {
+        border-bottom: 1px solid $green;
+      }
+    }
+  }
+}
+
+.footer-menu {
+  &__item {
+    font-size: rem-calc(14);
+
+    margin-bottom: 8px;
+    a {
+      text-decoration: none;
+
+      color: $white;
+      border-bottom: 1px solid rgba($white, .3);
+
+      @include transition;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}
+
+.footer-social {
+  &__title {
+    margin-bottom: 20px;
+
+    @extend .footer__copyright;
+  }
+  &__links {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+
+    display: block;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+    border: 1px solid rgba(#adaeae, .3);
+
+    @include transition;
+    &:hover {
+      background: rgba(#adaeae, .3);
+    }
+    &:before {
+      content: '';
+
+      @include absolute-center;
+    }
+    &._fb {
+      &:before {
+        @include bg($fb-white);
+      }
+    }
+    &._in {
+      &:before {
+        @include bg($in-white);
+      }
+    }
+    &._gp {
+      &:before {
+        @include bg($gp-white);
+      }
+    }
+  }
+}
+
+.footer-created {
+  font-size: rem-calc(12);
+
+  margin-top: 30px;
+
+  color: $white;
+  a {
+    position: relative;
+    top: -3px;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    text-indent: -9999px;
+
+    opacity: .3;
+
+    @include bg($ulabspro);
+    @include transition;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

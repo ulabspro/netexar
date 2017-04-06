@@ -1,0 +1,53 @@
+mixin customer-registration-form(data)
+  .userboard
+    .userboard-modal
+      .userboard-modal__title Регистрация Заказчика
+      .userboard-modal__subtitle С помощью аккаунта в соц. сетях
+      .userboard-modal-social
+        a(href="#" title="").userboard-modal-social__item._fb
+        a(href="#" title="").userboard-modal-social__item._vk
+        a(href="#" title="").userboard-modal-social__item._gp
+        a(href="#" title="").userboard-modal-social__item._ok
+      .userboard-modal__subtitle или
+
+      form(method="" action="").form.customer-registration-form
+        .form-group._iconed._name
+          input(type="text" value="" placeholder="Фамилия").form-group__field
+        .form-group._iconed._name
+          input(type="text" value="" placeholder="Имя").form-group__field
+        .form-group._iconed._name
+          input(type="text" value="" placeholder="Отчество").form-group__field
+        .form-group._iconed._phone
+          input(type="text" value="" placeholder="Телефон").form-group__field
+        .form-group._iconed._email
+          input(type="text" value="" placeholder="E-mail").form-group__field
+        .form-group._iconed._organization
+          input(type="text" value="" placeholder="Наименование организации").form-group__field
+        .form-group._iconed._password
+          input(type="text" value="" placeholder="Пароль").form-group__field
+
+        input(type="submit" value="Зарегистрироваться").form-reg-submit
+
+        .form-privacy Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+mixin check-number-form(data)
+  .userboard
+    .userboard-modal
+      .userboard-modal__title Подтверждение номера
+      .userboard-modal__subtitle на ваш номер отправлено смс сообщение с кодом подтверждения. пожалуйста введите его в поле ниже:
+
+      form(method="" action="").form.check-number-form
+        .form__group._center
+          .form-group._check-number
+            input(type="text" value="" placeholder="" size="5" maxlength="5" autofocus class=).form-group__field
+
+        .form-forget Не пришел код? <a href="#" title="">Выслать код повторно</a>
+
+        input(type="submit" value="Завершить регистрацию").form-reg-submit
+
+mixin thanks-registration(data)
+  .userboard
+    .userboard-modal
+      .userboard-modal__thanks
+        .userboard-modal__title Спасибо за регистрацию!
+        .userboard-modal__subtitle Сейчас вы будете перенаправлены в личный кабинет. Если этого не произошло, нажмите <a href="#" title="">сюда</a>

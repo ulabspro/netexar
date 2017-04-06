@@ -1,0 +1,11 @@
+mixin header(headerControl)
+  - var modiffer = attributes.class || ''
+  header.header(class="#{modiffer}")
+    .header__wrapper
+      a(href="#" title="").header__logo NetExAr
+      +top-menu
+      - if (headerControl == "logined")
+        +push-notifications
+        +logined
+      - else
+        +login

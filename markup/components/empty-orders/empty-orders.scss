@@ -1,0 +1,27 @@
+.empty-orders {
+  @extend .wrapper;
+  &__group {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.empty-orders-notification {
+  padding: 100px 0 200px;
+
+  text-align: center;
+
+  color: $gray;
+  &__title {
+    font-size: rem-calc(26);
+  }
+  &__subtitle {
+    font-size: rem-calc(13);
+
+    padding: 25px 0 35px;
+
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,136 @@
+.logined {
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    .logined-dropdown {
+      top: 0;
+
+      visibility: visible;
+
+      opacity: 1;
+      box-shadow: 0 23px 24px rgba($black, .36);
+    }
+  }
+  &:after {
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    right: -15px;
+
+    content: '';
+
+    @include bg($user-dropdown);
+  }
+  &__avatar {
+    position: relative;
+    z-index: 2;
+
+    margin-right: 10px;
+    img {
+      display: block;
+    }
+  }
+  &__group {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__name {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(14);
+
+    position: relative;
+    z-index: 2;
+
+    overflow: hidden;
+
+    max-width: 250px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: $gray;
+  }
+  &__id {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(10);
+
+    position: relative;
+    top: 1px;
+
+    margin-right: 8px;
+
+    color: $gray;
+    span {
+      font-family: $ProximaNova-Light;
+    }
+  }
+  &__balance {
+    font-size: rem-calc(10);
+
+    position: relative;
+    top: 1px;
+
+    margin-left: 8px;
+    padding-left: 16px;
+
+    color: $gray;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+
+      @include bg($user-balance);
+    }
+  }
+}
+
+.logined-dropdown {
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: -20px;
+
+  visibility: hidden;
+
+  width: calc(100% + 55px);
+  padding-top: 50px;
+
+  opacity: 0;
+  background-color: $white;
+  box-shadow: 0 23px 24px rgba($black, 0);
+
+  @include transition;
+}
+
+.logined-dropdown-menu {
+  padding: 20px;
+
+  border-top: 1px solid $light-gray;
+  &__item {
+    margin-bottom: 12px;
+    a {
+      font-family: $ProximaNova-Regular;
+      font-size: rem-calc(16);
+
+      text-decoration: none;
+
+      color: $blue;
+      border-bottom: 1px solid rgba($blue, .5);
+
+      @include transition;
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+}

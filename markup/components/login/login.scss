@@ -1,0 +1,24 @@
+.login {
+  font-family: $ProximaNova-Regular;
+  font-size: rem-calc(13);
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: $blue;
+  border-bottom: 1px solid #cde0e6;
+
+  @include transition;
+  &:hover {
+    border-bottom: 1px solid $blue;
+  }
+  &:before {
+    left: -15px;
+
+    content: '';
+
+    @include bg($login);
+    @include vertical-center;
+  }
+}

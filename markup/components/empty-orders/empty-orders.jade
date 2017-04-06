@@ -1,0 +1,20 @@
+mixin empty-orders(data)
+  .empty-orders
+    .empty-orders__group
+      h1.title Мои заказы
+      a(href="#" title="" class="jsModalTrigger" data-modal="#modal-order").add-order._small Разместить заказ
+
+    .tabs(class="jsTabs")
+      .tabs-control(class="jsTabsControl")._inside
+        .tabs-control__item(class="jsTabsControlItem")._active Все
+        .tabs-control__item(class="jsTabsControlItem") Активные
+        .tabs-control__item(class="jsTabsControlItem") В работе
+        .tabs-control__item(class="jsTabsControlItem") Завершенные
+        .tabs-control__item(class="jsTabsControlItem") Не выполненные
+
+      .tabs-content(class="jsTabsContent")
+        .tabs-content__item(class="jsTabsContentItem")
+          .empty-orders-notification
+            .empty-orders-notification__title У вас пока нет размещенного заказа
+            .empty-orders-notification__subtitle чтобы разместить новый заказ, <br>нажмите кнопку «разместить заказ»
+            a(href="#" title="" class="jsModalTrigger" data-modal="#modal-order").add-order._big Разместить заказ

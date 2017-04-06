@@ -1,0 +1,106 @@
+// Mixins.
+
+@mixin nl {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  list-style-position: outside;
+
+  text-indent: 0;
+}
+
+@mixin cf {
+  &:before,
+  &:after {
+    display: table;
+
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+  .lt-ie8 & {
+    zoom: 1;
+  }
+}
+
+@mixin blocks-justify {
+  text-align: justify;
+  text-justify: newspaper;
+}
+
+// You can add your own mixins here:
+// font-face import
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff ttf svg) {
+  $src: null;
+  $extmods: (
+  eot: '?',
+  svg: '#' + str-replace($name, ' ', '_')
+  );
+  $formats: (
+  otf: 'opentype',
+  ttf: 'truetype'
+  );
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + '.' + $extmod)) format(quote($format)), comma);
+  }
+  @font-face {
+    font-family: quote($name);
+    font-weight: $weight;
+    font-style: $style;
+
+    src: $src;
+  }
+}
+
+// alignment
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+}
+
+@function strip-units($value) {
+  @if type-of($value) == 'number' {
+    @return $value / ($value * 0 + 1);
+  } @else {
+    @warn '`#{$value}` is not a number';
+    @return $value;
+  }
+}
+
+@function rem-calc($pixels, $context: $base-font-size) {
+  $pixels: strip-units($pixels);
+  $context: strip-units($context);
+  @return ($pixels / $context) * 1rem;
+}
+
+@function letter-spacing($pixels, $context: 1000) {
+  $pixels: strip-units($pixels);
+  $context: strip-units($context);
+  @return ($pixels / $context) * 1em;
+}
+
+@mixin transition($time: .2s) {
+  transition: all $time ease-in-out;
+}

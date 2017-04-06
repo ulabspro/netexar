@@ -1,0 +1,77 @@
+.userboard {
+  padding: 50px 0;
+
+  background: url(%=static=%assets/top-baner/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.userboard-modal {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 565px;
+  margin: auto;
+  padding: 40px 80px;
+
+  border-radius: 3px;
+  background: $white;
+  &__title {
+    font-size: rem-calc(26);
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: $gray;
+  }
+  &__subtitle {
+    font-size: rem-calc(13);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $gray;
+    a {
+      text-decoration: none;
+
+      color: $blue;
+      border-bottom: 1px solid rgba($blue, .5);
+
+      @include transition;
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+  &__thanks {
+    padding: 150px 0;
+  }
+}
+
+.userboard-modal-social {
+  display: flex;
+
+  margin: 20px 0;
+
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    display: block;
+
+    @include transition;
+    &:hover {
+      opacity: .9;
+    }
+    &._fb {
+      @include bg($fb-login);
+    }
+    &._vk {
+      @include bg($vk-login);
+    }
+    &._gp {
+      @include bg($gp-login);
+    }
+    &._ok {
+      @include bg($ok-login);
+    }
+  }
+}

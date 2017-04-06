@@ -1,0 +1,78 @@
+.top-baner {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 600px;
+  padding-top: 100px;
+
+  background: url(%=static=%assets/top-baner/bg.jpg) no-repeat center;
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+
+    @extend .wrapper;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(25);
+    line-height: 33px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+  &__column {
+    position: relative;
+
+    width: 100%;
+    max-width: 370px;
+    margin: 0 50px;
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      right: -55px;
+
+      width: 1px;
+      height: 120%;
+
+      content: '';
+
+      background-color: rgba($white, .3);
+
+      @include vertical-center;
+    }
+  }
+  &__button {
+    margin: auto;
+  }
+}
+
+.top-baner-list {
+  width: 100%;
+  max-width: 230px;
+  margin: 50px auto;
+  &__item {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(19);
+
+    position: relative;
+
+    margin-bottom: 15px;
+    padding-left: 33px;
+
+    color: $white;
+    &:before {
+      left: 0;
+
+      content: '';
+
+      @include vertical-center;
+      @include bg($check-baner);
+    }
+  }
+}

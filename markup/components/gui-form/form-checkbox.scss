@@ -1,0 +1,21 @@
+.form-checkbox {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  justify-content: flex-start;
+  align-items: center;
+  &__field {
+    position: relative;
+    top: 2px;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  &__label {
+    font-size: rem-calc(15);
+
+    color: $gray;
+  }
+}

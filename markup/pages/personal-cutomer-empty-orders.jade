@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block header
+  +header("logined")._inside
+
+block content
+  +warning-pushes("Внимание! Ваш профиль заполнен не полностью. Пожалуйста, заполните информацию в разделе “Настройки”")._red
+  +empty-orders
+
+block modals
+  +modal-order

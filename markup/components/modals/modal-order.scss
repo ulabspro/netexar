@@ -1,0 +1,279 @@
+.modal-order {
+  top: 50px;
+  right: 0;
+  left: 0;
+
+  width: 940px;
+  margin: 0 auto 50px;
+  &._active {
+    top: 50px;
+  }
+  &__add-address {
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 20px;
+    padding-left: 15px;
+
+    text-decoration: none;
+
+    color: $blue;
+    &:before {
+      font-size: rem-calc(18);
+
+      position: absolute;
+      left: 0;
+
+      content: '+';
+
+      @include vertical-center;
+    }
+  }
+  &__submit {
+    font-size: rem-calc(20);
+
+    width: 100%;
+    height: 71px;
+
+    @extend .button;
+    @extend .button._green;
+  }
+  &__dismiss {
+    font-size: rem-calc(13);
+
+    width: 178px;
+    height: 33px;
+    margin: 20px auto;
+
+    @extend .button;
+    @extend .button._gray;
+  }
+}
+
+.modal-order-control-block {
+  width: 390px;
+  margin: auto;
+}
+
+.modal-order-block {
+  margin-bottom: 35px;
+  &__label {
+    font-size: rem-calc(16);
+
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+
+    color: $gray;
+    border-bottom: 1px solid rgba($black, .15);
+  }
+}
+
+.modal-order-row {
+  position: relative;
+
+  display: flex;
+
+  padding-left: 40px;
+
+  justify-content: space-between;
+  align-items: center;
+  &:before {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+
+    content: '';
+  }
+  &._start {
+    &:before {
+      @include bg($order-start-address);
+    }
+  }
+  &._finish {
+    &:before {
+      @include bg($order-finish-address);
+    }
+  }
+  &._box {
+    &:before {
+      @include bg($order-box);
+    }
+  }
+  &._truck {
+    &:before {
+      top: 13px;
+
+      @include bg($order-truck);
+    }
+  }
+  &._payment {
+    &:before {
+      @include bg($order-payment);
+    }
+  }
+  &._comment {
+    &:before {
+      @include bg($order-comment);
+    }
+  }
+  &._flex-start {
+    justify-content: flex-start;
+    .modal-order-column {
+      margin-right: 35px;
+    }
+  }
+  &._stretch {
+    align-items: stretch;
+  }
+  &._inside {
+    padding-left: 0;
+  }
+}
+
+.modal-order-column {
+  &._address {
+    width: 100%;
+    max-width: 400px;
+  }
+  &._date {
+    width: 100%;
+    max-width: 200px;
+  }
+  &._half {
+    width: 48%;
+  }
+  &._triple {
+    width: 32%;
+  }
+  &._full {
+    width: 100%;
+  }
+  &._crossed {
+    position: relative;
+
+    width: 100%;
+    max-width: 30%;
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      position: absolute;
+      top: 17px;
+      right: -14px;
+
+      content: '';
+
+      @include bg($cross);
+    }
+  }
+  &._group {
+    box-sizing: border-box;
+    width: 32%;
+    padding: 15px 15px 0 15px;
+
+    border: 1px solid rgba($black, .15);
+    .form-checkbox {
+      margin-bottom: 15px;
+      margin-left: 15px;
+    }
+  }
+  &__title {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(16);
+
+    margin-bottom: 15px;
+  }
+}
+
+.modal-order-map {
+  position: relative;
+
+  overflow: hidden;
+
+  height: 87px;
+
+  @include transition;
+  &._active {
+    overflow: visible;
+
+    height: 100%;
+  }
+  &__overlay {
+    position: absolute;
+
+    visibility: visible;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    opacity: 1;
+    background-color: rgba($black, .5);
+
+    @include transition;
+    &._active {
+      visibility: hidden;
+
+      opacity: 0;
+    }
+    &:hover {
+      cursor: pointer;
+
+      background-color: rgba($black, .4);
+      span {
+        border-bottom: 1px solid $white;
+      }
+    }
+    span {
+      font-family: $ProximaNova-Regular;
+      font-size: rem-calc(20);
+
+      color: $white;
+      border-bottom: 1px solid rgba($white, .5);
+
+      @include transition;
+      @include absolute-center;
+    }
+  }
+  &__hide {
+    font-size: rem-calc(12);
+
+    visibility: hidden;
+
+    margin-top: 10px;
+    padding-bottom: 5px;
+
+    text-align: center;
+
+    opacity: 0;
+    color: $blue;
+
+    @include transition;
+    &:hover {
+      cursor: pointer;
+    }
+    &._active {
+      visibility: visible;
+
+      opacity: 1;
+    }
+    span {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 4px;
+        left: -15px;
+
+        content: '';
+
+        @include bg($hide);
+      }
+    }
+  }
+}

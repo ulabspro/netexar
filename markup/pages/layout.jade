@@ -1,0 +1,35 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/top-menu/top-menu
+  include ../components/login/login
+  include ../components/top-baner/top-baner
+  include ../components/tabs/tabs
+  include ../components/sort/sort
+  include ../components/card/card
+  include ../components/main-list/main-list
+  include ../components/rating/rating
+  include ../components/userboard/userboard
+  include ../components/push-notifications/push-notifications
+  include ../components/empty-orders/empty-orders
+  include ../components/warning-pushes/warning-pushes
+  include ../components/modals/modals
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    block header
+      +header()
+    block content
+      h1 Hello, I'm layout
+    block footer
+      +footer()
+    block modals
+    
+    .mask
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,202 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.gr-button {
+  font-family: $ProximaNova-Regular;
+
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: $white;
+  border: 0;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgba($black, .2);
+  &._green {
+    background: linear-gradient(to bottom, #b1cb20, #9cb413);
+    &:hover {
+      background: $green;
+    }
+  }
+  &._blue {
+    background: linear-gradient(to bottom, #027b9d, #076681);
+    &:hover {
+      background: $blue;
+    }
+  }
+  &._big {
+    font-size: rem-calc(18);
+    line-height: 65px;
+
+    width: 320px;
+    height: 65px;
+
+    box-shadow: 0 3px 9px rgba($black, .11);
+  }
+}
+
+.button {
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+
+  border: 0;
+  border-radius: 3px;
+
+  @include transition;
+  &._green {
+    color: $white;
+    background-color: $green;
+    &:hover {
+      background-color: $green + #111;
+    }
+  }
+  &._gray {
+    color: $white;
+    background-color: #e0e0e0;
+    &:hover {
+      background-color: #e0e0e0 - #111;
+    }
+  }
+}
+
+.show-more {
+  font-size: 22px;
+  line-height: 62px;
+
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 290px;
+  height: 60px;
+  margin: 76px auto;
+  padding-left: 86px;
+
+  text-decoration: none;
+
+  color: $white;
+  background: $blue;
+
+  @include transition;
+  &:hover {
+    background: $blue + #111;
+  }
+  &:before {
+    left: 55px;
+
+    content: '';
+
+    @include bg($loader-big);
+    @include vertical-center;
+  }
+}
+
+.hint-label {
+  font-family: $ProximaNova-Regular;
+  font-size: rem-calc(11);
+  line-height: 18px;
+
+  display: inline-block;
+
+  width: 17px;
+  height: 17px;
+  margin-left: 10px;
+
+  text-align: center;
+
+  color: $white;
+  border-radius: 50%;
+  background-color: $red;
+}
+
+.title {
+  font-family: $ProximaNova-Semibold;
+  font-size: rem-calc(30);
+
+  color: $gray;
+}
+
+.add-order {
+  position: relative;
+
+  display: block;
+
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  color: $white;
+  background-color: $blue;
+
+  @include transition;
+  &:hover {
+    background-color: $blue + #111;
+  }
+  &:before {
+    font-size: rem-calc(18);
+
+    content: '+';
+
+    color: $white;
+
+    @include vertical-center;
+  }
+  &._small {
+    font-size: rem-calc(14);
+    line-height: 32px;
+
+    width: 165px;
+    height: 30px;
+    padding-left: 35px;
+    &:before {
+      left: 14px;
+    }
+  }
+  &._big {
+    font-size: rem-calc(25);
+    line-height: 55px;
+
+    width: 300px;
+    height: 55px;
+    margin: auto;
+    padding-left: 20px;
+    &:before {
+      font-size: rem-calc(30);
+
+      left: 28px;
+    }
+  }
+}
+
+.mask {
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+
+  visibility: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  background-color: rgba($black, .5);
+
+  @include transition;
+  &._active {
+    visibility: visible;
+
+    opacity: 1;
+  }
+}

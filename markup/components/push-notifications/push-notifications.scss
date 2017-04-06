@@ -1,0 +1,156 @@
+.push-notifications {
+  position: relative;
+
+  width: 95px;
+  &._active {
+    &:before {
+      visibility: visible;
+
+      opacity: 1;
+    }
+    .push-notifications__icon {
+      z-index: 99;
+    }
+  }
+  &:before {
+    z-index: 99;
+
+    display: block;
+    visibility: hidden;
+
+    width: 95px;
+    height: 75px;
+
+    content: '';
+
+    opacity: 0;
+    background-color: $white;
+    box-shadow: 0 23px 24px rgba($black, .36);
+
+    @include transition;
+    @include absolute-center;
+  }
+  &__icon {
+    @include absolute-center;
+    @include bg($notifications);
+    span {
+      font-size: rem-calc(8);
+
+      position: absolute;
+      right: -3px;
+
+      width: 10px;
+      height: 10px;
+
+      text-align: center;
+
+      color: $white;
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+}
+
+.push-notifications-dropdown {
+  position: absolute;
+  z-index: -1;
+  top: 35px;
+  right: 0;
+
+  visibility: hidden;
+
+  width: 320px;
+
+  opacity: 0;
+  background-color: $white;
+  box-shadow: 0 23px 24px rgba($black, .36);
+
+  @include transition;
+  &__content {
+    overflow-y: scroll;
+
+    max-height: 320px;
+  }
+  &._active {
+    z-index: 99;
+
+    visibility: visible;
+
+    opacity: 1;
+  }
+}
+
+.push-notifications-dropdown-item {
+  font-size: rem-calc(14);
+  line-height: rem-calc(18);
+
+  display: block;
+
+  padding: 15px 20px;
+
+  text-decoration: none;
+
+  border-top: 1px solid $light-gray;
+
+  @include transition;
+  &:hover {
+    background-color: #fafafa;
+  }
+  &__title {
+    font-family: $ProximaNova-Semibold;
+
+    color: $blue;
+  }
+  &__text {
+    font-family: $ProximaNova-Regular;
+
+    color: #7a7a7a;
+  }
+}
+
+.push-notifications-dropdown-control {
+  position: relative;
+
+  padding: 10px 20px;
+
+  border-top: 1px solid $light-gray;
+  &__off {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    padding-left: 24px;
+
+    text-decoration: none;
+
+    color: $blue;
+
+    @include transition;
+    &:hover {
+      opacity: .8;
+    }
+    &:before {
+      position: absolute;
+      top: 1px;
+      left: 0;
+
+      content: '';
+
+      @include bg($notifications-off);
+    }
+  }
+  &__settings {
+    position: absolute;
+    right: 20px;
+
+    display: block;
+
+    @include vertical-center;
+    @include bg($notifications-settings);
+    @include transition;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

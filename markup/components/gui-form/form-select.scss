@@ -1,0 +1,27 @@
+.form-select {
+  position: relative;
+
+  @extend .form-group;
+  &:after {
+    right: 16px;
+
+    content: '';
+
+    @include bg($select);
+    @include vertical-center;
+  }
+  &__field {
+    padding: 0 16px;
+
+    @extend .form-group__field;
+    appearance: none;
+  }
+  &._iconed {
+    @extend .form-group._iconed;
+  }
+  &._time {
+    &:before {
+      @include bg($time-select);
+    }
+  }
+}

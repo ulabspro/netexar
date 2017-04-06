@@ -1,0 +1,67 @@
+.card-login {
+  position: relative;
+
+  display: none;
+
+  padding: 40px 0;
+
+  border: 1px solid #e0e0e0;
+  background: #f2f2f2;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  &._active {
+    display: flex;
+  }
+}
+
+.card-login-info {
+  width: 100%;
+
+  text-align: center;
+  &__text {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(15);
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    color: $gray;
+  }
+  &:before {
+    position: relative;
+
+    display: block;
+
+    margin: auto;
+
+    content: '';
+
+    @include bg($locked);
+  }
+  &__button {
+    line-height: 43px;
+
+    width: 200px;
+    height: 43px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    @extend .gr-button;
+    @extend .gr-button._green;
+  }
+  &__link {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(13);
+
+    text-decoration: none;
+
+    color: $blue;
+    border-bottom: 1px solid rgba($blue, .5);
+
+    @include transition;
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+  }
+}

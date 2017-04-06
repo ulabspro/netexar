@@ -1,0 +1,34 @@
+.modal {
+  position: absolute;
+  z-index: 99;
+  top: -100%;
+
+  visibility: hidden;
+
+  box-sizing: border-box;
+  padding: 45px 35px;
+
+  opacity: 0;
+  border: 1px solid rgba(#8e8e8e, .88);
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  box-shadow: 0 23px 24px rgba($black, .36);
+
+  @include transition;
+  &._active {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__title {
+    font-size: rem-calc(26);
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: $gray;
+  }
+  &__privacy {
+    @extend .form-privacy;
+  }
+}

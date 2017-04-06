@@ -1,0 +1,18 @@
+.top-menu {
+  &__item {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(13);
+
+    margin: 0 10px;
+
+    text-decoration: none;
+
+    color: $gray;
+    border-bottom: 1px solid #ccc;
+
+    @include transition;
+    &:hover {
+      border-bottom: 1px solid $gray;
+    }
+  }
+}

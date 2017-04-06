@@ -1,0 +1,82 @@
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  &._iconed {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 14px;
+
+      display: block;
+
+      content: '';
+
+      @include vertical-center;
+    }
+    .form-group__field {
+      padding-left: 40px;
+    }
+  }
+  &._name {
+    &:before {
+      @include bg($form-name);
+    }
+  }
+  &._phone {
+    &:before {
+      @include bg($form-phone);
+    }
+  }
+  &._email {
+    &:before {
+      @include bg($form-email);
+    }
+  }
+  &._organization {
+    &:before {
+      @include bg($form-organization);
+    }
+  }
+  &._password {
+    &:before {
+      @include bg($form-password);
+    }
+  }
+  &._check-number {
+    width: 100%;
+    margin: 0 10px;
+    .form-group__field {
+      font-family: $ProximaNova-Semibold;
+      font-size: rem-calc(20);
+
+      height: 50px;
+      padding: 0;
+
+      text-align: center;
+    }
+  }
+  &._date {
+    &:before {
+      @include bg($date-select);
+    }
+  }
+  &._textarea {
+    .form-group__field {
+      height: auto;
+      padding-top: 16px;
+    }
+  }
+  &__field {
+    font-size: rem-calc(14);
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 41px;
+    padding: 0 16px;
+
+    border: 1px solid #d8d2d2;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: inset 0 3px 3px rgba(#7f7f7f, .11);
+  }
+}

@@ -1,0 +1,14 @@
+mixin sort(data)
+  - var modiffer = attributes.class || '';
+  .sort(class="#{modiffer}")
+    .sort-select
+      label.sort-select__label Показывать по:
+      select.sort-select__field
+        option Все
+        option 10
+        option 20
+        option 30
+        option 40
+      span.sort-select__from из 1340
+
+    a(href="#" title="Автозагрузка").sort-loader.jsToggle._active Автозагрузка

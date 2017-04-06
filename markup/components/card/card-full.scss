@@ -1,0 +1,270 @@
+.card-full {
+  display: none;
+
+  margin: 0 40px;
+  padding: 40px 0;
+
+  border-top: 1px solid $light-gray;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  &._active {
+    display: flex;
+  }
+}
+
+.card-column {
+  width: 100%;
+  max-width: 290px;
+  margin-right: 40px;
+
+  border-right: 1px solid $light-gray;
+  &:last-child {
+    margin-right: 0;
+
+    border-right: 0;
+  }
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(15);
+
+    margin-bottom: 30px;
+
+    color: $gray;
+  }
+}
+
+.card-detailed-route {
+  &__item {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    padding-left: 25px;
+
+    color: $gray;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+    }
+    span {
+      font-family: $ProximaNova-Light;
+      font-size: rem-calc(11);
+      line-height: 1.8;
+
+      display: block;
+
+      color: rgba($gray, .8);
+    }
+    &._start {
+      &:before {
+        @include bg($start-route);
+      }
+    }
+    &._finish {
+      margin-bottom: 50px;
+      &:before {
+        @include bg($finish-route);
+      }
+    }
+  }
+  &__length {
+    font-size: rem-calc(14);
+
+    margin-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    color: rgba($gray, .3);
+    border-left: 1px dashed rgba($gray, .3);
+  }
+  &__place {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    margin-left: 20px;
+
+    text-decoration: none;
+
+    color: $blue;
+    border-bottom: 1px solid rgba($blue, .3);
+
+    @include transition;
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+    &:before {
+      position: absolute;
+      left: -20px;
+
+      content: '';
+
+      @include bg($card-route);
+    }
+  }
+}
+
+.card-auto-type {
+  &__row {
+    font-size: rem-calc(14);
+
+    display: flex;
+
+    margin-bottom: 10px;
+
+    color: $gray;
+  }
+  &__title {
+    font-family: $ProximaNova-Semibold;
+
+    width: 100%;
+    max-width: 120px;
+  }
+  &__mine {
+    font-size: rem-calc(14);
+
+    display: inline-block;
+
+    margin-top: 27px;
+
+    text-decoration: none;
+
+    color: $green;
+    border-bottom: 1px solid rgba($green, .4);
+
+    @include transition;
+    &:hover {
+      border-bottom: 1px solid $green;
+    }
+  }
+}
+
+.customer-card-info {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  &__avatar {
+    margin-right: 15px;
+    img {
+      display: block;
+    }
+  }
+  &__name {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(13);
+    line-height: 1;
+
+    margin-bottom: 6px;
+
+    color: $green;
+  }
+}
+
+.customer-card-meta {
+  margin-top: 20px;
+  &__item {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(12);
+
+    margin-bottom: 15px;
+
+    color: $gray;
+    .green {
+      color: $green;
+    }
+    .red {
+      color: $red;
+    }
+  }
+}
+
+.customer-card-confirm {
+  display: flex;
+
+  margin-top: 20px;
+
+  justify-content: flex-start;
+  align-items: center;
+  &__item {
+    position: relative;
+    z-index: 100;
+
+    margin-right: 8px;
+
+    filter: grayscale(100%);
+    &._phone {
+      @include bg($small-phone);
+    }
+    &._passport {
+      @include bg($small-passport);
+    }
+    &._email {
+      @include bg($small-email);
+    }
+    &._fb {
+      @include bg($small-fb);
+    }
+    &._vk {
+      @include bg($small-vk);
+    }
+    &._confirmed {
+      filter: grayscale(0);
+    }
+    span {
+      font-size: rem-calc(10);
+
+      z-index: 99;
+      top: -60px;
+
+      visibility: hidden;
+
+      box-sizing: border-box;
+      width: 120px;
+      height: 45px;
+      padding: 10px;
+
+      text-align: center;
+
+      opacity: 0;
+      color: $gray;
+      border-radius: 3px;
+      background: $white;
+      box-shadow: 0 0 3px rgba($gray, .3);
+
+      @include horizontal-center;
+      @include transition;
+      &:after {
+        bottom: -4px;
+
+        display: block;
+
+        width: 0;
+        height: 0;
+
+        content: '';
+
+        border-top: 4px solid $white;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+
+        @include horizontal-center;
+      }
+    }
+    &:hover {
+      span {
+        top: -55px;
+
+        visibility: visible;
+
+        opacity: 1;
+      }
+    }
+  }
+}

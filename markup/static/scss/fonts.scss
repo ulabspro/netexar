@@ -1,0 +1,8 @@
+@include font-face(ProximaNova-Regular, "../fonts/ProximaNova-Regular");
+$ProximaNova-Regular: 'ProximaNova-Regular', Helvetica, Arial, sans-serif;
+
+@include font-face(ProximaNova-Light, "../fonts/ProximaNova-Light");
+$ProximaNova-Light: 'ProximaNova-Light', Helvetica, Arial, sans-serif;
+
+@include font-face(ProximaNova-Semibold, "../fonts/ProximaNova-Semibold");
+$ProximaNova-Semibold: 'ProximaNova-Semibold', Helvetica, Arial, sans-serif;
