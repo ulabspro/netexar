@@ -1,0 +1,132 @@
+.user-settings-personal {
+  width: 100%;
+  &__row {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 25px;
+
+    justify-content: flex-start;
+    align-items: center;
+    .form-select,
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+  &__label {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(16);
+
+    width: 100%;
+    max-width: 150px;
+
+    color: $gray;
+  }
+  &__value {
+    font-size: rem-calc(16);
+
+    width: 100%;
+    max-width: 300px;
+
+    color: $gray;
+  }
+  &__success-button {
+    margin-left: 0;
+
+    @extend .account-success-item__button;
+  }
+}
+
+.user-settings-save {
+  font-size: rem-calc(14);
+
+  width: 185px;
+  height: 38px;
+  margin-top: 60px;
+
+  @extend .button;
+  @extend .button._blue;
+}
+
+.user-settings-personal-check-document {
+  position: relative;
+
+  display: flex;
+
+  padding-left: 20px;
+
+  justify-content: flex-start;
+  align-items: center;
+  &:before {
+    position: absolute;
+    left: 0;
+
+    content: '';
+
+    @include bg($attachment);
+  }
+  &__link {
+    line-height: 1;
+
+    text-decoration: none;
+
+    color: $blue;
+    border-bottom: 1px solid rgba($blue, .5);
+
+    @include transition;
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  &__status {
+    font-size: rem-calc(12);
+
+    position: relative;
+
+    margin-left: 20px;
+    padding-left: 23px;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+    }
+    &._success {
+      color: $green;
+      &:before {
+        @include bg($success);
+      }
+    }
+    &._inprocess {
+      color: $blue;
+      &:before {
+        @include bg($inprocess);
+      }
+    }
+    &._invalid {
+      color: $red;
+      &:before {
+        @include bg($invalid);
+      }
+    }
+  }
+}
+
+.user-settings-personal-birthday {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  &__day {
+    width: 100%;
+    max-width: 70px;
+  }
+  &__month {
+    width: 100%;
+    max-width: 130px;
+  }
+  &__year {
+    width: 100%;
+    max-width: 80px;
+  }
+}

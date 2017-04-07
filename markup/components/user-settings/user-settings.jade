@@ -1,0 +1,73 @@
+mixin user-settings(settingsControl)
+  - var modiffer = attributes.class || ''
+  .user-settings(class="#{modiffer}")
+    h1.title Настройки
+
+    .tabs(class="jsTabs")
+      .tabs-control(class="jsTabsControl")
+        .tabs-control__item(class="jsTabsControlItem")._active Личные данные
+        .tabs-control__item(class="jsTabsControlItem") Уведомления
+        //- .tabs-control__item(class="jsTabsControlItem") Безопасность
+
+      .tabs-content(class="jsTabsContent")
+        .tabs-content__item(class="jsTabsContentItem")._active
+          .user-settings__content
+            +customer-settings-personal
+        .tabs-content__item(class="jsTabsContentItem")
+          .user-settings__content
+            +user-settings-notifications
+        //- .tabs-content__item(class="jsTabsContentItem")
+        //-   .user-settings__content
+
+
+mixin user-settings-photo()
+  .user-settings-photo
+    .user-settings-photo__image
+      img(src="%=static=%images/assets/user-settings/user-photo.png" alt="")
+    .user-settings-photo__control 
+      span Изменить фото профиля
+      input(type="file").user-settings-photo__upload
+
+mixin user-settings-notifications()
+  table.user-settings-notifications
+    thead
+      tr
+        th Настройка уведомлений
+        th E-mail
+        th SMS
+    tbody
+      tr
+        td Контакты выбранного перевозчика
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+
+      tr
+        td Новое ценовое предложение
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+
+      tr
+        td Новое сообщение
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+
+      tr
+        td Прочее
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field
+        td
+          .form-checkbox
+            input(type="checkbox" value="").form-checkbox__field

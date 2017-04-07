@@ -60,6 +60,13 @@
       background-color: $green + #111;
     }
   }
+  &._blue {
+    color: $white;
+    background-color: $blue;
+    &:hover {
+      background-color: $blue + #111;
+    }
+  }
   &._gray {
     color: $white;
     background-color: #e0e0e0;
@@ -205,5 +212,32 @@
     visibility: visible;
 
     opacity: 1;
+  }
+}
+
+table {
+  color: $gray;
+  thead {
+    tr {
+      th {
+        font-family: $ProximaNova-Regular;
+        font-size: rem-calc(14);
+
+        padding: 15px 20px;
+
+        background-color: #f2f2f2;
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+  tr {
+    border-bottom: 1px solid #dfdfdf;
+    td {
+      line-height: 1;
+
+      padding: 20px;
+    }
   }
 }

@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block header
+  +header("logined")._inside
+
+block content
+  +user-settings
+
+block modals
+  +modal-passport
+  +modal-thanks('Ваши паспортные данные будут проверены Администрацией и после этого статус проверки документов будет обновлен')

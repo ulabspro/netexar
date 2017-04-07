@@ -1,9 +1,12 @@
 .tabs-control {
   display: flex;
 
+  border-bottom: 1px solid $light-gray;
+
   justify-content: flex-start;
   align-items: flex-end;
   &._main {
+    border-bottom: 0;
     .tabs-control__item {
       font-size: rem-calc(18);
 
@@ -16,9 +19,6 @@
         }
       }
     }
-  }
-  &._inside {
-    border-bottom: 1px solid $light-gray;
   }
   &__item {
     padding: 10px 25px;

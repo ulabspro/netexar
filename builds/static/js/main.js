@@ -12488,6 +12488,7 @@ return jQuery;
     };
 })();
  })(window, jQuery);
+
 $('.jsCard').click(function () {
   var $this = $(this);
 
@@ -12503,6 +12504,7 @@ $('.jsParentReviewsControlOk').click(function (e) {
 
   $this.closest('.jsParentReviews').next('.jsParentReviewsShowOk').addClass('_active');
 });
+
 
 
 // Зададим стартовую дату
@@ -12554,13 +12556,13 @@ $('.jsModalTrigger').click(function (e) {
   var $this = $(this), 
       calledModal = $this.data('modal');
 
-  $(calledModal).toggleClass('_active');
-  $('.mask').toggleClass('_active');
+  $('.modal').removeClass('_active');
+  $(calledModal).addClass('_active');
+  $('.mask').addClass('_active');
 });
 
-$('.mask').click(function () {
-  $(this).removeClass('_active');
-  $('.modal').removeClass('_active');
+$('.mask, .jsModalClose').click(function () {
+  $('.mask, .modal').removeClass('_active');
 });
 
 
@@ -12599,6 +12601,7 @@ $('.jsTabsControlItem').click(function () {
 
   $this.closest('.jsTabs').find('.jsTabsContent').find('.jsTabsContentItem').eq(indexTab).addClass('_active').siblings().removeClass('_active');
 });
+
 
 
 

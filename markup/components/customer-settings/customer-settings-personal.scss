@@ -1,0 +1,15 @@
+.customer-settings-personal {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__side {
+    width: 100%;
+    max-width: 262px;
+    margin-right: 55px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 660px;
+  }
+}

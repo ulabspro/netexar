@@ -1,0 +1,62 @@
+.user-settings-photo {
+  position: relative;
+
+  width: 262px;
+  height: 262px;
+  &:before {
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: linear-gradient(to bottom, rgba($black,0) 30%, rgba(0,0,0,.4) 80% ,rgba(0,0,0,.8) 100%);
+  }
+  &__image {
+    img {
+      display: block;
+    }
+  }
+  &__control {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+
+    width: 100%;
+    padding: 7px 0;
+
+    text-align: center;
+
+    border-top: 1px solid rgba($white, .5);
+    span {
+      font-size: rem-calc(12);
+
+      position: relative;
+
+      padding-left: 28px;
+
+      color: $white;
+      &:before {
+        position: absolute;
+        top: -3px;
+        left: 0;
+
+        content: '';
+
+        @include bg($photo-settings);
+      }
+    }
+  }
+  &__upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+  }
+}

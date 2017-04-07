@@ -1,0 +1,102 @@
+.account-success {
+  margin-bottom: 30px;
+  padding: 40px;
+
+  text-align: center;
+
+  border: 1px solid rgba($black, .15);
+
+  @extend .wrapper;
+  &__title {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(15);
+    line-height: rem-calc(17);
+
+    color: $gray;
+  }
+  &__list {
+    display: flex;
+
+    margin-top: 23px;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.account-success-item {
+  font-size: rem-calc(14);
+
+  position: relative;
+
+  display: flex;
+
+  margin-right: 30px;
+  padding-left: 30px;
+
+  color: #6c6c6c;
+
+  justify-content: flex-start;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:before {
+    left: 0;
+
+    content: '';
+
+    @include vertical-center;
+  }
+  &._phone {
+    &:before {
+      @include bg($phone-success);
+    }
+  }
+  &._email {
+    &:before {
+      @include bg($email-success);
+    }
+  }
+  &._fb {
+    &:before {
+      @include bg($fb-success);
+    }
+  }
+  &._vk {
+    &:before {
+      @include bg($vk-success);
+    }
+  }
+  &__button {
+    font-size: rem-calc(11);
+    line-height: 27px;
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 103px;
+    height: 27px;
+    margin-left: 15px;
+    padding-left: 15px;
+
+    text-align: left;
+
+    color: $white;
+
+    @extend .button;
+    @extend .button._green;
+    &:after {
+      font-size: 16px;
+
+      position: absolute;
+      right: 15px;
+
+      content: '+';
+
+      color: $white;
+
+      @include vertical-center;
+    }
+  }
+}

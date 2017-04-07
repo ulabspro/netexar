@@ -219,3 +219,50 @@ mixin modal-order(data)
         input(type="submit" value="Разместить заказ").modal-order__submit
         input(type="reset" value="Отменить").modal-order__dismiss
         .modal__privacy._order Нажимая на кнопку «Разместить заказ», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+mixin modal-passport()
+  .modal.modal-passport#modal-passport
+    .modal__title Паспортные данные
+    .modal__text Внимание! Все поля формы обязательны к заполнению. Предоставленные даннные сверяются администрацией с предоставленными сканами документов.
+
+    form(method="" action="").form
+      .form-group
+        input(type="text" value="" placeholder="Фамилия").form-group__field
+      .form-group
+        input(type="text" value="" placeholder="Имя").form-group__field
+      .form-group
+        input(type="text" value="" placeholder="Отчество").form-group__field
+      .modal-passport-row
+        .modal-passport-column._fourth
+          .form-group
+            input(type="text" value="" placeholder="Серия").form-group__field
+        .modal-passport-column._three-quarters
+          .form-group
+            input(type="text" value="" placeholder="Номер").form-group__field
+
+      .form-group
+        input(type="text" value="" placeholder="Дата выдачи" class="datepicker-here" data-timepicker="false").form-group__field
+
+      .form-group
+        input(type="text" value="" placeholder="Кем выдан").form-group__field
+
+      .modal-passport-row
+        .form-attachment Лицевая сторона паспорта
+          input(type="file").form-attachment__field
+
+      .modal-passport-row
+        .form-attachment Страница с пропиской (регистрацией)
+          input(type="file").form-attachment__field
+
+      input(type="submit" value="Сохранить").modal-passport__submit
+
+      .modal__privacy Нажимая на кнопку «Сохранить», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+      a(href="#" class="jsModalTrigger" data-modal="#modal-thanks") Временный вызов модалки "Спасибо"
+
+mixin modal-thanks(textModalThanks)
+  .modal.modal-thanks._center#modal-thanks
+    .modal__title Спасибо!
+    .modal__text!= textModalThanks
+
+    a(href="#" title="" class="jsModalClose").modal__close-button Закрыть

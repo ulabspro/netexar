@@ -1,0 +1,16 @@
+.user-settings-notifications {
+  width: 680px;
+  tr {
+    td {
+      text-align: center;
+      &:first-child {
+        text-align: left;
+      }
+      .form-checkbox {
+        display: inline-block;
+
+        margin-bottom: 0;
+      }
+    }
+  }
+}

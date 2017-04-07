@@ -1,0 +1,80 @@
+mixin customer-settings-personal()
+  .customer-settings-personal
+    .customer-settings-personal__side
+      +user-settings-photo
+    .customer-settings-personal__content
+      form(method="" action="").form
+        .user-settings-personal
+          .user-settings-personal__row
+            .user-settings-personal__label ФИО
+            .user-settings-personal__value Александр Петренко
+
+          .user-settings-personal__row
+            .user-settings-personal__label Организация
+            .user-settings-personal__value ООО “СтальТрубМосЗавод”
+
+          .user-settings-personal__row
+            .user-settings-personal__label E-mail
+            .user-settings-personal__value petrenko@gmail.com
+
+          .user-settings-personal__row
+            .user-settings-personal__label Телефон
+            .user-settings-personal__value +7 (495) 321-12-12
+
+          .user-settings-personal__row
+            .user-settings-personal__label Документы
+            .user-settings-personal__value 
+              .user-settings-personal-check-document
+                a(href="#" title="" class="jsModalTrigger" data-modal="#modal-passport").user-settings-personal-check-document__link Паспорт
+                //- .user-settings-personal-check-document__status._success Документ проверен
+                //- .user-settings-personal-check-document__status._inprocess Документ проверяется
+                .user-settings-personal-check-document__status._invalid Документ не прошел проверку
+
+          .user-settings-personal__row
+            .user-settings-personal__label День рождения
+            .user-settings-personal__value
+              .user-settings-personal-birthday
+                .user-settings-personal-birthday__day
+                  .form-select
+                    select.form-select__field
+                      - for (var i = 1; i < 10; i++)
+                        option 0#{i}
+                      - for (var i = 10; i < 32; i++)
+                        option #{i}
+                .user-settings-personal-birthday__month
+                  .form-select
+                    select.form-select__field
+                      option Январь
+                      option Февраль
+                      option Март
+                      option Апрель
+                      option Май
+                      option Июнь
+                      option Июль
+                      option Август
+                      option Сентябрь
+                      option Октябрь
+                      option Ноябрь
+                      option Декабрь
+                .user-settings-personal-birthday__year
+                  .form-select
+                    select.form-select__field
+                      - for (var i = 1920; i < 2000; i++)
+                        option #{i}
+          .user-settings-personal__row
+            .user-settings-personal__label Город
+            .user-settings-personal__value
+              .form-group
+                input(type="text" value="Москва").form-group__field
+
+          .user-settings-personal__row
+            .user-settings-personal__label Facebook
+            .user-settings-personal__value
+              a(href="#" title="").user-settings-personal__success-button Привязать
+
+          .user-settings-personal__row
+            .user-settings-personal__label Vkontakte
+            .user-settings-personal__value
+              a(href="#" title="").user-settings-personal__success-button Привязать
+
+          input(type="submit" value="Сохранить изменения").user-settings-save
