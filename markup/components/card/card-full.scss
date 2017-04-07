@@ -268,3 +268,23 @@
     }
   }
 }
+
+.customer-card-not-selected {
+  padding-right: 60px;
+  &__text {
+    font-size: rem-calc(13);
+    line-height: rem-calc(17);
+
+    margin-bottom: 15px;
+
+    color: $gray;
+  }
+  &__link {
+    font-size: rem-calc(13);
+
+    color: $red;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

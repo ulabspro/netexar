@@ -20,6 +20,14 @@
       opacity: 1;
     }
   }
+  &._full {
+    border: 1px solid rgba(#8e8e8e, .44);
+    &:hover {
+      cursor: inherit;
+
+      box-shadow: 0 3px 3px rgba($black, .05);
+    }
+  }
   &__hovered {
     font-size: rem-calc(11);
 
@@ -208,4 +216,200 @@
 
   @extend .button;
   @extend .button._green;
+}
+
+.card-count-answers {
+  font-size: rem-calc(14);
+
+  display: block;
+
+  margin: auto;
+
+  text-align: center;
+
+  color: $red;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.card-status {
+  font-size: rem-calc(11);
+  line-height: 34px;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 123px;
+  height: 34px;
+  margin: auto;
+
+  text-align: center;
+
+  color: $white;
+  &._inwork {
+    background-color: $green;
+  }
+  &._active {
+    background-color: #9d9d9d;
+  }
+  &._finished {
+    background-color: $blue;
+  }
+  &._canceled {
+    background-color: $red;
+  }
+}
+
+.card-cancel {
+  position: relative;
+
+  margin: 0 40px;
+  padding: 40px 0;
+
+  border-top: 1px solid rgba($black, .15);
+  &__button {
+    font-size: rem-calc(12);
+    line-height: 35px;
+
+    position: absolute;
+    right: 0;
+
+    width: 140px;
+    height: 35px;
+
+    @include vertical-center;
+    @extend .button;
+    @extend .button._red;
+  }
+}
+
+.card-finished {
+  position: relative;
+
+  margin: 0 40px;
+  padding: 40px 0;
+
+  border-top: 1px solid rgba($black, .15);
+  &._active {
+    display: none;
+  }
+  &__text {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(14);
+
+    text-align: center;
+
+    color: $black;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.card-finished-buttons {
+  display: flex;
+
+  margin-top: 20px;
+
+  justify-content: center;
+  align-items: center;
+  &__control {
+    font-size: rem-calc(11);
+    line-height: 35px;
+
+    height: 35px;
+    margin: 0 10px;
+
+    @extend .button;
+    &._ok {
+      width: 182px;
+
+      @extend .button._green;
+    }
+    &._not {
+      width: 142px;
+
+      @extend .button._red;
+    }
+  }
+}
+
+.card-finished-reviews {
+  position: absolute;
+
+  display: flex;
+  visibility: hidden;
+
+  margin: 0 40px;
+  padding: 40px 0;
+
+  opacity: 0;
+  border-top: 1px solid rgba($black, .15);
+
+  @include transition;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &._active {
+    position: relative;
+
+    visibility: visible;
+
+    opacity: 1;
+  }
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(18);
+
+    width: 100%;
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: $black;
+  }
+}
+
+.card-finished-reviews-block {
+  display: flex;
+
+  margin: 0 10px;
+
+  justify-content: flex-start;
+  align-items: center;
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(14);
+
+    margin-right: 10px;
+
+    color: $black;
+  }
+}
+
+.card-finished-reviews-buttons {
+  display: flex;
+
+  width: 100%;
+  margin-top: 30px;
+
+  justify-content: center;
+  align-items: center;
+  &__control {
+    font-size: rem-calc(11);
+    line-height: 35px;
+
+    width: 142px;
+    height: 35px;
+    margin: 0 10px;
+
+    @extend .button;
+    &._ok {
+      @extend .button._green;
+    }
+    &._not {
+      @extend .button._red;
+    }
+  }
 }

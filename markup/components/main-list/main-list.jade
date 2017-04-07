@@ -11,7 +11,7 @@ mixin main-list(data)
 
     .main-list__bottom
       .tabs-content(class="jsTabsContent")
-        .tabs-content__item(class="jsTabsContentItem")
+        .tabs-content__item(class="jsTabsContentItem")._active
           //- card
           - var cardControl = {state: "logined", time: "express"}
           +card(cardControl)
@@ -26,3 +26,5 @@ mixin main-list(data)
           +card(cardControl)
 
           a(href="#" title="").show-more Загрузить еще
+
+        .tabs-content__item(class="jsTabsContentItem")

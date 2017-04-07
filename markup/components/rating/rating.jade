@@ -1,5 +1,6 @@
 mixin rating(data)
-  .rating
+  - var modiffer = attributes.class || ''
+  .rating(class="#{modiffer}")
     .rating__item._full
     .rating__item._full
     .rating__item._full

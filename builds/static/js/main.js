@@ -12495,6 +12495,16 @@ $('.jsCard').click(function () {
   $this.find('.jsCardHidden').toggleClass('_active');
 });
 
+$('.jsParentReviewsControlOk').click(function (e) {
+  e.preventDefault();
+  var $this = $(this);
+
+  $this.closest('.jsParentReviews').addClass('_active');
+
+  $this.closest('.jsParentReviews').next('.jsParentReviewsShowOk').addClass('_active');
+});
+
+
 // Зададим стартовую дату
 var start = new Date(),
     prevDay,
@@ -12523,7 +12533,6 @@ $('.datepicker-here').datepicker({
       prevDay = day;
   }
 });
-
 $('.jsExtraCheckCheckbox').change(function() {
   if($(this).is(":checked")) {
     $(this).closest('.jsExtraCheck').find('.jsExtraCheckField').show().focus();
@@ -12536,6 +12545,7 @@ $('.jsToggle').click(function (e) {
   e.preventDefault();
   $(this).toggleClass('_active');
 });
+
 
 
 $('.jsModalTrigger').click(function (e) {
@@ -12581,7 +12591,14 @@ $('.mask').click(function () {
 });
 
 
+$('.jsTabsControlItem').click(function () {
+  var $this = $(this),
+      indexTab = $this.index();
 
+  $this.addClass('_active').siblings().removeClass('_active');
+
+  $this.closest('.jsTabs').find('.jsTabsContent').find('.jsTabsContentItem').eq(indexTab).addClass('_active').siblings().removeClass('_active');
+});
 
 
 

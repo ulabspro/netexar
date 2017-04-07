@@ -11,4 +11,14 @@
       @include bg($rating-empty);
     }
   }
+  &._reviews {
+    .rating__item {
+      &._full {
+        @include bg($rating-full-big);
+      }
+      &._empty {
+        @include bg($rating-empty-big);
+      }
+    }
+  }
 }

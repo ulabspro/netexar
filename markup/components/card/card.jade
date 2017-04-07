@@ -99,3 +99,125 @@ mixin card(cardControl)
           .card-login-info__text Подробная информация о заказе доступна только <br>для Зарегистрированных пользователей
           a(href="#" title="").card-login-info__button Войти
           a(href="#" title="").card-login-info__link Регистрация
+
+mixin fullcard(fullcardControl)
+  - var modiffer = attributes.class || ''
+  .card(class="#{modiffer}")
+    .card-small
+      .card-map
+        .card-map__layout
+          img(src="%=static=%images/assets/card/map.png" alt="")
+        a(href="#" title="").card-map__zoom 
+          span Увеличить карту маршрута
+      .card-center
+        .card-meta id4113222  |  Размещено: 14.03.2017  16:00
+        .card-info
+          .card-info__item._way Москва - Химки - Балашиха - Одинцово
+            span (40 км)
+          .card-info__item._parameters 20 тонн, 43м<sup>3</sup>
+          .card-info__item._time Погрузка сегодня (22.03.2016 17:00)
+        .card-text Необходимо перевезти не бьющийся товар из Москвы в Химки без задержек
+      
+      .card-control
+        - if (fullcardControl.state == 'inwork')
+          .card-status._inwork Заказ в работе
+        - if (fullcardControl.state == 'active')
+          .card-status._active Активный заказ
+        - if (fullcardControl.state == 'finished')
+          .card-status._finished Заказ завершен
+        - if (fullcardControl.state == 'canceled')
+          .card-status._canceled Заказ отменен
+        .card-payment
+          .card-payment__cost Договорная
+          .card-payment__type безнал, без НДС (предоплата)
+        a(href="#" title="Предложений: 341").card-count-answers Предложений: 341
+    
+    .card-full._active
+      .card-column
+        .card-column__title Подробный маршрут:
+        
+        .card-detailed-route
+          .card-detailed-route__item._start Москва, ул. Новобережная, 14А
+            span Дата подачи: 18.07.2016 18:00
+
+          .card-detailed-route__length Общая протяженность: 40км
+
+          .card-detailed-route__item._finish Москва, ул. Ташкентская, 34В
+            span Дата отгрузки: 21.07.2016 с 9:00 до 10:00
+
+      .card-column
+        .card-column__title Требуемый автомобиль:
+
+        .card-auto-type
+          .card-auto-type__row
+            .card-auto-type__title Тип кузова: 
+            .card-auto-type__text Бортовой 20т, 12м 
+
+          .card-auto-type__row
+            .card-auto-type__title Коника:
+            .card-auto-type__text 2шт 
+
+          .card-auto-type__row
+            .card-auto-type__title Ремни:
+            .card-auto-type__text 4шт 
+
+          .card-auto-type__row
+            .card-auto-type__title Тип загрузки:
+            .card-auto-type__text Верхняя
+
+          .card-auto-type__row
+            .card-auto-type__title Тип выгрузки:
+            .card-auto-type__text Боковая
+
+      .card-column
+        .card-column__title Выбранный исполнитель:
+        - if (fullcardControl.state == 'inwork' || fullcardControl.state == 'finished')
+          .customer-card
+            .customer-card-info
+              .customer-card-info__avatar
+                img(src="%=static=%images/assets/card/customer.png" alt="")
+              .customer-card-info__content
+                .customer-card-info__name Владислав Святоня
+                +rating()
+
+            .customer-card-meta
+              .customer-card-meta__item Отзывы:   <span class="green">4</span> / 24 / <span class="red">0</span>
+              .customer-card-meta__item Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+
+        - if (fullcardControl.state == 'active' || fullcardControl.state == 'canceled')
+          .customer-card-not-selected
+            .customer-card-not-selected__text Исполнитель еще не выбран. Чтобы выбрать исполнителя, посмотрите “Список предложений” и выберите исполнителя, после чего он появиться здесь.
+            a(href='#' title="").customer-card-not-selected__link Перейти к списку предложений
+
+    - if (fullcardControl.state == 'active')
+      .card-cancel
+        a(href="#" title="").card-cancel__button Отменить заказ
+
+    - if (fullcardControl.state == 'finished')
+      .card-finished(class="jsParentReviews")
+        .card-finished__text
+          p Исполнитель указал, что заказ выполнен.
+          p Просим подтвердить или указать, что заказ не выполнен.
+          p Если в течении 12 часов вы не подтвердите, заказ автоматически будет считаться выполненным
+        .card-finished-buttons
+          a(href="#" title="").card-finished-buttons__control._ok(class="jsParentReviewsControlOk") Заказ завершен успешно
+          a(href="#" title="").card-finished-buttons__control._not(class="jsParentReviewsControlNot") Заказ просрочен
+
+      .card-finished-reviews(class="jsParentReviewsShowOk")
+        .card-finished-reviews__title Спасибо за подтверждение! Оставьте пожалуйста отзыв об исполнителе:
+
+        .card-finished-reviews-block
+          .card-finished-reviews-block__title Пунктуальность:
+          +rating()._reviews
+
+        .card-finished-reviews-block
+          .card-finished-reviews-block__title Вежливость:
+          +rating()._reviews
+
+        .card-finished-reviews-block
+          .card-finished-reviews-block__title Адекватность:
+          +rating()._reviews
+
+        .card-finished-reviews-buttons
+          a(href="#" title="").card-finished-reviews-buttons__control._ok Готово
+          a(href="#" title="").card-finished-reviews-buttons__control._not Не хочу

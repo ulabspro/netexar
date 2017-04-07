@@ -407,7 +407,7 @@ blockquote {
   src: url("../fonts/ProximaNova-Semibold.eot?") format("eot"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype"), url('../fonts/ProximaNova-Semibold.svg#str-replace(ProximaNova-Semibold, " ", "_")') format("svg");
 }
 
-.wrapper, .empty-orders, .footer__wrapper, .header__wrapper, .main-list__wrapper, .main-list__bottom, .top-baner__wrapper, .warning-pushes {
+.wrapper, .empty-orders, .list-orders, .footer__wrapper, .header__wrapper, .main-list__wrapper, .main-list__bottom, .top-baner__wrapper, .warning-pushes {
   box-sizing: border-box;
   width: 100%;
   max-width: 980px;
@@ -451,7 +451,7 @@ blockquote {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.11);
 }
 
-.button, .card-response, .modal-order__submit, .modal-order__dismiss {
+.button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .modal-order__submit, .modal-order__dismiss {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -461,22 +461,31 @@ blockquote {
   transition: all 0.2s ease-in-out;
 }
 
-.button._green, .card-response, .modal-order__submit, ._green.modal-order__dismiss {
+.button._green, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, .modal-order__submit, ._green.modal-order__dismiss {
   color: #fff;
   background-color: #b0cb1f;
 }
 
-.button._green:hover, .card-response:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover {
+.button._green:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover {
   background-color: #c1dc30;
 }
 
-.button._gray, ._gray.card-response, ._gray.modal-order__submit, .modal-order__dismiss {
+.button._gray, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.modal-order__submit, .modal-order__dismiss {
   color: #fff;
   background-color: #e0e0e0;
 }
 
-.button._gray:hover, ._gray.card-response:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover {
+.button._gray:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover {
   background-color: #cfcfcf;
+}
+
+.button._red, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.modal-order__submit, ._red.modal-order__dismiss {
+  color: #fff;
+  background-color: #f43333;
+}
+
+.button._red:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover {
+  background-color: #ff4444;
 }
 
 .show-more {
@@ -679,7 +688,7 @@ body._active {
 
 .card-detailed-route__item._start:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -211px -65px;
+  background-position: -211px -31px;
   width: 15px;
   height: 30px;
   background-size: 262px, 243px;
@@ -692,7 +701,7 @@ body._active {
 
 .card-detailed-route__item._finish:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -211px -31px;
+  background-position: -211px -65px;
   width: 15px;
   height: 30px;
   background-size: 262px, 243px;
@@ -837,7 +846,7 @@ body._active {
 
 .customer-card-confirm__item._phone {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -235px -193px;
+  background-position: -235px -208px;
   width: 11px;
   height: 11px;
   background-size: 262px, 243px;
@@ -846,7 +855,7 @@ body._active {
 
 .customer-card-confirm__item._passport {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -142px -205px;
+  background-position: -186px -205px;
   width: 10px;
   height: 12px;
   background-size: 262px, 243px;
@@ -927,6 +936,26 @@ body._active {
   top: -55px;
   visibility: visible;
   opacity: 1;
+}
+
+.customer-card-not-selected {
+  padding-right: 60px;
+}
+
+.customer-card-not-selected__text {
+  font-size: 0.8125rem;
+  line-height: 1.0625rem;
+  margin-bottom: 15px;
+  color: #404040;
+}
+
+.customer-card-not-selected__link {
+  font-size: 0.8125rem;
+  color: #f43333;
+}
+
+.customer-card-not-selected__link:hover {
+  text-decoration: none;
 }
 
 .card-login {
@@ -1017,6 +1046,15 @@ body._active {
 .card:hover .card__hovered {
   visibility: visible;
   opacity: 1;
+}
+
+.card._full {
+  border: 1px solid rgba(142, 142, 142, 0.44);
+}
+
+.card._full:hover {
+  cursor: inherit;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 .card__hovered {
@@ -1135,7 +1173,7 @@ body._active {
 .card-info__item._parameters:before {
   left: -1px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -43px -205px;
+  background-position: -87px -205px;
   width: 16px;
   height: 16px;
   background-size: 262px, 243px;
@@ -1179,7 +1217,7 @@ body._active {
   left: 12px;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -63px -205px;
+  background-position: -107px -205px;
   width: 16px;
   height: 16px;
   background-size: 262px, 243px;
@@ -1214,7 +1252,196 @@ body._active {
   height: 55px;
 }
 
-.empty-orders__group {
+.card-count-answers {
+  font-size: 0.875rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #f43333;
+}
+
+.card-count-answers:hover {
+  text-decoration: none;
+}
+
+.card-status {
+  font-size: 0.6875rem;
+  line-height: 34px;
+  display: block;
+  box-sizing: border-box;
+  width: 123px;
+  height: 34px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.card-status._inwork {
+  background-color: #b0cb1f;
+}
+
+.card-status._active {
+  background-color: #9d9d9d;
+}
+
+.card-status._finished {
+  background-color: #076681;
+}
+
+.card-status._canceled {
+  background-color: #f43333;
+}
+
+.card-cancel {
+  position: relative;
+  margin: 0 40px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card-cancel__button {
+  font-size: 0.75rem;
+  line-height: 35px;
+  position: absolute;
+  right: 0;
+  width: 140px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card-finished {
+  position: relative;
+  margin: 0 40px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card-finished._active {
+  display: none;
+}
+
+.card-finished__text {
+  font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #000;
+}
+
+.card-finished__text p {
+  margin: 0;
+}
+
+.card-finished-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-finished-buttons__control {
+  font-size: 0.6875rem;
+  line-height: 35px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.card-finished-buttons__control._ok {
+  width: 182px;
+}
+
+.card-finished-buttons__control._not {
+  width: 142px;
+}
+
+.card-finished-reviews {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  margin: 0 40px;
+  padding: 40px 0;
+  opacity: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-finished-reviews._active {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.card-finished-reviews__title {
+  font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.card-finished-reviews-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-finished-reviews-block__title {
+  font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  margin-right: 10px;
+  color: #000;
+}
+
+.card-finished-reviews-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-finished-reviews-buttons__control {
+  font-size: 0.6875rem;
+  line-height: 35px;
+  width: 142px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.empty-orders__group, .list-orders__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1281,7 +1508,7 @@ body._active {
 .footer__logo {
   margin-bottom: 30px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -44px;
   width: 136px;
   height: 40px;
   background-size: 262px, 243px;
@@ -1457,7 +1684,7 @@ body._active {
 
 .footer-social__item._in:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -83px -205px;
+  background-position: -190px -182px;
   width: 16px;
   height: 15px;
   background-size: 262px, 243px;
@@ -2431,7 +2658,7 @@ body._active {
 
 .form-group._email:before, ._email.form-select:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -122px -205px;
+  background-position: -166px -205px;
   width: 16px;
   height: 12px;
   background-size: 262px, 243px;
@@ -2449,7 +2676,7 @@ body._active {
 
 .form-group._password:before, ._password.form-select:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -103px -205px;
+  background-position: -147px -205px;
   width: 15px;
   height: 15px;
   background-size: 262px, 243px;
@@ -2471,7 +2698,7 @@ body._active {
 
 .form-group._date:before, ._date.form-select:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -190px -182px;
+  background-position: -127px -205px;
   width: 16px;
   height: 15px;
   background-size: 262px, 243px;
@@ -2503,7 +2730,7 @@ body._active {
   right: 16px;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -253px -27px;
+  background-position: -253px -15px;
   width: 9px;
   height: 8px;
   background-size: 262px, 243px;
@@ -2582,7 +2809,7 @@ body._active {
   z-index: 99;
   margin-left: 5px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -235px -61px;
+  background-position: -235px -42px;
   width: 14px;
   height: 15px;
   background-size: 262px, 243px;
@@ -2655,11 +2882,15 @@ body._active {
 .header__logo {
   text-indent: -9999px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -44px;
+  background-position: 0px 0px;
   width: 136px;
   height: 40px;
   background-size: 262px, 243px;
   background-repeat: no-repeat;
+}
+
+.list-orders__cards {
+  padding-top: 40px;
 }
 
 .login {
@@ -2789,7 +3020,7 @@ body._active {
   left: 0;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -235px -208px;
+  background-position: -235px -193px;
   width: 11px;
   height: 11px;
   background-size: 262px, 243px;
@@ -2938,7 +3169,7 @@ body._active {
 
 .modal-order-row._start:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -211px -99px;
+  background-position: -211px -128px;
   width: 18px;
   height: 25px;
   background-size: 262px, 243px;
@@ -2947,7 +3178,7 @@ body._active {
 
 .modal-order-row._finish:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -211px -128px;
+  background-position: -211px -99px;
   width: 18px;
   height: 25px;
   background-size: 262px, 243px;
@@ -3043,7 +3274,7 @@ body._active {
   right: -14px;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -253px -15px;
+  background-position: -253px -27px;
   width: 9px;
   height: 8px;
   background-size: 262px, 243px;
@@ -3339,7 +3570,7 @@ body._active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -235px -42px;
+  background-position: -235px -61px;
   width: 14px;
   height: 15px;
   background-size: 262px, 243px;
@@ -3378,6 +3609,24 @@ body._active {
   background-position: -41px -229px;
   width: 11px;
   height: 10px;
+  background-size: 262px, 243px;
+  background-repeat: no-repeat;
+}
+
+.rating._reviews .rating__item._full {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -43px -205px;
+  width: 18px;
+  height: 17px;
+  background-size: 262px, 243px;
+  background-repeat: no-repeat;
+}
+
+.rating._reviews .rating__item._empty {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -65px -205px;
+  width: 18px;
+  height: 17px;
   background-size: 262px, 243px;
   background-repeat: no-repeat;
 }
@@ -3469,6 +3718,26 @@ body._active {
 
 .sort-loader._active:hover {
   background-color: #9fba0e;
+}
+
+.tabs-content {
+  position: relative;
+}
+
+.tabs-content__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs-content__item._active {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
 }
 
 .tabs-control {
@@ -3598,7 +3867,7 @@ body._active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -156px -205px;
+  background-position: -200px -205px;
   width: 13px;
   height: 9px;
   background-size: 262px, 243px;
@@ -3618,17 +3887,6 @@ body._active {
 
 .top-menu__item:hover {
   border-bottom: 1px solid #404040;
-}
-
-.warning-pushes {
-  margin-bottom: 30px;
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-}
-
-.warning-pushes._red {
-  background-color: rgba(244, 51, 51, 0.8);
 }
 
 .check-number-form {
@@ -3719,7 +3977,7 @@ body._active {
 
 .userboard-modal-social__item._vk {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -135px;
+  background-position: -90px -135px;
   width: 86px;
   height: 43px;
   background-size: 262px, 243px;
@@ -3728,7 +3986,7 @@ body._active {
 
 .userboard-modal-social__item._gp {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -88px;
+  background-position: 0px -135px;
   width: 86px;
   height: 43px;
   background-size: 262px, 243px;
@@ -3737,9 +3995,20 @@ body._active {
 
 .userboard-modal-social__item._ok {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -90px -135px;
+  background-position: 0px -88px;
   width: 86px;
   height: 43px;
   background-size: 262px, 243px;
   background-repeat: no-repeat;
+}
+
+.warning-pushes {
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.warning-pushes._red {
+  background-color: rgba(244, 51, 51, 0.8);
 }

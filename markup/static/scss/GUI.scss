@@ -67,6 +67,13 @@
       background-color: #e0e0e0 - #111;
     }
   }
+  &._red {
+    color: $white;
+    background-color: $red;
+    &:hover {
+      background-color: $red + #111;
+    }
+  }
 }
 
 .show-more {

@@ -1,0 +1,21 @@
+.tabs-content {
+  position: relative;
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    @include transition;
+    &._active {
+      position: relative;
+
+      visibility: visible;
+
+      opacity: 1;
+    }
+  }
+}

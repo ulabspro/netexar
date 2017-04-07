@@ -1,0 +1,85 @@
+mixin list-orders(data)
+  .list-orders
+    .list-orders__group
+      h1.title Мои заказы
+      a(href="#" title="" class="jsModalTrigger" data-modal="#modal-order").add-order._small Разместить заказ
+
+    .tabs(class="jsTabs")
+      .tabs-control(class="jsTabsControl")._inside
+        .tabs-control__item(class="jsTabsControlItem")._active Все
+          span.hint-label 12
+        .tabs-control__item(class="jsTabsControlItem") Активные
+          span.hint-label 2
+        .tabs-control__item(class="jsTabsControlItem") В работе
+          span.hint-label 5
+        .tabs-control__item(class="jsTabsControlItem") Завершенные
+          span.hint-label 1
+        .tabs-control__item(class="jsTabsControlItem") Не выполненные
+          span.hint-label 2
+
+      .tabs-content(class="jsTabsContent")
+        .tabs-content__item(class="jsTabsContentItem")._active
+          .list-orders__cards
+            - var fullcardControl = {state: 'inwork'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'active'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'finished'};
+            +fullcard(fullcardControl)._full
+
+            a(href="#" title="").show-more Загрузить еще
+
+        .tabs-content__item(class="jsTabsContentItem")
+          .list-orders__cards
+            - var fullcardControl = {state: 'active'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'active'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'active'};
+            +fullcard(fullcardControl)._full
+
+            a(href="#" title="").show-more Загрузить еще
+
+        .tabs-content__item(class="jsTabsContentItem")
+          .list-orders__cards
+            - var fullcardControl = {state: 'inwork'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'inwork'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'inwork'};
+            +fullcard(fullcardControl)._full
+
+            a(href="#" title="").show-more Загрузить еще
+
+        .tabs-content__item(class="jsTabsContentItem")
+          .list-orders__cards
+            - var fullcardControl = {state: 'finished'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'finished'};
+            +fullcard(fullcardControl)._full
+
+            - var fullcardControl = {state: 'finished'};
+            +fullcard(fullcardControl)._full
+
+            a(href="#" title="").show-more Загрузить еще
+            
+
+        .tabs-content__item(class="jsTabsContentItem")
+          .list-orders__cards
+            - var fullcardControl = {state: 'canceled'};
+            +fullcard(fullcardControl)._canceled
+
+            - var fullcardControl = {state: 'canceled'};
+            +fullcard(fullcardControl)._canceled
+
+            - var fullcardControl = {state: 'canceled'};
+            +fullcard(fullcardControl)._canceled
+
+            a(href="#" title="").show-more Загрузить еще

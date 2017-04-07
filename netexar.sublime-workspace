@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"marign",
+				"margin-left"
+			],
+			[
+				"form",
+				"form-checkbox"
+			],
+			[
 				"moda",
 				"modal-order"
 			],
@@ -20,20 +40,8 @@
 				"font-size"
 			],
 			[
-				"marign",
-				"margin-bottom"
-			],
-			[
 				"pad",
 				"padding-top"
-			],
-			[
-				"form",
-				"form-group"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"modal",
@@ -74,10 +82,6 @@
 			[
 				"p",
 				"push-notifications-dropdown"
-			],
-			[
-				"min",
-				"min-width"
 			],
 			[
 				"back",
@@ -510,29 +514,34 @@
 			[
 				"a",
 				"article-row"
-			],
-			[
-				"bo",
-				"border-bottom"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "markup/components/modals/modals.jade",
+			"file": "markup/pages/personal-cutomer-list-orders.jade",
 			"settings":
 			{
-				"buffer_size": 8260,
+				"buffer_size": 123,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "markup/components/modals/modal-order.scss",
+			"file": "markup/components/list-orders/list-orders.jade",
 			"settings":
 			{
-				"buffer_size": 3975,
+				"buffer_size": 978,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/list-orders/list-orders.scss",
+			"settings":
+			{
+				"buffer_size": 133,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -545,10 +554,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 168.0,
-		"last_filter": "Package Control: instal",
+		"height": 354.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: instal",
 				"Package Control: Install Package"
@@ -559,10 +572,6 @@
 			],
 			[
 				"Package Control: ins",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
 				"Package Control: Install Package"
 			],
 			[
@@ -611,23 +620,27 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals",
+		"/Users/extiser/git/1studio/netexar/markup/components/list-orders",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-order.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraCheck.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-checkbox.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-order.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/push-notifications/push-notifications.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
-		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-select.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-checkbox.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-group.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-empty-orders.jade",
@@ -663,8 +676,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/.customer-registration-form.scss.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/registration-form/registration-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card-login.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card-full.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/footer/footer.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/index.jade",
@@ -743,9 +754,7 @@
 		"/Users/extiser/git/hairproblem/markup/modules/pagination/pagination.jade",
 		"/Users/extiser/git/hairproblem/markup/static/scss/vars.scss",
 		"/Users/extiser/git/hairproblem/markup/modules/include/include.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/category-articles/category-articles.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/popular-service/popular-service.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/category/category.jade"
+		"/Users/extiser/git/hairproblem/markup/modules/category-articles/category-articles.scss"
 	],
 	"find":
 	{
@@ -764,6 +773,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"hint",
+			"half",
 			".modal-order-column._address",
 			"date",
 			"вфвеу",
@@ -889,9 +900,7 @@
 			".art-menu a .t, .art-menu ul a, .art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover",
 			"../images",
 			"inner-entry",
-			"portfolio-sort-container",
-			"art",
-			"font-size: 18px;"
+			"portfolio-sort-container"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1037,31 +1046,57 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "markup/components/modals/modals.jade",
+					"file": "markup/pages/personal-cutomer-list-orders.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8260,
+						"buffer_size": 123,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4439,
-								4439
+								80,
+								80
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/list-orders/list-orders.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								918,
+								918
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1071,34 +1106,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "markup/components/modals/modal-order.scss",
+					"buffer": 2,
+					"file": "markup/components/list-orders/list-orders.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3975,
+						"buffer_size": 133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1951,
-								1951
+								0,
+								133
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3171.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
