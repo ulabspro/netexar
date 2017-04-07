@@ -14,16 +14,7 @@ mixin modal-order(data)
           
           .modal-order-column._half
             .form-group._iconed._date
-              input(type="text" value="" placeholder="Дата и время подачи машины" class="datepicker-here" data-timepicker="true").form-group__field
-          
-          //- .modal-order-column._date
-          //-   .form-select._iconed._time
-          //-     select.form-select__field
-          //-       option Время подачи
-          //-       - for (var i = 0; i < 10; i++)
-          //-         option 0#{i}:00
-          //-       - for (var i = 10; i < 24; i++)
-          //-         option #{i}:00
+              input(type="text" value="" placeholder="Дата и время подачи машины" class="datepicker-here").form-group__field
 
         .modal-order-row
           .modal-order-column
@@ -35,17 +26,28 @@ mixin modal-order(data)
               input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field
           
           .modal-order-column._half
-            .form-group._iconed._date
-              input(type="text" value="" placeholder="Дата и время выгрузки" class="datepicker-here" data-timepicker="true").form-group__field
+            .modal-order-row._inside
+              .modal-order-column._half
+                .form-group._iconed._date
+                  input(type="text" value="" placeholder="Дата выгрузки" class="datepicker-here alt-datepicker" data-timepicker="false").form-group__field
           
-          //- .modal-order-column._date
-          //-   .form-select._iconed._time
-          //-     select.form-select__field
-          //-       option Время подачи
-          //-       - for (var i = 0; i < 10; i++)
-          //-         option 0#{i}:00
-          //-       - for (var i = 10; i < 24; i++)
-          //-         option #{i}:00
+              .modal-order-column._fourth
+                .form-select._iconed._time
+                  select.form-select__field
+                    option C
+                    - for (var i = 0; i < 10; i++)
+                      option 0#{i}:00
+                    - for (var i = 10; i < 24; i++)
+                      option #{i}:00
+
+              .modal-order-column._fourth
+                .form-select._iconed._time
+                  select.form-select__field
+                    option До
+                    - for (var i = 0; i < 10; i++)
+                      option 0#{i}:00
+                    - for (var i = 10; i < 24; i++)
+                      option #{i}:00
 
         .modal-order-row._flex-start
           .modal-order-column
@@ -88,7 +90,7 @@ mixin modal-order(data)
                   input(type="text" value="" placeholder="Вес груза, тонны").form-group__field
               .modal-order-column._half
                 .form-group
-                  input(type="text" value="" placeholder="Вес груза, тонны").form-group__field
+                  input(type="text" value="" placeholder="Объем груза, м3").form-group__field
 
             .modal-order-row._inside
               .modal-order-column._crossed
@@ -162,13 +164,15 @@ mixin modal-order(data)
           .modal-order-column._group
             .modal-order-column__title Дополнительная атрибутика
 
-            label.form-checkbox
-              input(type="checkbox").form-checkbox__field
+            label.form-checkbox._extra(class="jsExtraCheck")
+              input(type="checkbox").form-checkbox__field(class="jsExtraCheckCheckbox")
               span.form-checkbox__label Коники
+              input(type="text" value="" placeholder="Кол-во, шт" class="jsExtraCheckField").form-checkbox__input-field
 
-            label.form-checkbox
-              input(type="checkbox").form-checkbox__field
+            label.form-checkbox._extra(class="jsExtraCheck")
+              input(type="checkbox").form-checkbox__field(class="jsExtraCheckCheckbox")
               span.form-checkbox__label Ремни
+              input(type="text" value="" placeholder="Кол-во, шт" class="jsExtraCheckField").form-checkbox__input-field
 
       //- Стоимость и оплата
       .modal-order-block
