@@ -18,3 +18,19 @@
     @extend .button._green;
   }
 }
+
+.modal-passport-row {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-passport-column {
+  &._fourth {
+    width: 24%;
+  }
+  &._three-quarters {
+    width: 73%;
+  }
+}
