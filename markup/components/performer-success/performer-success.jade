@@ -1,0 +1,174 @@
+mixin performer-passport-form(data)
+  .performer-success
+    .performer-success__title Паспортные данные
+    .performer-success__text Внимание! Все поля формы обязательны к заполнению. <br>Предоставленные даннные сверяются администрацией с предоставленными сканами документов.
+
+    .performer-success-form
+      form(method="" action="").form
+        .form-group
+          input(type="text" value="" placeholder="Фамилия").form-group__field
+        .form-group
+          input(type="text" value="" placeholder="Имя").form-group__field
+        .form-group
+          input(type="text" value="" placeholder="Отчество").form-group__field
+        .modal-passport-row
+          .modal-passport-column._fourth
+            .form-group
+              input(type="text" value="" placeholder="Серия").form-group__field
+          .modal-passport-column._three-quarters
+            .form-group
+              input(type="text" value="" placeholder="Номер").form-group__field
+
+        .form-group
+          input(type="text" value="" placeholder="Дата выдачи" class="datepicker-here" data-timepicker="false").form-group__field
+
+        .form-group
+          input(type="text" value="" placeholder="Кем выдан").form-group__field
+
+        .modal-passport-row
+          .form-attachment Лицевая сторона паспорта
+            input(type="file").form-attachment__field
+
+        .modal-passport-row
+          .form-attachment Страница с пропиской (регистрацией)
+            input(type="file").form-attachment__field
+
+        input(type="submit" value="Далее").modal-passport__submit
+
+        .modal__privacy Нажимая на кнопку «Далее», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+mixin performer-juristic-form(data)
+  .performer-success
+    .performer-success__title Юридические данные
+    .performer-success__text Внимание! Все поля формы обязательны к заполнению. <br>Предоставленные даннные сверяются администрацией с предоставленными сканами документов.
+
+    .performer-success-form
+      form(method="" action="").form
+        .form-group
+          input(type="text" value="" placeholder="Номер ИНН").form-group__field
+
+        .modal-passport-row._juristic
+          .form-attachment Прикрепите скан ИНН
+            input(type="file").form-attachment__field
+
+        .form-group
+          input(type="text" value="" placeholder="Номер ОГРН").form-group__field
+
+        .modal-passport-row._juristic
+          .form-attachment Прикрепите скан ОГРН
+            input(type="file").form-attachment__field
+
+        input(type="submit" value="Далее").modal-passport__submit
+
+        .modal__privacy Нажимая на кнопку «Далее», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+mixin performer-auto-form(data)
+  .performer-success
+    .performer-success__title Добавить автомобиль
+    .performer-success__text Внимание! Все поля формы обязательны к заполнению. <br>Предоставленные даннные сверяются администрацией с предоставленными сканами документов.
+
+    .performer-success-form
+      form(method="" action="").form
+        .form-group
+          input(type="text" value="" placeholder="Марка грузовика").form-group__field
+        .form-select
+          select.form-select__field
+            option Тип грузовика
+            option 10 тонн
+            option 20 тонн
+        .form-group
+          input(type="text" value="" placeholder="Номер грузовика").form-group__field
+
+        .form-group
+          input(type="text" value="" placeholder="Год выпуска").form-group__field
+
+        .form-group
+          input(type="text" value="" placeholder="Номер техпаспорта").form-group__field
+
+        .form-group
+          input(type="text" value="" placeholder="Дата выдачи" class="datepicker-here" data-timepicker="false").form-group__field
+
+        .modal-passport-row
+          .form-attachment Техпаспорт (сторона с собственником)
+            input(type="file").form-attachment__field
+
+        .modal-passport-row
+          .form-attachment Техпаспорт (сторона с данными на ТС)
+            input(type="file").form-attachment__field
+
+        .modal__privacy._top Добавить еще автомобили Вы можете <br>в настройках личного кабинета
+
+        input(type="submit" value="Далее").modal-passport__submit
+
+        .modal__privacy Нажимая на кнопку «Далее», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>
+
+mixin performer-driver-form()
+  .performer-success
+    .performer-success__title Добавить водителя
+    .performer-success__text Внимание! Все поля формы обязательны к заполнению. <br>Предоставленные даннные сверяются администрацией с предоставленными сканами документов.
+
+    .performer-success-form
+      form(method="" action="").form
+        .performer-success-form-group
+          .performer-success-form-group__title 1. Основная информация
+          
+          .form-group
+            input(type="text" value="" placeholder="Фамилия").form-group__field
+          .form-group
+            input(type="text" value="" placeholder="Имя").form-group__field
+          .form-group
+            input(type="text" value="" placeholder="Отчество").form-group__field
+          .form-group
+            input(type="text" value="" placeholder="Дата рождения" class="datepicker-here" data-timepicker="false").form-group__field
+          .form-group
+            input(type="text" value="" placeholder="Телефон").form-group__field
+          .form-group
+            input(type="text" value="" placeholder="Дополнительный телефон").form-group__field
+
+        .performer-success-form-group
+          .performer-success-form-group__title 2. Паспортные данные
+
+          .modal-passport-row
+            .modal-passport-column._fourth
+              .form-group
+                input(type="text" value="" placeholder="Серия").form-group__field
+            .modal-passport-column._three-quarters
+              .form-group
+                input(type="text" value="" placeholder="Номер").form-group__field
+
+          .form-group
+            input(type="text" value="" placeholder="Дата выдачи" class="datepicker-here" data-timepicker="false").form-group__field
+
+          .form-group
+            input(type="text" value="" placeholder="Кем выдан").form-group__field
+
+          .modal-passport-row
+            .form-attachment Лицевая сторона паспорта
+              input(type="file").form-attachment__field
+
+          .modal-passport-row
+            .form-attachment Страница с пропиской (регистрацией)
+              input(type="file").form-attachment__field
+
+        .performer-success-form-group
+          .performer-success-form-group__title 3. Водительское удостоверение
+
+          .form-group
+            input(type="text" value="" placeholder="Номер ВУ").form-group__field
+
+          .form-group
+            input(type="text" value="" placeholder="Дата выдачи ВУ").form-group__field
+
+          .modal-passport-row
+            .form-attachment Лицевая сторона ВУ
+              input(type="file").form-attachment__field
+
+          .modal-passport-row
+            .form-attachment Обратная сторона ВУ
+              input(type="file").form-attachment__field
+        
+        .modal__privacy._top Добавить еще водителей Вы можете <br>в настройках личного кабинета
+
+        input(type="submit" value="Далее").modal-passport__submit
+
+        .modal__privacy Нажимая на кнопку «Далее», вы подтверждаете свое согласие с условиями <a href="#" title="">Публичной офферты</a> и <a href="#" title="">Политикой конфиденциальности</a>

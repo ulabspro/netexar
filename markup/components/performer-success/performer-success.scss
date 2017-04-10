@@ -1,0 +1,36 @@
+.performer-success {
+  text-align: center;
+
+  @extend .wrapper;
+  &__title {
+    margin-bottom: 15px;
+
+    @extend .title;
+  }
+  &__text {
+    font-size: rem-calc(16);
+    line-height: rem-calc(21);
+
+    color: #958d8d;
+  }
+}
+
+.performer-success-form {
+  width: 100%;
+  max-width: 335px;
+  margin: 50px auto 100px;
+}
+
+.performer-success-form-group {
+  margin-bottom: 30px;
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(18);
+
+    margin-bottom: 20px;
+
+    text-align: left;
+
+    color: $gray;
+  }
+}

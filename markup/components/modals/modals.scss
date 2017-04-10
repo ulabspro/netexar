@@ -34,6 +34,9 @@
   }
   &__privacy {
     @extend .form-privacy;
+    &._top {
+      margin-bottom: 20px;
+    }
   }
   &__text {
     margin-bottom: 25px;

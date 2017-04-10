@@ -1,0 +1,22 @@
+.jsChangeAccItemToggle {
+  display: none;
+}
+
+.form-radio-group {
+  margin-bottom: 20px;
+}
+
+.form-radio {
+  margin-right: 20px;
+  &__field {
+    width: 15px;
+    height: 15px;
+  }
+  span {
+    font-size: rem-calc(14);
+
+    padding-left: 10px;
+
+    color: $gray;
+  }
+}

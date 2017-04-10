@@ -7,3 +7,17 @@
     padding-top: 40px;
   }
 }
+
+.list-orders-performer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  &__side {
+    width: 305px;
+    padding-top: 40px;
+  }
+  &__content {
+    width: 642px;
+  }
+}

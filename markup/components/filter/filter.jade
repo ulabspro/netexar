@@ -1,0 +1,185 @@
+mixin time-filter(data)
+  .time-filter.tabs(class="jsTabs")
+    .filter__title Фильтрация по дате
+    .filter-control(class="jsTabsControl")
+      .filter-control__item(class="jsTabsControlItem")._active Размещения заказа
+      .filter-control__item(class="jsTabsControlItem") Подачи машины
+  
+    .tabs-content(class="jsTabsContent")
+      .tabs-content__item(class="jsTabsContentItem")._active
+        .form-group
+          input(type="text" value="" placeholder="Дата размещения заказа" class="datepicker-here").form-group__field
+      .tabs-content__item(class="jsTabsContentItem")
+        .form-group
+          input(type="text" value="" placeholder="Дата подачи машины" class="datepicker-here").form-group__field
+        .filter-date-buttons
+          .filter-date-buttons__item._active(class="jsToggle") Сегодня
+          .filter-date-buttons__item(class="jsToggle") Завтра
+          .filter-date-buttons__item(class="jsToggle") Все 
+
+    input(type="submit" value="Показать").filter__submit
+
+
+mixin orders-filter(data)
+  .orders-filter.tabs(class="jsTabs")
+    .filter-control(class="jsTabsControl")
+      .filter-control__item(class="jsTabsControlItem")._active Все фильтры
+      .filter-control__item(class="jsTabsControlItem") Мои фильтры
+  
+    .tabs-content(class="jsTabsContent")
+      .tabs-content__item(class="jsTabsContentItem")._active
+        
+        .filter__group
+          .filter__title Расположение
+          .form-select
+            select.form-select__field
+              option Все
+              option Москва
+              option Московская область
+
+        .filter__group
+          .filter__title Оплата
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Наличные / Перевод на карту
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Базналичный расчет с НДС
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Базналичный расчет без НДС
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Не требуется договор
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+    
+        .filter__group
+          .filter__title Порядок оплаты
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Предоплата
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Частичная предоплата
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label На выгрузке
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Отсрочка
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+        .filter__group
+          .filter__title Цена
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Указана
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Договорая
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+        .filter__group
+          .filter__title Дополнительно
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Трекинг перевозки
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox._hint
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Срочная заявка
+            .form-hint
+              .form-hint__label Здесь подсказка к полю
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Не требуются коники
+
+        .filter__group
+          .filter__title Класс грузоподъемности
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label 10 тонн
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label 20 тонн
+
+        .filter__group
+          .filter__title Тип полуприцепа
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Бортовой
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Тентованый
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Открытый контейнер
+
+        .filter__group
+          .filter__title Тип загрузки / выгрузки
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Верхняя
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Задняя
+
+          label.form-checkbox
+            input(type="checkbox").form-checkbox__field
+            span.form-checkbox__label Боковая
+
+        input(type="submit" value="Применить фильтр").filter__submit
+
+        .save-filter.jsSaveFilter
+          a(href="#" title="").save-filter__button.jsSaveFilterTrigger Сохранить фильтр
+          .save-filter__content.jsSaveFilterContent
+            input(type="text" value="" placeholder="Введите название фильтра" class="jsSaveFilterField").save-filter__field
+            input(type="submit" value="Сохранить").save-filter__submit
+
+      
+
+      .tabs-content__item(class="jsTabsContentItem")
+        .saved-filters
+          .saved-filters__item Фильтр 1
+          .saved-filters__item Фильтр 2
+          .saved-filters__item Фильтр 3
+
+    

@@ -1,0 +1,8 @@
+extends ./layout.jade
+
+block header
+  +header("logined")._inside
+
+block content
+  +warning-pushes('Внимание! Ваш профиль заполнен не полностью. Доступ к заявкам ограничен. <br>Пожалуйста заполните профиль используя нижеследующую форму.')._red
+  +performer-driver-form

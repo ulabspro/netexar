@@ -1,0 +1,29 @@
+.performer-my {
+  padding-bottom: 120px;
+  @extend .wrapper;
+  &__title {
+    @extend .title;
+  }
+  &__group {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+    &._bottom {
+      margin-top: 40px;
+    }
+  }
+  &__add {
+    width: 190px;
+
+    @extend .add-order;
+    @extend .add-order._small;
+  }
+  &__table {
+    width: 100%;
+    max-width: 100%;
+    font-size: rem-calc(14);
+  }
+}

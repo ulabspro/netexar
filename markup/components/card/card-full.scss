@@ -11,6 +11,17 @@
   &._active {
     display: flex;
   }
+  &._performer {
+    &._active {
+      display: block;
+    }
+  }
+  &__row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .card-column {

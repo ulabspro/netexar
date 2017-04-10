@@ -1,4 +1,4 @@
-mixin list-orders(data)
+mixin list-orders-customer(data)
   .list-orders
     .list-orders__group
       h1.title Мои заказы
@@ -83,3 +83,118 @@ mixin list-orders(data)
             +fullcard(fullcardControl)._canceled
 
             a(href="#" title="").show-more Загрузить еще
+
+mixin list-orders-performer(data)
+  .list-orders
+    .tabs(class="jsTabs")
+      .tabs-control(class="jsTabsControl")._performer
+        .tabs-control__item(class="jsTabsControlItem")._active Все заказы
+        .tabs-control__item(class="jsTabsControlItem") Интересные
+          span.hint-label 2
+        .tabs-control__item(class="jsTabsControlItem") Мои предложения
+          span.hint-label 5
+        .tabs-control__item(class="jsTabsControlItem") В работе
+          span.hint-label 1
+        .tabs-control__item(class="jsTabsControlItem") Завершенные
+          span.hint-label 2
+        .tabs-control__item(class="jsTabsControlItem") Не выполненные
+          span.hint-label 2
+
+
+      .list-orders-performer
+        .list-orders-performer__side
+          +time-filter
+          +orders-filter
+        .list-orders-performer__content
+          .tabs-content(class="jsTabsContent")
+            .tabs-content__item(class="jsTabsContentItem")._active
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                a(href="#" title="").show-more Загрузить еще
+
+            .tabs-content__item(class="jsTabsContentItem")
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+                a(href="#" title="").show-more Загрузить еще
+
+            .tabs-content__item(class="jsTabsContentItem")
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+                a(href="#" title="").show-more Загрузить еще
+
+            .tabs-content__item(class="jsTabsContentItem")
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+                a(href="#" title="").show-more Загрузить еще
+                
+
+            .tabs-content__item(class="jsTabsContentItem")
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+                a(href="#" title="").show-more Загрузить еще
+
+            .tabs-content__item(class="jsTabsContentItem")
+              .list-orders__cards
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+
+                - var cardControl = {state: "logined", time: "express"}
+                +cardPerformer(cardControl)._performer
+                a(href="#" title="").show-more Загрузить еще

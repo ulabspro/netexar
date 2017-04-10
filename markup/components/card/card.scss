@@ -28,6 +28,12 @@
       box-shadow: 0 3px 3px rgba($black, .05);
     }
   }
+  &._performer {
+    // padding-left: 20px;
+    .card-center {
+      padding-left: 0;
+    }
+  }
   &__hovered {
     font-size: rem-calc(11);
 

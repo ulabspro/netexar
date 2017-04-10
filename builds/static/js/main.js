@@ -12782,6 +12782,10 @@ $('.jsParentReviewsControlOk').click(function (e) {
 
 
 
+$('.jsSaveFilterTrigger').click(function (e) {
+  e.preventDefault();
+  $(this).closest('.jsSaveFilter').find('.jsSaveFilterContent').slideToggle().find('.jsSaveFilterField').focus();
+});
 
 // Зададим стартовую дату
 var start = new Date(),
@@ -12819,6 +12823,15 @@ $('.jsExtraCheckCheckbox').change(function() {
     $(this).closest('.jsExtraCheck').find('.jsExtraCheckField').hide().val('');
   }
 });
+$('.jsChangeAccItem').click(function (e) {
+  var accItemPos = $(this).index();
+
+  if (accItemPos == 0) {
+    $('.jsChangeAccItemToggle').hide();
+  } else {
+    $('.jsChangeAccItemToggle').show();
+  }
+})
 
 $('.jsToggle').click(function (e) {
   e.preventDefault();
@@ -12861,6 +12874,8 @@ $('.order-attention').sticky({
     bottomSpacing: 600
   }
 );
+
+
 
 
 

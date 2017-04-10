@@ -1,0 +1,123 @@
+.filter {
+  &__title {
+    font-family: $ProximaNova-Semibold;
+
+    margin-bottom: 15px;
+  }
+  &__submit {
+    width: 100%;
+    height: 44px;
+
+    @extend .button;
+    @extend .button._green;
+  }
+  &__group {
+    margin-bottom: 30px;
+    .form-checkbox {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.filter-control {
+  display: flex;
+
+  margin-bottom: 25px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__item {
+    font-size: rem-calc(13);
+
+    width: 50%;
+    padding: 6px 0;
+
+    text-align: center;
+
+    color: $white;
+    background-color: #c9c9c9;
+    &._active {
+      background-color: $blue;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.filter-date-buttons {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  justify-content: center;
+  align-items: center;
+  &__item {
+    font-size: rem-calc(13);
+
+    box-sizing: border-box;
+    width: 33%;
+    padding: 6px 0;
+
+    text-align: center;
+
+    color: $white;
+    border-right: 1px solid $white;
+    background-color: #c9c9c9;
+    &._active {
+      background-color: $green;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.save-filter {
+  &__button {
+    line-height: 43px;
+
+    width: 100%;
+    height: 43px;
+    margin: 10px auto;
+
+    @extend .button;
+    @extend .button._gray;
+  }
+  &__field {
+    width: 80%;
+
+    @extend .form-group__field;
+  }
+  &__submit {
+    font-size: rem-calc(13);
+
+    margin: 10px auto 0;
+
+    @extend .button;
+    @extend .button._blue;
+  }
+  &__content {
+    display: none;
+  }
+}
+
+.saved-filters {
+  &__item {
+    font-size: rem-calc(14);
+    line-height: 30px;
+
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 15px;
+
+    text-align: left;
+
+    @extend .button;
+    @extend .button._green;
+  }
+}
