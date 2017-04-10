@@ -24,7 +24,8 @@ module.exports = {
         },
         "jsPathsToConcatBeforeModulesJs": [
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/air-datepicker/dist/js/datepicker.js'
+            'node_modules/air-datepicker/dist/js/datepicker.js',
+            'node_modules/jquery-sticky/jquery.sticky.js'
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],

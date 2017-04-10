@@ -111,9 +111,8 @@
 
 .card-info {
   font-family: $ProximaNova-Regular;
+  font-size: rem-calc(16);
   &__item {
-    font-size: rem-calc(16);
-
     position: relative;
 
     margin-bottom: 10px;

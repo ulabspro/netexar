@@ -1,0 +1,29 @@
+mixin order-customer(data)
+  .order-customer
+    .order-customer__title Заказчик
+    .customer-card
+      .customer-card-info
+        .customer-card-info__avatar
+          img(src="%=static=%images/assets/card/customer.png" alt="")
+        .customer-card-info__content
+          .customer-card-info__name Владислав Святоня
+          +rating()
+
+      .customer-card-meta
+        .customer-card-meta__item Отзывы:   <span class="green">4</span> / 24 / <span class="red">0</span>
+        .customer-card-meta__item Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+
+    .order-customer-success
+      .order-customer-success-item._phone 
+        span +7 (495) 999 10 00
+      .order-customer-success-item._email._not 
+        span E-mail
+        a(href="#" title="").account-success-item__button Привязать
+      .order-customer-success-item._fb._not 
+        span Facebook
+        a(href="#" title="").account-success-item__button Привязать
+      .order-customer-success-item._vk._not 
+        span Vkontakte
+        a(href="#" title="").account-success-item__button Привязать
+
+    a(href="#" title="").order-customer__link Просмотреть полный профиль

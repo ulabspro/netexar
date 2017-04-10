@@ -1,0 +1,13 @@
+.order-customer-success {
+  margin: 40px 0;
+}
+.order-customer-success-item {
+  margin-bottom: 10px;
+
+  @extend .account-success-item;
+  span {
+    display: block;
+
+    min-width: 65px;
+  }
+}

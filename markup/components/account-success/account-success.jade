@@ -1,5 +1,6 @@
 mixin account-success(data)
-  .account-success
+  - var modiffer = attributes.class || '';
+  .account-success(class="#{modiffer}")
     .account-success__title Повысьте доверие пользователей к себе – привяжите ваши аккаунты социальных сетей к профилю. Мы обязуемся не раскрывать ваши контакты.
 
     .account-success__list

@@ -15,6 +15,7 @@ $('.datepicker-here').datepicker({
   startDate: start,
   minHours: startHours,
   maxHours: 18,
+  autoClose: true,
   onSelect: function(fd, d, picker) {
       // Ничего не делаем если выделение было снято
       if (!d) return;
