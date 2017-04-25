@@ -4,52 +4,160 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"date",
-				"datepicker"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"marign",
-				"margin-left"
-			],
-			[
-				"form",
-				"form-checkbox"
-			],
-			[
-				"moda",
-				"modal-order"
-			],
-			[
-				"max",
-				"max-width"
+				"pad",
+				"padding-bottom"
 			],
 			[
 				"margin",
-				"margin-left"
+				"margin-top"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"sav",
+				"save-filter"
+			],
+			[
+				"save",
+				"save-filter__button"
+			],
+			[
+				"filter",
+				"filter__title"
 			],
 			[
 				"fon",
 				"font-size"
 			],
 			[
-				"pad",
-				"padding-top"
+				"flex",
+				"flex-start"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"per",
+				"performer-success"
+			],
+			[
+				"js",
+				"jsChangeAccItemToggle"
+			],
+			[
+				"form",
+				"form-radio"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"sele",
+				"selected-performer-card-contacts"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"order",
+				"order-comments-answer"
+			],
+			[
+				"fno",
+				"font-size"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"car",
+				"card-order-row"
+			],
+			[
+				"card",
+				"card-order-row"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"Prox",
+				"ProximaNova-Regular"
+			],
+			[
+				"user",
+				"user-settings-notifications"
+			],
+			[
+				"moda",
+				"modal__text"
+			],
+			[
+				"_",
+				"_fourth"
+			],
+			[
+				"for",
+				"form-group"
+			],
+			[
+				"use",
+				"user-settings-personal"
+			],
+			[
+				"tabs",
+				"tabs-control"
+			],
+			[
+				"acc",
+				"account-success-item"
+			],
+			[
+				"ac",
+				"account-success-item"
+			],
+			[
+				"card-fini",
+				"card-finished"
+			],
+			[
+				"cus",
+				"customer-card-not-selected"
+			],
+			[
+				"full",
+				"fullcardControl"
+			],
+			[
+				"inde",
+				"indexTab"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"max",
+				"max-width"
 			],
 			[
 				"modal",
 				"modal-order"
-			],
-			[
-				"js",
-				"jsPushDropdown"
 			],
 			[
 				"emp",
@@ -92,10 +200,6 @@
 				"logined-dropdown"
 			],
 			[
-				"inl",
-				"inline"
-			],
-			[
 				"li",
 				"logined"
 			],
@@ -114,10 +218,6 @@
 			[
 				"us",
 				"userboard-modal"
-			],
-			[
-				"use",
-				"userboard-modal-social"
 			],
 			[
 				"backgrou",
@@ -144,14 +244,6 @@
 				"margin-top"
 			],
 			[
-				"Prox",
-				"ProximaNova-Semibold"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
 				"Pro",
 				"ProximaNova-Regular"
 			],
@@ -164,24 +256,8 @@
 				"rating__item"
 			],
 			[
-				"cus",
-				"customer-card-info"
-			],
-			[
-				"car",
-				"card-auto-type"
-			],
-			[
-				"card",
-				"card-cost"
-			],
-			[
 				"ca",
 				"card-map"
-			],
-			[
-				"tabs",
-				"tabs-content"
 			],
 			[
 				"background",
@@ -206,10 +282,6 @@
 			[
 				"top",
 				"top-baner"
-			],
-			[
-				"font",
-				"font-family"
 			],
 			[
 				"marg",
@@ -336,10 +408,6 @@
 				"inline-block"
 			],
 			[
-				"for",
-				"form"
-			],
-			[
 				"ph",
 				"photorgrapher-content-item__link"
 			],
@@ -446,106 +514,11 @@
 			[
 				"re",
 				"request-form"
-			],
-			[
-				"ad",
-				"advantages__item"
-			],
-			[
-				"sl",
-				"slider__item"
-			],
-			[
-				"slide",
-				"slider"
-			],
-			[
-				"v",
-				"vertical-align"
-			],
-			[
-				"st",
-				"structure-inner-content"
-			],
-			[
-				"marig",
-				"margin-left"
-			],
-			[
-				"catal",
-				"catalog-tabs-content-box"
-			],
-			[
-				"cat",
-				"catalog-tabs-content"
-			],
-			[
-				"con",
-				"contact-content"
-			],
-			[
-				"sli",
-				"slider-item"
-			],
-			[
-				"new",
-				"news-line-item"
-			],
-			[
-				"border-co",
-				"border-color"
-			],
-			[
-				"border-c",
-				"border-collapse"
-			],
-			[
-				"margn",
-				"margin-top"
-			],
-			[
-				"le",
-				"left"
-			],
-			[
-				"i",
-				"italic"
-			],
-			[
-				"a",
-				"article-row"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/pages/personal-cutomer-list-orders.jade",
-			"settings":
-			{
-				"buffer_size": 123,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/components/list-orders/list-orders.jade",
-			"settings":
-			{
-				"buffer_size": 978,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/components/list-orders/list-orders.scss",
-			"settings":
-			{
-				"buffer_size": 133,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -620,33 +593,99 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/list-orders",
+		"/Users/extiser/git/1studio/netexar/markup/components/account-success/assets",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-my.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/header/header.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card-full.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
-		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/filter/orders-filter.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/filter/time-filter.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/orders-filter/orders-filter.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/orders-filter/orders-filter.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/time-filter/time-filter.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-list-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-list-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-driver.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-passport.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-passport-form/performer-passport-form.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/performer-registration.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-radio.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraRadio.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.js",
+		"/Users/extiser/git/1studio/netexar/tars-config.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/selected-performer/selected-performer.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/selected-performer/selected-performer.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card-order/card-order.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer-success.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/account-success/account-success.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/account-success/account-success.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card-order/card-order.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/order-page.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-notifications.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-attachment.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-settings.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-thanks.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/customer-settings/customer-settings.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-personal.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-order.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/customer-settings/customer-settings-personal.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/customer-settings/customer-settings.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-photo.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-settings.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-list-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-content.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-contents.scs",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraCheck.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-checkbox.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/push-notifications/push-notifications.scss",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-select.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-group.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-empty-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/_datepicker-config.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/dateSelect.js",
-		"/Users/extiser/git/1studio/netexar/tars-config.js",
 		"/Users/extiser/git/1studio/netexar/node_modules/air-datepicker/dist/css/datepicker.css",
 		"/Users/extiser/git/1studio/netexar/node_modules/air-datepicker/src/sass/timepicker.scss",
 		"/Users/extiser/git/1studio/netexar/node_modules/air-datepicker/src/sass/_datepicker-config.scss",
@@ -656,18 +695,14 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/footer/footer.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/header/header.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/thanks.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/login.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/logined.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/header/header.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/login.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/sms-input.js",
 		"/Users/extiser/git/1studio/netexar/markup/pages/check-number.jade",
@@ -676,17 +711,13 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/.customer-registration-form.scss.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/registration-form/registration-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card-login.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card-full.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/footer/footer.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/index.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.js",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/vars.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.js",
@@ -697,64 +728,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/top-menu/top-menu.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/default_component_scheme.json",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-menu/top-menu.scss",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/fonts.scss",
-		"/Users/extiser/git/quick-made/markup/static/scss/fonts.scss",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/quick-made/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/ozone/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/downloader/markup/components/pagination/pagination.scss",
-		"/Users/extiser/git/downloader/markup/components/downloads-list/downloads-list.scss",
-		"/Users/extiser/git/downloader/markup/components/tree/tree.scss",
-		"/Users/extiser/git/downloader/markup/components/downloads-list/downloads-list.jade",
-		"/Users/extiser/git/downloader/markup/components/progress/progress.scss",
-		"/Users/extiser/temp/ozone.sql",
-		"/Users/extiser/MAMP/ozone/wp-content/themes/ozone/slider-main.php",
-		"/Users/extiser/MAMP/ozone/wp-content/themes/ozone/index.php",
-		"/Users/extiser/MAMP/ozone/wp-content/plugins/ozone-admin-theme/css/slate.css",
-		"/Users/extiser/MAMP/ozone/wp-content/plugins/ozone-admin-theme/ozone-admin-theme.php",
-		"/Users/extiser/MAMP/ozone/wp-content/themes/ozone/header.php",
-		"/Users/extiser/git/verst_hairproblem/markup/modules/sidebar/sidebar.scss",
-		"/Users/extiser/git/verst_hairproblem/markup/modules/single/single.scss",
-		"/Users/extiser/git/verst_hairproblem/markup/modules/category/category.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/seo-text/seo-text.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/seo-text/seo-text.scss",
-		"/Users/extiser/git/hairproblem/markup/static/scss/common.scss",
-		"/Users/extiser/git/hairproblem/markup/static/scss/GUI.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/p404/p404.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/p404/p404.jade",
-		"/Users/extiser/git/hairproblem/markup/pages/index.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/single/single.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/p404-teplo/p404.scss",
-		"/Users/extiser/git/slimadvice/markup/modules/single/single.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/article-row/article-row.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/sidebar/sidebar.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/search/search.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/pagination/pagination.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/last-articles-big/last-articles-big.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/header/header.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/footer/footer.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/comments-native/comments-native.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/comments/comments.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/breadcrumbs/breadcrumbs.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/article-column/article-column.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/!pagination/pagination.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/top-menu/top-menu.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/last-articles/last-articles.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/article-row/article-row.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/category/category.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/top-menu/top-menu.js",
-		"/Users/extiser/git/hairproblem/markup/modules/top-menu/top-menu.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/header/header.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/search/search.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/search/search.js",
-		"/Users/extiser/git/hairproblem/markup/modules/sidebar/sidebar-scroll.js",
-		"/Users/extiser/git/slimadvice/markup/modules/header/header.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/pagination/pagination.jade",
-		"/Users/extiser/git/hairproblem/markup/static/scss/vars.scss",
-		"/Users/extiser/git/hairproblem/markup/modules/include/include.jade",
-		"/Users/extiser/git/hairproblem/markup/modules/category-articles/category-articles.scss"
+		"/Users/extiser/git/1studio/netexar/markup/components/default_component_scheme.json"
 	],
 	"find":
 	{
@@ -773,6 +747,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"extra",
+			"checkbox",
+			"checkbxo",
+			"passport",
+			"name",
+			"inside",
+			"map",
+			"card-info",
+			"customer-card",
+			"border",
 			"hint",
 			"half",
 			".modal-order-column._address",
@@ -890,17 +874,7 @@
 			"sidebar",
 			"margin-top: -37px;",
 			"sidebar-left",
-			".left-sidebar",
-			"art-sheet-body",
-			".subcategory",
-			"art-postheader",
-			".contact-info-footer a",
-			".art-footer .art-nav a",
-			".art-menu .art-menu-li-separator",
-			".art-menu a .t, .art-menu ul a, .art-menu a, .art-menu a:link, .art-menu a:visited, .art-menu a:hover",
-			"../images",
-			"inner-entry",
-			"portfolio-sort-container"
+			".left-sidebar"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1046,94 +1020,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/pages/personal-cutomer-list-orders.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 123,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								80
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "markup/components/list-orders/list-orders.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								918,
-								918
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "markup/components/list-orders/list-orders.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								133
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1143,7 +1031,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 70.0
 	},
 	"layout":
 	{
@@ -1218,7 +1106,7 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 229.0,
+	"side_bar_width": 323.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
