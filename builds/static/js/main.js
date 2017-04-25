@@ -2547,7 +2547,7 @@ $('.datepicker-here').datepicker({
   altField: $('.alt-datepicker'),
   altFieldDateFormat: 'dd.mm.yyyy',
   timepicker: true,
-  startDate: start,
+  // startDate: start,
   minHours: startHours,
   maxHours: 18,
   autoClose: true,
@@ -2586,6 +2586,11 @@ $('.jsToggle').click(function (e) {
 
 
 
+$('.order-attention').sticky({
+    topSpacing: 0,
+    bottomSpacing: 600
+  }
+);
 $('.jsModalTrigger').click(function (e) {
   e.preventDefault();
 
@@ -2615,11 +2620,6 @@ $('.jsMapShowHideLink').click(function () {
   $this.removeClass('_active');
   $this.closest('.jsMapShow').removeClass('_active').find('.jsMapShowOverlay').removeClass('_active');
 });
-$('.order-attention').sticky({
-    topSpacing: 0,
-    bottomSpacing: 600
-  }
-);
 
 
 

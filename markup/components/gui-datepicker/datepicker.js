@@ -12,7 +12,7 @@ $('.datepicker-here').datepicker({
   altField: $('.alt-datepicker'),
   altFieldDateFormat: 'dd.mm.yyyy',
   timepicker: true,
-  startDate: start,
+  // startDate: start,
   minHours: startHours,
   maxHours: 18,
   autoClose: true,
