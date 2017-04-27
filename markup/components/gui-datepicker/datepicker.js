@@ -8,7 +8,7 @@ start.setHours(9);
 start.setMinutes(0);
 
 $('.datepicker-here').datepicker({
-  minDate: new Date(),
+  // minDate: new Date(),
   altField: $('.alt-datepicker'),
   altFieldDateFormat: 'dd.mm.yyyy',
   timepicker: true,
