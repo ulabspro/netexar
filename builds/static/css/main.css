@@ -3418,6 +3418,31 @@ body._active {
   background-repeat: no-repeat;
 }
 
+.list-orders__cards {
+  padding-top: 40px;
+}
+
+.list-orders-performer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.list-orders-performer__side {
+  width: 305px;
+  padding-top: 40px;
+}
+
+.list-orders-performer__content {
+  width: 642px;
+}
+
 .login {
   font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
@@ -3588,31 +3613,6 @@ body._active {
 
 .logined-dropdown-menu__item a:hover {
   border-bottom: 1px solid #076681;
-}
-
-.list-orders__cards {
-  padding-top: 40px;
-}
-
-.list-orders-performer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.list-orders-performer__side {
-  width: 305px;
-  padding-top: 40px;
-}
-
-.list-orders-performer__content {
-  width: 642px;
 }
 
 .main-list__top {
