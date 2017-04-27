@@ -2551,6 +2551,7 @@ $('.datepicker-here').datepicker({
   minHours: startHours,
   maxHours: 18,
   autoClose: true,
+  setDate: $(this).val(),
   onSelect: function(fd, d, picker) {
       // Ничего не делаем если выделение было снято
       if (!d) return;
@@ -2583,6 +2584,7 @@ $('.jsToggle').click(function (e) {
   e.preventDefault();
   $(this).toggleClass('_active');
 });
+
 
 
 $('.jsModalTrigger').click(function (e) {
@@ -2619,7 +2621,6 @@ $('.order-attention').sticky({
     bottomSpacing: 600
   }
 );
-
 
 
 
