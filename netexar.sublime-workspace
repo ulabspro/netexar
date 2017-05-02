@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"dp",
+				"dpOptns"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"set",
+				"setVal"
+			],
+			[
 				"pad",
 				"padding-bottom"
 			],
@@ -146,10 +158,6 @@
 			[
 				"inde",
 				"indexTab"
-			],
-			[
-				"date",
-				"datepicker"
 			],
 			[
 				"max",
@@ -506,24 +514,16 @@
 			[
 				"co",
 				"content"
-			],
-			[
-				"ser",
-				"services__item"
-			],
-			[
-				"re",
-				"request-form"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "markup/pages/layout.jade",
+			"file": "markup/components/modals/modals.jade",
 			"settings":
 			{
-				"buffer_size": 1786,
+				"buffer_size": 10640,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -603,6 +603,7 @@
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
@@ -610,6 +611,7 @@
 	"file_history":
 	[
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.scss",
@@ -633,7 +635,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-list-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-list-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-driver.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-passport.scss",
@@ -747,6 +748,7 @@
 		"height": 202.0,
 		"where_history":
 		[
+			"/Users/extiser/git/1studio/netexar/markup/components",
 			""
 		]
 	},
@@ -755,6 +757,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"performer-passport-form",
 			"extra",
 			"checkbox",
 			"checkbxo",
@@ -881,8 +884,7 @@
 			"top-orange",
 			"sidebar",
 			"margin-top: -37px;",
-			"sidebar-left",
-			".left-sidebar"
+			"sidebar-left"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1033,19 +1035,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "markup/pages/layout.jade",
+					"file": "markup/components/modals/modals.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1786,
+						"buffer_size": 10640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1729,
-								1729
+								1022,
+								2006
 							]
 						],
 						"settings":
@@ -1055,7 +1057,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1037.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

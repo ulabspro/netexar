@@ -125,8 +125,12 @@
                                         <div class="user-settings-photo__image">
                                             <img src="static/images/assets/user-settings/user-photo.png" alt="">
                                         </div>
-                                        <div class="user-settings-photo__control"> <span>Изменить фото профиля</span>
-                                            <input type="file" class="user-settings-photo__upload">
+                                        <div class="user-settings-photo__control">
+                                            <form action="/file-upload" class="dropzone">
+                                                <div class="fallback">
+                                                    <input type="file" name="file" class="user-settings-photo__upload">
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
