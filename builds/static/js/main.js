@@ -4277,7 +4277,6 @@
 
 }).call(this);
 
-
 $('.jsCard').click(function () {
   var $this = $(this);
 
@@ -4293,6 +4292,7 @@ $('.jsParentReviewsControlOk').click(function (e) {
 
   $this.closest('.jsParentReviews').next('.jsParentReviewsShowOk').addClass('_active');
 });
+
 
 
 
@@ -4346,7 +4346,8 @@ $('.jsSaveFilterTrigger').click(function (e) {
 
 
 $('.dropzone').dropzone({
-  dictDefaultMessage: 'Изменить фото профиля'
+  dictDefaultMessage: 'Изменить фото профиля',
+  paramName: $(".js-dropzone-file").attr("name")
 });
 $('.jsExtraCheckCheckbox').change(function() {
   if($(this).is(":checked")) {

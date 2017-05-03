@@ -519,15 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/components/modals/modals.jade",
-			"settings":
-			{
-				"buffer_size": 10640,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -602,14 +593,19 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.scss",
+		"/Users/extiser/git/1studio/netexar/tars-config.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
@@ -646,7 +642,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.js",
-		"/Users/extiser/git/1studio/netexar/tars-config.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/selected-performer/selected-performer.jade",
@@ -661,11 +656,9 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/account-success/account-success.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card-order/card-order.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/order-page.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-notifications.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-attachment.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-thanks.scss",
@@ -735,9 +728,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/data/data.js",
 		"/Users/extiser/git/bitbucket/izeta-site/markup/pages/index.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-menu/top-menu.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/default_component_scheme.json"
+		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.jade"
 	],
 	"find":
 	{
@@ -757,6 +748,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".dropzone",
 			"performer-passport-form",
 			"extra",
 			"checkbox",
@@ -883,8 +875,7 @@
 			"uslugi3",
 			"top-orange",
 			"sidebar",
-			"margin-top: -37px;",
-			"sidebar-left"
+			"margin-top: -37px;"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1030,39 +1021,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/components/modals/modals.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1022,
-								2006
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

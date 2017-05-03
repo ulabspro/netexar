@@ -25,10 +25,9 @@ mixin user-settings-photo()
     .user-settings-photo__image
       img(src="%=static=%images/assets/user-settings/user-photo.png" alt="")
     .user-settings-photo__control 
-      //- span Изменить фото профиля
       form(action="/file-upload" class="dropzone")
         .fallback
-          input(type="file" name="file").user-settings-photo__upload
+          input(type="file" name="file" class="js-dropzone-file").user-settings-photo__upload
 
 mixin user-settings-notifications()
   table.user-settings-notifications
