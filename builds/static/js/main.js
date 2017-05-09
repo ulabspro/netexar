@@ -4277,6 +4277,7 @@
 
 }).call(this);
 
+
 $('.jsCard').click(function () {
   var $this = $(this);
 
@@ -4294,12 +4295,11 @@ $('.jsParentReviewsControlOk').click(function (e) {
 });
 
 
-
-
 $('.jsSaveFilterTrigger').click(function (e) {
   e.preventDefault();
   $(this).closest('.jsSaveFilter').find('.jsSaveFilterContent').slideToggle().find('.jsSaveFilterField').focus();
 });
+
 
 // Зададим стартовую дату
 // var start = new Date(),
