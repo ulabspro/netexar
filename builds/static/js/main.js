@@ -4295,11 +4295,11 @@ $('.jsParentReviewsControlOk').click(function (e) {
 });
 
 
+
 $('.jsSaveFilterTrigger').click(function (e) {
   e.preventDefault();
   $(this).closest('.jsSaveFilter').find('.jsSaveFilterContent').slideToggle().find('.jsSaveFilterField').focus();
 });
-
 
 // Зададим стартовую дату
 // var start = new Date(),
@@ -4427,6 +4427,7 @@ $('.mask').click(function () {
 
 
 
+
 $('.jsTabsControlItem').click(function () {
   var $this = $(this),
       indexTab = $this.index();
@@ -4435,7 +4436,6 @@ $('.jsTabsControlItem').click(function () {
 
   $this.closest('.jsTabs').find('.jsTabsContent').find('.jsTabsContentItem').eq(indexTab).addClass('_active').siblings().removeClass('_active');
 });
-
 
 
 

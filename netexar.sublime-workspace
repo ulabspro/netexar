@@ -519,6 +519,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "markup/pages/login.jade",
+			"settings":
+			{
+				"buffer_size": 50,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/userboard/userboard.jade",
+			"settings":
+			{
+				"buffer_size": 5646,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -593,14 +611,15 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone",
-		"/Users/extiser/git/1studio/netexar/markup/components/user-settings",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/1studio/netexar/markup/components/login-form/login-form.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.scss",
@@ -608,7 +627,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
-		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-my.jade",
@@ -727,8 +745,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/normalize.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/data/data.js",
 		"/Users/extiser/git/bitbucket/izeta-site/markup/pages/index.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.jade"
+		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.scss"
 	],
 	"find":
 	{
@@ -1021,8 +1038,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "markup/pages/login.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/userboard/userboard.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5646,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4636,
+								4645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2214.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -75,3 +75,12 @@
     }
   }
 }
+
+.form-registration-link {
+  @extend .button;
+  @extend .button._gray;
+  width: 200px;
+  height: 37px;
+  line-height: 37px;
+  margin: 0 auto 20px;
+}
