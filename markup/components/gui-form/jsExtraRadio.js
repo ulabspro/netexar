@@ -1,7 +1,7 @@
 $('.jsChangeAccItem').click(function (e) {
-  var accItemPos = $(this).index();
-
-  if (accItemPos == 0) {
+  var accItemPos = $("input", this).val();
+  console.log(accItemPos);
+  if (accItemPos == 3) {
     $('.jsChangeAccItemToggle').hide();
   } else {
     $('.jsChangeAccItemToggle').show();

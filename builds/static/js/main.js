@@ -4357,9 +4357,9 @@ $('.jsExtraCheckCheckbox').change(function() {
   }
 });
 $('.jsChangeAccItem').click(function (e) {
-  var accItemPos = $(this).index();
-
-  if (accItemPos == 0) {
+  var accItemPos = $("input", this).val();
+  console.log(accItemPos);
+  if (accItemPos == 3) {
     $('.jsChangeAccItemToggle').hide();
   } else {
     $('.jsChangeAccItemToggle').show();
@@ -4427,7 +4427,6 @@ $('.mask').click(function () {
 
 
 
-
 $('.jsTabsControlItem').click(function () {
   var $this = $(this),
       indexTab = $this.index();
@@ -4436,6 +4435,7 @@ $('.jsTabsControlItem').click(function () {
 
   $this.closest('.jsTabs').find('.jsTabsContent').find('.jsTabsContentItem').eq(indexTab).addClass('_active').siblings().removeClass('_active');
 });
+
 
 
 
