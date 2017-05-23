@@ -1,0 +1,23 @@
+.status {
+  font-size: rem-calc(13);
+  line-height: 20px;
+
+  display: block;
+
+  width: 120px;
+  height: 20px;
+  margin-right: 20px;
+
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: $white;
+  background-color: $green;
+  &._active {
+    background-color: $blue;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

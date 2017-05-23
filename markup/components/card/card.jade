@@ -243,6 +243,7 @@ mixin cardPerformer(cardControl)
           .card-payment__cost Договорная
           .card-payment__type безнал, без НДС (предоплата)
         a(href="#" title="Откликнуться").card-response Откликнуться
+        .card-viewed Заявка просмотрена
     
     .card-full._performer(class="jsCardHidden")
       .card-full__row
@@ -316,3 +317,6 @@ mixin cardPerformer(cardControl)
                 span Facebook не привязан
               .customer-card-confirm__item._vk
                 span Vkontakte не привязан
+
+      .card__row
+        a(href="#" title="").card-interest Сохранить в интересные

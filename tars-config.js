@@ -23,7 +23,6 @@ module.exports = {
             "providePlugin": {}
         },
         "jsPathsToConcatBeforeModulesJs": [
-            // 'node_modules/jquery/dist/jquery.js',
             'node_modules/air-datepicker/dist/js/datepicker.js',
             'node_modules/jquery-sticky/jquery.sticky.js',
             'node_modules/dropzone/dist/dropzone.js'

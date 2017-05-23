@@ -1,8 +1,8 @@
 $('.jsCard').click(function () {
   var $this = $(this);
 
-  $this.toggleClass('_active');
-  $this.find('.jsCardHidden').toggleClass('_active');
+  $this.addClass('_active');
+  $this.find('.jsCardHidden').addClass('_active');
 });
 
 $('.jsParentReviewsControlOk').click(function (e) {
@@ -12,4 +12,13 @@ $('.jsParentReviewsControlOk').click(function (e) {
   $this.closest('.jsParentReviews').addClass('_active');
 
   $this.closest('.jsParentReviews').next('.jsParentReviewsShowOk').addClass('_active');
+});
+
+$('.card-interest').click(function (e) {
+  e.preventDefault();
+  if ($(this).hasClass('_active')) {
+    $(this).removeClass('_active').html('Сохранить в интересные');
+  } else {
+    $(this).addClass('_active').html('Убрать из интересных');
+  }
 });

@@ -4278,11 +4278,12 @@
 }).call(this);
 
 
+
 $('.jsCard').click(function () {
   var $this = $(this);
 
-  $this.toggleClass('_active');
-  $this.find('.jsCardHidden').toggleClass('_active');
+  $this.addClass('_active');
+  $this.find('.jsCardHidden').addClass('_active');
 });
 
 $('.jsParentReviewsControlOk').click(function (e) {
@@ -4294,6 +4295,14 @@ $('.jsParentReviewsControlOk').click(function (e) {
   $this.closest('.jsParentReviews').next('.jsParentReviewsShowOk').addClass('_active');
 });
 
+$('.card-interest').click(function (e) {
+  e.preventDefault();
+  if ($(this).hasClass('_active')) {
+    $(this).removeClass('_active').html('Сохранить в интересные');
+  } else {
+    $(this).addClass('_active').html('Убрать из интересных');
+  }
+});
 
 
 $('.jsSaveFilterTrigger').click(function (e) {
@@ -4358,8 +4367,7 @@ $('.jsExtraCheckCheckbox').change(function() {
 });
 $('.jsChangeAccItem').click(function (e) {
   var accItemPos = $("input", this).val();
-  console.log(accItemPos);
-  if (accItemPos == 3) {
+  if (accItemPos == 2) {
     $('.jsChangeAccItemToggle').hide();
   } else {
     $('.jsChangeAccItemToggle').show();
@@ -4402,6 +4410,22 @@ $('.jsMapShowHideLink').click(function () {
   $this.removeClass('_active');
   $this.closest('.jsMapShow').removeClass('_active').find('.jsMapShowOverlay').removeClass('_active');
 });
+
+$(function(){
+     $('.form-attachment__field').change(function(){
+      
+         var hiddenElement = $(this).closest('.form-attachment').find('.form-attachment__file-text');
+
+         $(this).closest('.form-attachment').addClass('_active');
+
+         if (hiddenElement.length > 0) {
+            hiddenElement.text($(this).val());
+         } else {
+            $(this).closest('.form-attachment').append('<div class="form-attachment__file-text">'+ $(this).val() +'</div>');
+         }
+     });
+});
+
 $('.order-attention').sticky({
     topSpacing: 0,
     bottomSpacing: 600
@@ -4426,6 +4450,13 @@ $('.mask').click(function () {
 });
 
 
+$('.status').click(function () {
+  if ($(this).hasClass('_active')) {
+    $(this).removeClass('_active').html('Статус: Свободен');
+  } else {
+    $(this).addClass('_active').html('Статус: Занят');
+  }
+});
 
 $('.jsTabsControlItem').click(function () {
   var $this = $(this),

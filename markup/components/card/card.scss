@@ -418,3 +418,39 @@
     }
   }
 }
+
+.card-interest {
+  line-height: 40px;
+
+  position: relative;
+
+  width: 220px;
+  height: 40px;
+  margin: 30px auto 0;
+  padding-left: 25px;
+
+  @extend .button;
+  @extend .button._blue;
+  &:before {
+    position: absolute;
+    left: 20px;
+
+    content: '';
+
+    @include bg($interest);
+    @include vertical-center;
+  }
+  &._active {
+    @extend .button._green;
+    &:before {
+      @include bg($interest_active);
+    }
+  }
+}
+
+.card-viewed {
+  text-align: center;
+  color: $blue;
+  padding-top: 10px;
+  font-size: rem-calc(14);
+}

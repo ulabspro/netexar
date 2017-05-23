@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"marign",
+				"margin-right"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"tetx",
+				"text-indent"
+			],
+			[
+				"form",
+				"form-attachment"
+			],
+			[
+				"form-a",
+				"form-attachment__file-text"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
 				"dp",
 				"dpOptns"
 			],
@@ -16,20 +48,12 @@
 				"setVal"
 			],
 			[
-				"pad",
-				"padding-bottom"
-			],
-			[
 				"margin",
 				"margin-top"
 			],
 			[
 				"fle",
 				"flex-start"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"sav",
@@ -52,10 +76,6 @@
 				"flex-start"
 			],
 			[
-				"marign",
-				"margin-bottom"
-			],
-			[
 				"per",
 				"performer-success"
 			],
@@ -64,16 +84,8 @@
 				"jsChangeAccItemToggle"
 			],
 			[
-				"form",
-				"form-radio"
-			],
-			[
 				"paddin",
 				"padding-left"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"sele",
@@ -502,37 +514,43 @@
 			[
 				"ho",
 				"how__item"
-			],
-			[
-				"se",
-				"services"
-			],
-			[
-				"magrin",
-				"margin-left"
-			],
-			[
-				"co",
-				"content"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "markup/pages/login.jade",
+			"file": "markup/components/header/header.jade",
 			"settings":
 			{
-				"buffer_size": 50,
+				"buffer_size": 320,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "markup/components/userboard/userboard.jade",
+			"file": "markup/components/status/status.jade",
 			"settings":
 			{
-				"buffer_size": 5646,
+				"buffer_size": 70,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/status/status.scss",
+			"settings":
+			{
+				"buffer_size": 335,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/status/status.js",
+			"settings":
+			{
+				"buffer_size": 204,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -611,23 +629,41 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard",
+		"/Users/extiser/git/1studio/netexar/markup/components/status",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
+		"/Users/extiser/git/1studio/netexar/markup/static/images",
+		"/Users/extiser/git/1studio/netexar/markup/static/images/sprite",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/1studio/netexar/markup/components/login-form/login-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.jade",
+		"/Users/extiser/MAMP/ilq/index.php",
+		"/Users/extiser/MAMP/ilq/article.php",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-attachment.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.scss",
+		"/Users/extiser/git/netexar/builds/static/js/main.js",
+		"/Users/extiser/git/netexar/tars-config.js",
+		"/Users/extiser/git/1studio/netexar/markup/pages/login.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-group.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraRadio.js",
+		"/Users/extiser/git/1studio/netexar/tars-config.js",
+		"/Users/extiser/git/netexar/package.json",
+		"/Users/extiser/git/1studio/netexar/markup/components/login-form/login-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.scss",
-		"/Users/extiser/git/1studio/netexar/tars-config.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/datepicker.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-success/performer-success.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-my.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.jade",
@@ -635,10 +671,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card-full.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/orders-filter.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/time-filter.scss",
@@ -656,7 +688,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-passport-form/performer-passport-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/performer-registration.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-radio.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraRadio.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.js",
@@ -677,10 +708,8 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-notifications.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-attachment.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-thanks.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/customer-settings/customer-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/user-settings/user-settings-personal.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-order.scss",
@@ -691,7 +720,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-settings.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-list-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-content.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.js",
@@ -701,7 +729,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-checkbox.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/push-notifications/push-notifications.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-select.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-group.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-cutomer-empty-orders.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-datepicker/_datepicker-config.scss",
@@ -723,7 +750,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/login/logined.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/login.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/sms-input.js",
 		"/Users/extiser/git/1studio/netexar/markup/pages/check-number.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/check-number-form.scss",
@@ -739,13 +765,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.js",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss/vars.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/jsToggle/jsToggle.js",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/normalize.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/tabs/data/data.js",
-		"/Users/extiser/git/bitbucket/izeta-site/markup/pages/index.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/top-baner/top-baner.scss"
+		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.jade"
 	],
 	"find":
 	{
@@ -765,6 +785,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"hint",
 			".dropzone",
 			"performer-passport-form",
 			"extra",
@@ -891,8 +912,7 @@
 			"jquery",
 			"uslugi3",
 			"top-orange",
-			"sidebar",
-			"margin-top: -37px;"
+			"sidebar"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1038,24 +1058,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "markup/pages/login.jade",
+					"file": "markup/components/header/header.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50,
+						"buffer_size": 320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								50
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/status/status.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
 							]
 						],
 						"settings":
@@ -1066,37 +1116,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "markup/components/userboard/userboard.jade",
+					"buffer": 2,
+					"file": "markup/components/status/status.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5646,
+						"buffer_size": 335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4636,
-								4645
+								0,
+								335
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2214.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "markup/components/status/status.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

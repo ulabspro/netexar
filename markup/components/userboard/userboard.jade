@@ -104,8 +104,9 @@ mixin login-form(data)
       .userboard-modal__subtitle или
 
       form(method="" action="").form.customer-registration-form
-        .form-group._iconed._email
+        .form-group._iconed._email.has-error
           input(type="text" value="" placeholder="E-mail").form-group__field
+          .help-block Необходимо заполнить поле "Username"
         .form-group._iconed._password
           input(type="text" value="" placeholder="Пароль").form-group__field
 

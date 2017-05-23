@@ -6,6 +6,7 @@ mixin header(headerControl)
       +top-menu
       - if (headerControl == "logined")
         +push-notifications
+        +status
         +logined
       - else
         +login

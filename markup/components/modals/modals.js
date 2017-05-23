@@ -27,3 +27,18 @@ $('.jsMapShowHideLink').click(function () {
   $this.removeClass('_active');
   $this.closest('.jsMapShow').removeClass('_active').find('.jsMapShowOverlay').removeClass('_active');
 });
+
+$(function(){
+     $('.form-attachment__field').change(function(){
+      
+         var hiddenElement = $(this).closest('.form-attachment').find('.form-attachment__file-text');
+
+         $(this).closest('.form-attachment').addClass('_active');
+
+         if (hiddenElement.length > 0) {
+            hiddenElement.text($(this).val());
+         } else {
+            $(this).closest('.form-attachment').append('<div class="form-attachment__file-text">'+ $(this).val() +'</div>');
+         }
+     });
+});

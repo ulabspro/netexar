@@ -451,7 +451,7 @@ blockquote {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.11);
 }
 
-.button, .account-success-item__button, .user-settings-personal__success-button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .user-settings-save, .form-registration-link {
+.button, .account-success-item__button, .user-settings-personal__success-button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .card-interest, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .user-settings-save, .form-registration-link {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -461,39 +461,39 @@ blockquote {
   transition: all 0.2s ease-in-out;
 }
 
-.button._green, .account-success-item__button, .user-settings-personal__success-button, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.user-settings-save, ._green.form-registration-link {
+.button._green, .account-success-item__button, .user-settings-personal__success-button, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, ._green.card-interest, .card-interest._active, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.user-settings-save, ._green.form-registration-link {
   color: #fff;
   background-color: #b0cb1f;
 }
 
-.button._green:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
+.button._green:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, ._green.card-interest:hover, .card-interest._active:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
   background-color: #c1dc30;
 }
 
-.button._blue, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, .user-settings-save, ._blue.form-registration-link {
+.button._blue, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, .card-interest, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, .user-settings-save, ._blue.form-registration-link {
   color: #fff;
   background-color: #076681;
 }
 
-.button._blue:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
+.button._blue:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, .card-interest:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
   background-color: #187792;
 }
 
-.button._gray, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.user-settings-save, .form-registration-link {
+.button._gray, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.card-interest, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.user-settings-save, .form-registration-link {
   color: #fff;
   background-color: #e0e0e0;
 }
 
-.button._gray:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
+.button._gray:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.card-interest:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
   background-color: #cfcfcf;
 }
 
-.button._red, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, ._red.user-settings-save, ._red.form-registration-link {
+.button._red, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.card-interest, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, ._red.user-settings-save, ._red.form-registration-link {
   color: #fff;
   background-color: #f43333;
 }
 
-.button._red:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
+.button._red:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.card-interest:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
   background-color: #ff4444;
 }
 
@@ -1013,7 +1013,7 @@ body._active {
 
 .customer-card-confirm__item._phone {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -59px;
+  background-position: -269px -74px;
   width: 11px;
   height: 11px;
   background-size: 281px, 264px;
@@ -1612,27 +1612,45 @@ body._active {
   margin: 0 10px;
 }
 
-.customer-settings-personal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.card-interest {
+  line-height: 40px;
+  position: relative;
+  width: 220px;
+  height: 40px;
+  margin: 30px auto 0;
+  padding-left: 25px;
 }
 
-.customer-settings-personal__side {
-  width: 100%;
-  max-width: 262px;
-  margin-right: 55px;
+.card-interest:before {
+  position: absolute;
+  left: 20px;
+  content: '';
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -52px -250px;
+  width: 14px;
+  height: 13px;
+  background-size: 281px, 264px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-.customer-settings-personal__content {
-  width: 100%;
-  max-width: 660px;
+.card-interest._active:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -20px -234px;
+  width: 13px;
+  height: 10px;
+  background-size: 281px, 264px;
+  background-repeat: no-repeat;
+}
+
+.card-viewed {
+  text-align: center;
+  color: #076681;
+  padding-top: 10px;
+  font-size: 0.875rem;
 }
 
 .card-order {
@@ -1771,6 +1789,29 @@ body._active {
   height: 14px;
   background-size: 281px, 264px;
   background-repeat: no-repeat;
+}
+
+.customer-settings-personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.customer-settings-personal__side {
+  width: 100%;
+  max-width: 262px;
+  margin-right: 55px;
+}
+
+.customer-settings-personal__content {
+  width: 100%;
+  max-width: 660px;
 }
 
 .empty-orders__group, .list-orders__group {
@@ -1973,7 +2014,7 @@ body._active {
 .footer__logo {
   margin-bottom: 30px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -44px;
   width: 136px;
   height: 40px;
   background-size: 281px, 264px;
@@ -3462,12 +3503,15 @@ body._active {
   font-size: 0.875rem;
   position: relative;
   display: inline-block;
+  margin-bottom: 20px;
   margin-left: 20px;
   color: #076681;
   border-bottom: 1px solid rgba(7, 102, 129, 0.5);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 20px;
+}
+
+.form-attachment._active {
+  font-size: 0;
+  text-indent: -9999px;
 }
 
 .form-attachment:hover {
@@ -3497,6 +3541,11 @@ body._active {
   width: 100%;
   height: 100%;
   opacity: 0;
+}
+
+.form-attachment__file-text {
+  font-size: 0.875rem;
+  text-indent: 0;
 }
 
 .form-checkbox {
@@ -3605,7 +3654,7 @@ body._active {
 
 .form-group._password:before, ._password.form-select:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -130px -205px;
+  background-position: -111px -205px;
   width: 15px;
   height: 15px;
   background-size: 281px, 264px;
@@ -3613,7 +3662,7 @@ body._active {
 }
 
 .form-group._check-number, ._check-number.form-select {
-  width: 100%;
+  width: 60%;
   margin: 0 10px;
 }
 
@@ -3651,6 +3700,40 @@ body._active {
   box-shadow: inset 0 3px 3px rgba(127, 127, 127, 0.11);
 }
 
+.form-group.has-error .form-group__field, .has-error.form-select .form-group__field, .form-group.has-error .save-filter__field, .has-error.form-select .save-filter__field, .form-group.has-error .form-select__field, .has-error.form-select .form-select__field {
+  border: 1px solid rgba(244, 51, 51, 0.5);
+  box-shadow: 0 0 3px #f43333;
+}
+
+.form-group.has-error .help-block, .has-error.form-select .help-block {
+  font-size: 0.8125rem;
+  position: absolute;
+  right: -270px;
+  width: 240px;
+  padding: 10px;
+  color: #f43333;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-group.has-error .help-block:before, .has-error.form-select .help-block:before {
+  position: absolute;
+  left: -5px;
+  content: '';
+  border-top: 5px solid transparent;
+  border-right: 5px solid rgba(0, 0, 0, 0.16);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .jsChangeAccItemToggle {
   display: none;
 }
@@ -3682,7 +3765,7 @@ body._active {
   right: 16px;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -181px;
+  background-position: -269px -193px;
   width: 9px;
   height: 8px;
   background-size: 281px, 264px;
@@ -3834,7 +3917,7 @@ body._active {
 .header__logo {
   text-indent: -9999px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -44px;
+  background-position: 0px 0px;
   width: 136px;
   height: 40px;
   background-size: 281px, 264px;
@@ -3993,7 +4076,7 @@ body._active {
   left: 0;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -74px;
+  background-position: -269px -59px;
   width: 11px;
   height: 11px;
   background-size: 281px, 264px;
@@ -4141,7 +4224,7 @@ body._active {
 
 .modal-order-row._start:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -205px;
+  background-position: -180px -135px;
   width: 18px;
   height: 25px;
   background-size: 281px, 264px;
@@ -4150,7 +4233,7 @@ body._active {
 
 .modal-order-row._finish:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -180px -135px;
+  background-position: 0px -205px;
   width: 18px;
   height: 25px;
   background-size: 281px, 264px;
@@ -4246,7 +4329,7 @@ body._active {
   right: -14px;
   content: '';
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -193px;
+  background-position: -269px -181px;
   width: 9px;
   height: 8px;
   background-size: 281px, 264px;
@@ -5065,7 +5148,7 @@ body._active {
 
 .rating__item._full {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -123px;
+  background-position: -269px -152px;
   width: 11px;
   height: 10px;
   background-size: 281px, 264px;
@@ -5074,7 +5157,7 @@ body._active {
 
 .rating__item._empty {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -269px -152px;
+  background-position: -269px -123px;
   width: 11px;
   height: 10px;
   background-size: 281px, 264px;
@@ -5083,7 +5166,7 @@ body._active {
 
 .rating._reviews .rating__item._full {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -247px -89px;
+  background-position: -247px -68px;
   width: 18px;
   height: 17px;
   background-size: 281px, 264px;
@@ -5092,7 +5175,7 @@ body._active {
 
 .rating._reviews .rating__item._empty {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -247px -68px;
+  background-position: -247px -89px;
   width: 18px;
   height: 17px;
   background-size: 281px, 264px;
@@ -5251,6 +5334,28 @@ body._active {
   background-color: #9fba0e;
 }
 
+.status {
+  font-size: 0.8125rem;
+  line-height: 20px;
+  display: block;
+  width: 120px;
+  height: 20px;
+  margin-right: 20px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b0cb1f;
+}
+
+.status._active {
+  background-color: #076681;
+}
+
+.status:hover {
+  cursor: pointer;
+}
+
 .tabs-content {
   position: relative;
 }
@@ -5307,7 +5412,9 @@ body._active {
 }
 
 .tabs-control__item {
+  display: block;
   padding: 10px 25px;
+  text-decoration: none;
   color: #076681;
   border-bottom: 2px solid transparent;
 }
@@ -5403,7 +5510,7 @@ body._active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -20px -234px;
+  background-position: -37px -234px;
   width: 13px;
   height: 9px;
   background-size: 281px, 264px;
@@ -5550,7 +5657,7 @@ body._active {
 
 .user-settings-personal-check-document__status._success:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -92px -205px;
+  background-position: -187px -182px;
   width: 15px;
   height: 15px;
   background-size: 281px, 264px;
@@ -5563,7 +5670,7 @@ body._active {
 
 .user-settings-personal-check-document__status._inprocess:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -111px -205px;
+  background-position: -130px -205px;
   width: 15px;
   height: 15px;
   background-size: 281px, 264px;
@@ -5576,7 +5683,7 @@ body._active {
 
 .user-settings-personal-check-document__status._invalid:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -187px -182px;
+  background-position: -92px -205px;
   width: 15px;
   height: 15px;
   background-size: 281px, 264px;
