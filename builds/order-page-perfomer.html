@@ -228,28 +228,26 @@
             </div>
             <div class="order-page-content-bottom">
                 <div class="order-page-content-bottom__left">
-                    <div class="selected-performer">
-                        <div class="selected-performer__title">Выбранный исполнитель</div>
-                        <div class="selected-performer-card">
-                            <div class="selected-performer-card__photo">
-                                <img src="http://placehold.it/100x100" alt="">
-                            </div>
-                            <div class="selected-performer-card__info">
-                                <div class="selected-performer-card__name">Марина Александровна<span>Менеджер АТП</span>
-                                </div>
-                                <div class="selected-performer-card-contacts">
-                                    <div class="selected-performer-card-contacts__item _phone">+7 (495) 999 10 00</div>
-                                    <div class="selected-performer-card-contacts__item _email">custom@bnb.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="order-page-content-first-comment">
                         <div class="order-page-content-first-comment__title">Комментарий к заказу:</div>
                         <p>На складе парковаться там то, при себе иметь паспорт водителю, для выписки пропуска нужен номер машины заранее. Что то такое</p>
                     </div>
                     <div class="order-comments">
                         <div class="order-comments__title">У задания <span>4</span> предложения</div>
+                        <div class="order-comments-myform _top">
+                            <div class="order-comments-myform__photo">
+                                <img src="http://placehold.it/55x55" alt="">
+                            </div>
+                            <div class="order-comments-myform__msg">
+                                <div class="form-group">
+                                    <input type="text" value="" placeholder="Ваше ценовое предложение" class="form-group__field">
+                                </div>
+                                <div class="form-group _textarea">
+                                    <textarea placeholder="Ваш комментарий" rows="5" class="form-group__field"></textarea>
+                                </div>
+                                <input type="submit" value="Отправить" class="order-comments__submit">
+                            </div>
+                        </div>
                         <div class="order-comments-answer">
                             <div class="order-comments-answer__photo">
                                 <img src="http://placehold.it/55x55" alt="">
@@ -257,7 +255,7 @@
                             <div class="order-comments-answer__content">
                                 <div class="order-comments-answer__top">
                                     <div class="order-comments-answer-user">
-                                        <div class="order-comments-answer-user__name">Марина Александровна<span>Менеджер АТП</span><span class="order-comments-answer-user__status _busy">Занят</span>
+                                        <div class="order-comments-answer-user__name">Марина Александровна<span>Менеджер АТП</span><span class="order-comments-answer-user__status _free">Свободен</span>
                                         </div>
                                         <div class="order-comments-answer-user__block">
                                             <div class="rating">
@@ -273,9 +271,17 @@
                                     </div>
                                     <div class="order-comments-answer__time">9 минут назад</div>
                                 </div>
-                                <div class="order-comments-answer__cost">Предлагаемая цена: <span>4000 руб</span>
+                                <div class="order-comments-answer__cost jsChangeCost">
+
+                                    Предлагаемая цена:
+                                    <form method="" actio=""><span>
+                          <input type="text" value="4000" disabled class="jsChangeCostArea"> руб
+                          <input type="submit" value="Сохранить" class="save-cost"><a href="#" title="" class="jsChangeCostTrigger">Изменить</a><a href="#" title="" class="jsChangeCostTriggerOff">Отменить</a></span>
+                                    </form>
                                 </div>
                                 <div class="order-comments-answer__text">Закажите перевозку у нас! К вашим услугам профессиональные водители со стажем, которые доставят ваш груз точно в срок!</div>
+                                <div class="order-comments-answer-control"><a href="#" title="" data-modal="#modal-delete" class="jsModalTrigger order-comments-answer-control__delete">Удалить предложение</a>
+                                </div>
                             </div>
                             <div class="order-comments-answer _inside">
                                 <div class="order-comments-answer__photo">
@@ -301,6 +307,32 @@
                                         <div class="order-comments-answer__time">9 минут назад</div>
                                     </div>
                                     <div class="order-comments-answer__text">Ваша цена мне не подходит. Слишком дорого!</div>
+                                </div>
+                            </div>
+                            <div class="order-comments-answer _inside">
+                                <div class="order-comments-answer__photo">
+                                    <img src="http://placehold.it/55x55" alt="">
+                                </div>
+                                <div class="order-comments-answer__content">
+                                    <div class="order-comments-answer__top">
+                                        <div class="order-comments-answer-user">
+                                            <div class="order-comments-answer-user__name _performer">Марина Александровна<span>Менеджер АТП</span><span class="order-comments-answer-user__status _free">Свободен</span>
+                                            </div>
+                                            <div class="order-comments-answer-user__block">
+                                                <div class="rating">
+                                                    <div class="rating__item _full"></div>
+                                                    <div class="rating__item _full"></div>
+                                                    <div class="rating__item _full"></div>
+                                                    <div class="rating__item _full"></div>
+                                                    <div class="rating__item _empty"></div>
+                                                </div>
+                                                <div class="order-comments-answer-user__rate">Количество сделок: <span class="green">29</span> / <span class="red">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-comments-answer__time">9 минут назад</div>
+                                    </div>
+                                    <div class="order-comments-answer__text">Ну а че дорого-то? Цены на базаре видели? А доллар как вырос??</div>
                                 </div>
                             </div>
                             <div class="order-comments-myform _inside">
@@ -338,11 +370,7 @@
                                     </div>
                                     <div class="order-comments-answer__time">20 минут назад</div>
                                 </div>
-                                <div class="order-comments-answer__cost">Предлагаемая цена: <span>4000 руб</span>
-                                </div>
-                                <div class="order-comments-answer__text">Закажите перевозку у нас! К вашим услугам профессиональные водители со стажем, которые доставят ваш груз точно в срок!</div>
-                                <div class="order-comments-answer-control"><a href="#" title="" class="order-comments-answer-control__comment">Комментировать</a><a href="#" title="" class="order-comments-answer-control__choose">Выбрать исполнителем</a>
-                                </div>
+                                <div class="order-comments-answer__text">Это коментарий другого исполнителя, поэтому мы не видим предлагаемую цену</div>
                             </div>
                             <div class="order-comments-answer _inside">
                                 <div class="order-comments-answer__photo">
@@ -368,17 +396,6 @@
                                         <div class="order-comments-answer__time">20 минут назад</div>
                                     </div>
                                     <div class="order-comments-answer__text">Ваша цена мне не подходит. Слишком дорого!</div>
-                                </div>
-                            </div>
-                            <div class="order-comments-myform _inside">
-                                <div class="order-comments-myform__photo">
-                                    <img src="http://placehold.it/55x55" alt="">
-                                </div>
-                                <div class="order-comments-myform__msg">
-                                    <div class="form-group _textarea">
-                                        <textarea placeholder="Ваш комментарий" rows="5" class="form-group__field"></textarea>
-                                    </div>
-                                    <input type="submit" value="Отправить" class="order-comments__submit">
                                 </div>
                             </div>
                         </div>
@@ -466,6 +483,12 @@
                 </div>
             </div>
         </footer>
+        <div id="modal-delete" class="modal modal-delete">
+            <div class="modal__title">Вы уверены, что хотите удалить свое предложение безвозвратно?</div>
+            <div class="modal-delete-buttons">
+                <input type="submit" value="Да, уверен" class="modal-delete-buttons__yes"><a href="#" title="" class="modal-delete-buttons__no jsModalClose">Нет, спасибо</a>
+            </div>
+        </div>
         <div class="mask"></div>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="static/js/main.min.js"></script>

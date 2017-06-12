@@ -167,8 +167,26 @@
     margin-top: 20px;
 
     color: $gray;
+    form {
+      display: inline;
+    }
     span {
+      position: relative;
+
       color: $blue;
+    }
+    a {
+      font-size: rem-calc(12);
+
+      position: relative;
+      top: -2px;
+
+      margin-left: 20px;
+
+      color: $blue;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   &__text {
@@ -200,6 +218,17 @@
       span {
         background-color: $blue;
       }
+    }
+  }
+  &__status {
+    position: relative;
+
+    text-transform: uppercase;
+    &._busy {
+      background-color: $red;
+    }
+    &._free {
+      background-color: $green;
     }
   }
   &__rate {
@@ -263,4 +292,56 @@
     @extend .button;
     @extend .button._green;
   }
+  &__delete {
+    font-size: rem-calc(11);
+    line-height: 27px;
+
+    width: 150px;
+    height: 27px;
+
+    color: $white;
+
+    @extend .button;
+    @extend .button._red;
+  }
+}
+
+.jsChangeCostArea {
+  display: inline-block;
+
+  width: auto;
+
+  border: 0;
+  &._active {
+    width: 200px;
+    height: 30px;
+    padding-left: 15px;
+
+    border: 1px solid #d8d2d2;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: inset 0 3px 3px rgba(#7f7f7f, .11);
+  }
+}
+
+.save-cost {
+  font-size: rem-calc(11);
+
+  position: absolute;
+  top: -2px;
+  left: 115px;
+
+  display: none;
+
+  width: 100px;
+  height: 27px;
+
+  color: $white;
+
+  @extend .button;
+  @extend .button._green;
+}
+
+.jsChangeCostTriggerOff {
+  display: none;
 }

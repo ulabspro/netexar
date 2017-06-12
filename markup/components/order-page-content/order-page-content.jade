@@ -8,10 +8,28 @@ mixin order-page-customer-content(data)
 
     .order-page-content-bottom
       .order-page-content-bottom__left
-        //- +selected-performer
+        +selected-performer
         .order-page-content-first-comment
           .order-page-content-first-comment__title Комментарий к заказу:
           p На складе парковаться там то, при себе иметь паспорт водителю, для выписки пропуска нужен номер машины заранее. Что то такое
         +order-comments
+      .order-page-content-bottom__right
+        +order-attention
+
+mixin order-page-perfomer-content(data)
+  .order-page-content
+    .order-page-content-top
+      .order-page-content-top__left
+        +card-order
+      .order-page-content-top__right
+        +order-customer
+
+    .order-page-content-bottom
+      .order-page-content-bottom__left
+        //- +selected-performer
+        .order-page-content-first-comment
+          .order-page-content-first-comment__title Комментарий к заказу:
+          p На складе парковаться там то, при себе иметь паспорт водителю, для выписки пропуска нужен номер машины заранее. Что то такое
+        +order-comments-perfomer
       .order-page-content-bottom__right
         +order-attention

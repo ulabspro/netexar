@@ -17,17 +17,16 @@ mixin order-comments(data)
           .order-comments-answer-user
             .order-comments-answer-user__name Марина Александровна
               span Менеджер АТП
+              span.order-comments-answer-user__status._busy Занят
             .order-comments-answer-user__block
               +rating
               .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+
+          
           .order-comments-answer__time 9 минут назад
 
         .order-comments-answer__cost Предлагаемая цена: <span>4000 руб</span>
         .order-comments-answer__text Закажите перевозку у нас! К вашим услугам профессиональные водители со стажем, которые доставят ваш груз точно в срок!
-
-        .order-comments-answer-control
-          a(href="#" title="").order-comments-answer-control__comment Комментировать
-          a(href="#" title="").order-comments-answer-control__choose Выбрать исполнителем
 
       .order-comments-answer._inside
         .order-comments-answer__photo
@@ -60,6 +59,7 @@ mixin order-comments(data)
           .order-comments-answer-user
             .order-comments-answer-user__name Марина Александровна
               span Менеджер АТП
+              span.order-comments-answer-user__status._free Свободен
             .order-comments-answer-user__block
               +rating
               .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
@@ -94,3 +94,115 @@ mixin order-comments(data)
           .form-group._textarea
             textarea(placeholder="Ваш комментарий" rows="5").form-group__field
           input(type="submit" value="Отправить").order-comments__submit
+
+mixin order-comments-perfomer(data)
+  .order-comments
+    .order-comments__title У задания <span>4</span> предложения
+    .order-comments-myform._top
+      .order-comments-myform__photo
+        img(src="http://placehold.it/55x55" alt="")
+      .order-comments-myform__msg
+        .form-group
+          input(type="text" value="" placeholder="Ваше ценовое предложение").form-group__field
+        .form-group._textarea
+          textarea(placeholder="Ваш комментарий" rows="5").form-group__field
+        input(type="submit" value="Отправить").order-comments__submit
+
+    .order-comments-answer
+      .order-comments-answer__photo
+        img(src="http://placehold.it/55x55" alt="")
+      .order-comments-answer__content
+        .order-comments-answer__top
+          .order-comments-answer-user
+            .order-comments-answer-user__name Марина Александровна
+              span Менеджер АТП
+              span.order-comments-answer-user__status._free Свободен
+            .order-comments-answer-user__block
+              +rating
+              .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+          .order-comments-answer__time 9 минут назад
+
+        .order-comments-answer__cost.jsChangeCost 
+          | Предлагаемая цена: 
+          form(method="" actio="")
+            span
+              input(type="text" value="4000" class="jsChangeCostArea" disabled)
+              |  руб
+              input(type="submit" value="Сохранить").save-cost
+              a(href="#" title="").jsChangeCostTrigger Изменить
+              a(href="#" title="").jsChangeCostTriggerOff Отменить
+
+        .order-comments-answer__text Закажите перевозку у нас! К вашим услугам профессиональные водители со стажем, которые доставят ваш груз точно в срок!
+
+        .order-comments-answer-control
+          a(href="#" title="" class="jsModalTrigger" data-modal="#modal-delete").order-comments-answer-control__delete Удалить предложение
+
+      .order-comments-answer._inside
+        .order-comments-answer__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-answer__content
+          .order-comments-answer__top
+            .order-comments-answer-user
+              .order-comments-answer-user__name._customer Алексей Новожилов
+                span Заказчик
+              .order-comments-answer-user__block
+                +rating
+                .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+            .order-comments-answer__time 9 минут назад
+
+          .order-comments-answer__text Ваша цена мне не подходит. Слишком дорого!
+
+      .order-comments-answer._inside
+        .order-comments-answer__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-answer__content
+          .order-comments-answer__top
+            .order-comments-answer-user
+              .order-comments-answer-user__name._performer Марина Александровна
+                span Менеджер АТП
+                span.order-comments-answer-user__status._free Свободен
+              .order-comments-answer-user__block
+                +rating
+                .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+            .order-comments-answer__time 9 минут назад
+
+          .order-comments-answer__text Ну а че дорого-то? Цены на базаре видели? А доллар как вырос??
+
+      .order-comments-myform._inside
+        .order-comments-myform__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-myform__msg
+          .form-group._textarea
+            textarea(placeholder="Ваш комментарий" rows="5").form-group__field
+          input(type="submit" value="Отправить").order-comments__submit
+
+    .order-comments-answer
+      .order-comments-answer__photo
+        img(src="http://placehold.it/55x55" alt="")
+      .order-comments-answer__content
+        .order-comments-answer__top
+          .order-comments-answer-user
+            .order-comments-answer-user__name Марина Александровна
+              span Менеджер АТП
+              span.order-comments-answer-user__status._free Свободен
+            .order-comments-answer-user__block
+              +rating
+              .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+          .order-comments-answer__time 20 минут назад
+
+        .order-comments-answer__text Это коментарий другого исполнителя, поэтому мы не видим предлагаемую цену
+
+      .order-comments-answer._inside
+        .order-comments-answer__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-answer__content
+          .order-comments-answer__top
+            .order-comments-answer-user
+              .order-comments-answer-user__name._customer Алексей Новожилов
+                span Заказчик
+              .order-comments-answer-user__block
+                +rating
+                .order-comments-answer-user__rate Количество сделок:   <span class="green">29</span> / <span class="red">0</span>
+            .order-comments-answer__time 20 минут назад
+
+          .order-comments-answer__text Ваша цена мне не подходит. Слишком дорого!

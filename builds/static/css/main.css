@@ -451,7 +451,7 @@ blockquote {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.11);
 }
 
-.button, .account-success-item__button, .user-settings-personal__success-button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .card-interest, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .user-settings-save, .form-registration-link {
+.button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .card-interest, .account-success-item__button, .user-settings-personal__success-button, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .order-comments-answer-control__delete, .save-cost, .user-settings-save, .form-registration-link {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -461,39 +461,39 @@ blockquote {
   transition: all 0.2s ease-in-out;
 }
 
-.button._green, .account-success-item__button, .user-settings-personal__success-button, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, ._green.card-interest, .card-interest._active, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.user-settings-save, ._green.form-registration-link {
+.button._green, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, ._green.card-interest, .card-interest._active, .account-success-item__button, .user-settings-personal__success-button, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, ._green.modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.order-comments-answer-control__delete, .save-cost, ._green.user-settings-save, ._green.form-registration-link {
   color: #fff;
   background-color: #b0cb1f;
 }
 
-.button._green:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, ._green.card-interest:hover, .card-interest._active:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
+.button._green:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, ._green.card-interest:hover, .card-interest._active:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, ._green.modal-delete-buttons__yes:hover, .modal-delete-buttons__no:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.order-comments-answer-control__delete:hover, .save-cost:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
   background-color: #c1dc30;
 }
 
-.button._blue, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, .card-interest, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, .user-settings-save, ._blue.form-registration-link {
+.button._blue, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, .card-interest, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-delete-buttons__yes, ._blue.modal-delete-buttons__no, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, ._blue.order-comments-answer-control__delete, ._blue.save-cost, .user-settings-save, ._blue.form-registration-link {
   color: #fff;
   background-color: #076681;
 }
 
-.button._blue:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, .card-interest:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
+.button._blue:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, .card-interest:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-delete-buttons__yes:hover, ._blue.modal-delete-buttons__no:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, ._blue.order-comments-answer-control__delete:hover, ._blue.save-cost:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
   background-color: #187792;
 }
 
-.button._gray, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.card-interest, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.user-settings-save, .form-registration-link {
+.button._gray, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.card-interest, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-delete-buttons__yes, ._gray.modal-delete-buttons__no, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.order-comments-answer-control__delete, ._gray.save-cost, ._gray.user-settings-save, .form-registration-link {
   color: #fff;
   background-color: #e0e0e0;
 }
 
-.button._gray:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.card-interest:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
+.button._gray:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.card-interest:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-delete-buttons__yes:hover, ._gray.modal-delete-buttons__no:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.order-comments-answer-control__delete:hover, ._gray.save-cost:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
   background-color: #cfcfcf;
 }
 
-.button._red, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.card-interest, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, ._red.user-settings-save, ._red.form-registration-link {
+.button._red, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.card-interest, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, .modal-delete-buttons__yes, ._red.modal-delete-buttons__no, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, .order-comments-answer-control__delete, ._red.save-cost, ._red.user-settings-save, ._red.form-registration-link {
   color: #fff;
   background-color: #f43333;
 }
 
-.button._red:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.card-interest:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
+.button._red:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.card-interest:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, .modal-delete-buttons__yes:hover, ._red.modal-delete-buttons__no:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, .order-comments-answer-control__delete:hover, ._red.save-cost:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
   background-color: #ff4444;
 }
 
@@ -651,130 +651,12 @@ html,
 body {
   font-family: "ProximaNova-Light", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  height: 100%;
+  position: relative;
 }
 
 html._active,
 body._active {
   overflow: hidden;
-}
-
-.account-success {
-  margin-bottom: 30px;
-  padding: 40px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.account-success__title {
-  font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
-  font-size: 0.9375rem;
-  line-height: 1.0625rem;
-  color: #404040;
-}
-
-.account-success__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 23px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account-success-item, .order-customer-success-item, .selected-performer-card-contacts__item {
-  font-size: 0.875rem;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 30px;
-  padding-left: 30px;
-  color: #6c6c6c;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account-success-item:last-child, .order-customer-success-item:last-child, .selected-performer-card-contacts__item:last-child {
-  margin-right: 0;
-}
-
-.account-success-item:before, .order-customer-success-item:before, .selected-performer-card-contacts__item:before {
-  left: 0;
-  content: '';
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.account-success-item._phone:before, ._phone.order-customer-success-item:before, ._phone.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -247px -110px;
-  width: 17px;
-  height: 17px;
-  background-size: 281px, 281px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._email:before, ._email.order-customer-success-item:before, ._email.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -46px -205px;
-  width: 19px;
-  height: 19px;
-  background-size: 281px, 281px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._fb:before, ._fb.order-customer-success-item:before, ._fb.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -230px -140px;
-  width: 11px;
-  height: 20px;
-  background-size: 281px, 281px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._vk:before, ._vk.order-customer-success-item:before, ._vk.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -180px -164px;
-  width: 23px;
-  height: 13px;
-  background-size: 281px, 281px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item__button, .user-settings-personal__success-button {
-  font-size: 0.6875rem;
-  line-height: 27px;
-  position: relative;
-  box-sizing: border-box;
-  width: 103px;
-  height: 27px;
-  margin-left: 15px;
-  padding-left: 15px;
-  text-align: left;
-  color: #fff;
-}
-
-.account-success-item__button:after, .user-settings-personal__success-button:after {
-  font-size: 16px;
-  position: absolute;
-  right: 15px;
-  content: '+';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .card-full {
@@ -1661,6 +1543,124 @@ body._active {
   padding-top: 10px;
   text-align: center;
   color: #076681;
+}
+
+.account-success {
+  margin-bottom: 30px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.account-success__title {
+  font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
+  color: #404040;
+}
+
+.account-success__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-success-item, .order-customer-success-item, .selected-performer-card-contacts__item {
+  font-size: 0.875rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  padding-left: 30px;
+  color: #6c6c6c;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-success-item:last-child, .order-customer-success-item:last-child, .selected-performer-card-contacts__item:last-child {
+  margin-right: 0;
+}
+
+.account-success-item:before, .order-customer-success-item:before, .selected-performer-card-contacts__item:before {
+  left: 0;
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.account-success-item._phone:before, ._phone.order-customer-success-item:before, ._phone.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -247px -110px;
+  width: 17px;
+  height: 17px;
+  background-size: 281px, 281px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._email:before, ._email.order-customer-success-item:before, ._email.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -46px -205px;
+  width: 19px;
+  height: 19px;
+  background-size: 281px, 281px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._fb:before, ._fb.order-customer-success-item:before, ._fb.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -230px -140px;
+  width: 11px;
+  height: 20px;
+  background-size: 281px, 281px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._vk:before, ._vk.order-customer-success-item:before, ._vk.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -180px -164px;
+  width: 23px;
+  height: 13px;
+  background-size: 281px, 281px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item__button, .user-settings-personal__success-button {
+  font-size: 0.6875rem;
+  line-height: 27px;
+  position: relative;
+  box-sizing: border-box;
+  width: 103px;
+  height: 27px;
+  margin-left: 15px;
+  padding-left: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.account-success-item__button:after, .user-settings-personal__success-button:after {
+  font-size: 16px;
+  position: absolute;
+  right: 15px;
+  content: '+';
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .card-order {
@@ -4186,6 +4186,47 @@ body._active {
           align-items: center;
 }
 
+.modal-delete {
+  position: fixed;
+  width: 450px;
+}
+
+.modal-delete._active {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  margin: auto;
+}
+
+.modal-delete-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-delete-buttons__yes {
+  width: 150px;
+  height: 35px;
+  margin-right: 10px;
+  border: 0;
+}
+
+.modal-delete-buttons__no {
+  line-height: 35px;
+  display: block;
+  width: 150px;
+  height: 35px;
+  margin-left: 10px;
+}
+
 .modal-order {
   right: 0;
   left: 0;
@@ -4797,8 +4838,25 @@ body._active {
   color: #404040;
 }
 
+.order-comments-answer__cost form {
+  display: inline;
+}
+
 .order-comments-answer__cost span {
+  position: relative;
   color: #076681;
+}
+
+.order-comments-answer__cost a {
+  font-size: 0.75rem;
+  position: relative;
+  top: -2px;
+  margin-left: 20px;
+  color: #076681;
+}
+
+.order-comments-answer__cost a:hover {
+  text-decoration: none;
 }
 
 .order-comments-answer__text {
@@ -4824,6 +4882,19 @@ body._active {
 
 .order-comments-answer-user__name._customer span {
   background-color: #076681;
+}
+
+.order-comments-answer-user__status {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.order-comments-answer-user__status._busy {
+  background-color: #f43333;
+}
+
+.order-comments-answer-user__status._free {
+  background-color: #b0cb1f;
 }
 
 .order-comments-answer-user__rate {
@@ -4894,6 +4965,45 @@ body._active {
   width: 150px;
   height: 27px;
   color: #fff;
+}
+
+.order-comments-answer-control__delete {
+  font-size: 0.6875rem;
+  line-height: 27px;
+  width: 150px;
+  height: 27px;
+  color: #fff;
+}
+
+.jsChangeCostArea {
+  display: inline-block;
+  width: auto;
+  border: 0;
+}
+
+.jsChangeCostArea._active {
+  width: 200px;
+  height: 30px;
+  padding-left: 15px;
+  border: 1px solid #d8d2d2;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: inset 0 3px 3px rgba(127, 127, 127, 0.11);
+}
+
+.save-cost {
+  font-size: 0.6875rem;
+  position: absolute;
+  top: -2px;
+  left: 115px;
+  display: none;
+  width: 100px;
+  height: 27px;
+  color: #fff;
+}
+
+.jsChangeCostTriggerOff {
+  display: none;
 }
 
 .order-customer-success {
@@ -5276,69 +5386,6 @@ body._active {
   background-repeat: no-repeat;
 }
 
-.selected-performer {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 40px;
-  padding: 40px;
-  border: 1px solid #e9e9e9;
-  background: rgba(249, 249, 249, 0.5);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
-}
-
-.selected-performer__title {
-  font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
-  font-size: 1.75rem;
-  margin-bottom: 20px;
-  color: #404040;
-}
-
-.selected-performer-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.selected-performer-card__photo {
-  margin-right: 20px;
-}
-
-.selected-performer-card__name {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-
-.selected-performer-card__name span {
-  font-size: 0.875rem;
-  line-height: 1;
-  margin-left: 15px;
-  padding: 2px 7px;
-  color: #fff;
-  background-color: #b0cb1f;
-}
-
-.selected-performer-card-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.selected-performer-card-contacts__item {
-  font-size: 1.125rem;
-}
-
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5428,26 +5475,67 @@ body._active {
   background-color: #9fba0e;
 }
 
-.status {
-  font-size: 0.8125rem;
-  line-height: 20px;
-  display: block;
-  width: 120px;
-  height: 20px;
+.selected-performer {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 40px;
+  padding: 40px;
+  border: 1px solid #e9e9e9;
+  background: rgba(249, 249, 249, 0.5);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.selected-performer__title {
+  font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #404040;
+}
+
+.selected-performer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected-performer-card__photo {
   margin-right: 20px;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none;
+}
+
+.selected-performer-card__name {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.selected-performer-card__name span {
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-left: 15px;
+  padding: 2px 7px;
   color: #fff;
   background-color: #b0cb1f;
 }
 
-.status._active {
-  background-color: #076681;
+.selected-performer-card-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.status:hover {
-  cursor: pointer;
+.selected-performer-card-contacts__item {
+  font-size: 1.125rem;
 }
 
 .tabs-content {
@@ -5522,6 +5610,28 @@ body._active {
 
 .tabs-control__item._active {
   border-bottom: 2px solid #076681;
+}
+
+.status {
+  font-size: 0.8125rem;
+  line-height: 20px;
+  display: block;
+  width: 120px;
+  height: 20px;
+  margin-right: 20px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b0cb1f;
+}
+
+.status._active {
+  background-color: #076681;
+}
+
+.status:hover {
+  cursor: pointer;
 }
 
 .top-baner {

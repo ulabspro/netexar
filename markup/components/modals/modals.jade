@@ -1,3 +1,11 @@
+mixin modal-delete(data)
+  .modal.modal-delete#modal-delete
+    .modal__title Вы уверены, что хотите удалить свое предложение безвозвратно?
+
+    .modal-delete-buttons
+      input(type="submit" value="Да, уверен").modal-delete-buttons__yes
+      a(href="#" title="").modal-delete-buttons__no.jsModalClose Нет, спасибо
+
 mixin modal-order(data)
   .modal.modal-order#modal-order
     .modal__title Разместить новый заказ
