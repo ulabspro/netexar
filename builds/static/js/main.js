@@ -4278,7 +4278,6 @@
 }).call(this);
 
 
-
 $('.jsCard').click(function () {
   var $this = $(this);
 
@@ -4303,6 +4302,7 @@ $('.card-interest').click(function (e) {
     $(this).addClass('_active').html('Убрать из интересных');
   }
 });
+
 
 
 $('.jsSaveFilterTrigger').click(function (e) {
@@ -4450,6 +4450,7 @@ $('.mask').click(function () {
 });
 
 
+
 $('.status').click(function () {
   if ($(this).hasClass('_active')) {
     $(this).removeClass('_active').html('Статус: Свободен');
@@ -4457,7 +4458,6 @@ $('.status').click(function () {
     $(this).addClass('_active').html('Статус: Занят');
   }
 });
-
 $('.jsTabsControlItem').click(function () {
   var $this = $(this),
       indexTab = $this.index();

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"text",
 				"text-decoration"
 			],
@@ -14,10 +22,6 @@
 			[
 				"no",
 				"nowrap"
-			],
-			[
-				"pad",
-				"padding-top"
 			],
 			[
 				"tetx",
@@ -46,10 +50,6 @@
 			[
 				"set",
 				"setVal"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"fle",
@@ -519,42 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/components/header/header.jade",
-			"settings":
-			{
-				"buffer_size": 320,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/components/status/status.jade",
-			"settings":
-			{
-				"buffer_size": 70,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/components/status/status.scss",
-			"settings":
-			{
-				"buffer_size": 335,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/components/status/status.js",
-			"settings":
-			{
-				"buffer_size": 204,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -629,7 +593,8 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/status",
+		"/Users/extiser/git/1studio/netexar/markup/components/card",
+		"/Users/extiser/git/1studio/netexar/markup/components/list-orders",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/images",
@@ -638,16 +603,25 @@
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/header/header.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/login/login.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/login/login.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/top-menu/top-menu.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/header/header.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/status/status.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/status/status.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/status/status.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.jade",
 		"/Users/extiser/MAMP/ilq/index.php",
 		"/Users/extiser/MAMP/ilq/article.php",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-attachment.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.scss",
 		"/Users/extiser/git/netexar/builds/static/js/main.js",
@@ -667,7 +641,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.scss",
 		"/Users/extiser/git/1studio/netexar/markup/pages/personal-performer-my.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/performer-my/performer-my.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/header/header.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/filter/filter.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card-full.scss",
@@ -723,7 +696,6 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/rating/rating.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-contents.scs",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraCheck.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-checkbox.scss",
@@ -743,12 +715,9 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/header/header.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/thanks.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/login/login.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/logined.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/login/login.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/sms-input.js",
 		"/Users/extiser/git/1studio/netexar/markup/pages/check-number.jade",
@@ -761,11 +730,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/pages/index.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.js",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/vars.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/sort/sort.jade"
+		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.scss"
 	],
 	"find":
 	{
@@ -1058,125 +1023,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/components/header/header.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 320,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								293,
-								293
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "markup/components/status/status.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 70,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "markup/components/status/status.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 335,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								335
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "markup/components/status/status.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],

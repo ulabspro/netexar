@@ -1,13 +1,13 @@
 mixin order-comments(data)
   .order-comments
     .order-comments__title У задания <span>4</span> предложения
-    .order-comments-myform
-      .order-comments-myform__photo
-        img(src="http://placehold.it/55x55" alt="")
-      .order-comments-myform__msg
-        .form-group._textarea
-          textarea(placeholder="Ваш комментарий" rows="5").form-group__field
-        input(type="submit" value="Отправить").order-comments__submit
+    //- .order-comments-myform
+    //-   .order-comments-myform__photo
+    //-     img(src="http://placehold.it/55x55" alt="")
+    //-   .order-comments-myform__msg
+    //-     .form-group._textarea
+    //-       textarea(placeholder="Ваш комментарий" rows="5").form-group__field
+    //-     input(type="submit" value="Отправить").order-comments__submit
 
     .order-comments-answer
       .order-comments-answer__photo
@@ -44,6 +44,14 @@ mixin order-comments(data)
 
           .order-comments-answer__text Ваша цена мне не подходит. Слишком дорого!
 
+      .order-comments-myform._inside
+        .order-comments-myform__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-myform__msg
+          .form-group._textarea
+            textarea(placeholder="Ваш комментарий" rows="5").form-group__field
+          input(type="submit" value="Отправить").order-comments__submit
+
     .order-comments-answer
       .order-comments-answer__photo
         img(src="http://placehold.it/55x55" alt="")
@@ -78,3 +86,11 @@ mixin order-comments(data)
             .order-comments-answer__time 20 минут назад
 
           .order-comments-answer__text Ваша цена мне не подходит. Слишком дорого!
+
+      .order-comments-myform._inside
+        .order-comments-myform__photo
+          img(src="http://placehold.it/55x55" alt="")
+        .order-comments-myform__msg
+          .form-group._textarea
+            textarea(placeholder="Ваш комментарий" rows="5").form-group__field
+          input(type="submit" value="Отправить").order-comments__submit

@@ -1,24 +1,58 @@
 .login {
-  font-family: $ProximaNova-Regular;
-  font-size: rem-calc(13);
+  &__item {
+    font-family: $ProximaNova-Regular;
+    font-size: rem-calc(13);
 
-  position: relative;
+    position: relative;
 
-  text-decoration: none;
+    margin-right: 30px;
+    margin-left: 20px;
 
-  color: $blue;
-  border-bottom: 1px solid #cde0e6;
+    text-decoration: none;
 
-  @include transition;
-  &:hover {
-    border-bottom: 1px solid $blue;
-  }
-  &:before {
-    left: -15px;
+    color: $blue;
+    border-bottom: 1px solid #cde0e6;
 
-    content: '';
+    @include transition;
+    &:after {
+      position: absolute;
+      right: -20px;
 
-    @include bg($login);
-    @include vertical-center;
+      content: '/';
+
+      color: #ccc;
+
+      @include vertical-center;
+    }
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      &:after {
+        content: '';
+      }
+    }
+    &._enter {
+      &:before {
+        left: -15px;
+
+        content: '';
+
+        @include bg($enter);
+        @include vertical-center;
+      }
+    }
+    &._reg {
+      &:before {
+        left: -15px;
+
+        content: '';
+
+        @include bg($reg);
+        @include vertical-center;
+      }
+    }
   }
 }

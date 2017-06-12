@@ -1,6 +1,6 @@
 mixin card(cardControl)
   - var modiffer = attributes.class || ''
-  .card(class="#{modiffer} jsCard")
+  .card.jsCard(class="#{modiffer}")
     .card__hovered Кликните для просмотра подробностей заказа
     .card-small
       .card-map
@@ -11,17 +11,18 @@ mixin card(cardControl)
       .card-center
         .card-meta id4113222  |  Размещено: 14.03.2017  16:00
         .card-info
-          .card-info__item._way Москва - Химки - Балашиха - Одинцово
+          .card-info__item._way Москва - Химки
             span (40 км)
           .card-info__item._parameters 20 тонн, 43м<sup>3</sup>
           .card-info__item._time Погрузка сегодня (22.03.2016 17:00)
-        .card-text Необходимо перевезти не бьющийся товар из Москвы в Химки без задержек
+        .card-text Необходимо перевезти 
       .card-control
         - if (cardControl.time == "express")
           .card-express Срочный заказ
         .card-payment
           .card-payment__cost Договорная
-          .card-payment__type безнал, без НДС (предоплата)
+          .card-payment__type Наличные / Перевод на карту 
+            span (На выгрузке)
         a(href="#" title="Откликнуться").card-response Откликнуться
     
     - if (cardControl.state == "logined") 
@@ -110,12 +111,12 @@ mixin fullcard(fullcardControl)
         a(href="#" title="").card-map__zoom 
           span Увеличить карту маршрута
       .card-center
-        .card-meta id4113222  |  Размещено: 14.03.2017  16:00
+        .card-meta Номер заказа: 4113222  |  Размещено: 14.03.2017  16:00
         .card-info
           .card-info__item._way Москва - Химки - Балашиха - Одинцово
             span (40 км)
-          .card-info__item._parameters 20 тонн, 43м<sup>3</sup>
-          .card-info__item._time Погрузка сегодня (22.03.2016 17:00)
+          .card-info__item._parameters 10 тонн, 10м<sup>3</sup>, 10м x 10м x 10м
+          .card-info__item._time Погрузка: 22.03.2016 17:00
         .card-text Необходимо перевезти не бьющийся товар из Москвы в Химки без задержек
       
       .card-control
@@ -150,12 +151,16 @@ mixin fullcard(fullcardControl)
 
         .card-auto-type
           .card-auto-type__row
-            .card-auto-type__title Тип кузова: 
-            .card-auto-type__text Бортовой 20т, 12м 
+            .card-auto-type__title Тип: 
+            .card-auto-type__text Тентованный
 
           .card-auto-type__row
-            .card-auto-type__title Коника:
-            .card-auto-type__text 2шт 
+            .card-auto-type__title Класс г/п:
+            .card-auto-type__text 10 тонн
+
+          .card-auto-type__row
+            .card-auto-type__title Коники:
+            .card-auto-type__text 4шт 
 
           .card-auto-type__row
             .card-auto-type__title Ремни:
@@ -163,11 +168,11 @@ mixin fullcard(fullcardControl)
 
           .card-auto-type__row
             .card-auto-type__title Тип загрузки:
-            .card-auto-type__text Верхняя
+            .card-auto-type__text Верхняя, Задняя, Боковая
 
           .card-auto-type__row
             .card-auto-type__title Тип выгрузки:
-            .card-auto-type__text Боковая
+            .card-auto-type__text Верхняя, Задняя, Боковая
 
       .card-column
         .card-column__title Выбранный исполнитель:
@@ -200,8 +205,8 @@ mixin fullcard(fullcardControl)
           p Просим подтвердить или указать, что заказ не выполнен.
           p Если в течении 12 часов вы не подтвердите, заказ автоматически будет считаться выполненным
         .card-finished-buttons
-          a(href="#" title="").card-finished-buttons__control._ok(class="jsParentReviewsControlOk") Заказ завершен успешно
-          a(href="#" title="").card-finished-buttons__control._not(class="jsParentReviewsControlNot") Заказ просрочен
+          a(href="#" title="").card-finished-buttons__control._ok.jsParentReviewsControlOk Заказ завершен успешно
+          a(href="#" title="").card-finished-buttons__control._not.jsParentReviewsControlNot Заказ просрочен
 
       .card-finished-reviews(class="jsParentReviewsShowOk")
         .card-finished-reviews__title Спасибо за подтверждение! Оставьте пожалуйста отзыв об исполнителе:

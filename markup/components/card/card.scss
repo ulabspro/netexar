@@ -103,6 +103,9 @@
 }
 
 .card-center {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 460px;
   padding-left: 40px;
 }
 
@@ -164,6 +167,9 @@
 }
 
 .card-control {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 185px;
   padding-left: 20px;
 }
 
@@ -182,7 +188,7 @@
   padding-left: 36px;
 
   color: $white;
-  background: $blue;
+  background: $red;
   &:before {
     left: 12px;
 
@@ -208,6 +214,9 @@
     font-size: rem-calc(10);
 
     color: #919191;
+    span {
+      display: block;
+    }
   }
 }
 
@@ -449,8 +458,11 @@
 }
 
 .card-viewed {
-  text-align: center;
-  color: $blue;
-  padding-top: 10px;
   font-size: rem-calc(14);
+
+  padding-top: 10px;
+
+  text-align: center;
+
+  color: $blue;
 }
