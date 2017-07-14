@@ -25,6 +25,7 @@ mixin main-list(data)
           - var cardControl = {state: "notlogined", time: ""}
           +card(cardControl)
 
-          a(href="#" title="").show-more Загрузить еще
+          //- a(href="#" title="").show-more Загрузить еще
+          +pagination()
 
         .tabs-content__item(class="jsTabsContentItem")

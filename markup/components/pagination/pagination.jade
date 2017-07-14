@@ -1,0 +1,12 @@
+mixin pagination(data)
+  ul.pagination
+    li(class="prev disabled")
+      span «
+    li.active
+      a(href="/site/index?page=1&amp;per-page=10" data-page="0") 1
+    li 
+      a(href="/site/index?page=2&amp;per-page=10" data-page="1") 2
+    li 
+      a(href="/site/index?page=2&amp;per-page=10" data-page="3") 3
+    li.next
+      a(href="/site/index?page=2&amp;per-page=10" data-page="1") »

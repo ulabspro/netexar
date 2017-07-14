@@ -1,0 +1,44 @@
+.politics-page {
+  &__wrapper {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @extend .wrapper;
+  }
+  h1 {
+    margin-bottom: 20px;
+
+    @extend .title;
+  }
+  strong {
+    font-family: $ProximaNova-Semibold;
+
+    display: block;
+
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  p {
+    > strong {
+      display: inline;
+
+      margin-left: 0;
+    }
+  }
+  ol,
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    text-decoration: none;
+
+    color: $red;
+
+    @include transition;
+    &:hover {
+      color: $blue + #111;
+    }
+  }
+}

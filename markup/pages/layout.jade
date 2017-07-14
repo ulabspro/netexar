@@ -33,6 +33,9 @@ html(class="no-js", lang="ru")
   include ../components/about-page/about-page
   include ../components/how-page/how-page
   include ../components/question-page/question-page
+  include ../components/pagination/pagination
+  include ../components/politics-page/politics-page
+  include ../components/terms-page/terms-page
   include ../components/footer/footer
 
   head
@@ -49,5 +52,5 @@ html(class="no-js", lang="ru")
     .mask
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
-    script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+    //- script(src="https://code.jquery.com/jquery-2.2.4.min.js")
     script(src='%=static=%js/main%=hash=%%=min=%.js')

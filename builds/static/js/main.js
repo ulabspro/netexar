@@ -6989,7 +6989,6 @@ $('.card-interest').click(function (e) {
 });
 
 
-
 $('.jsSaveFilterTrigger').click(function (e) {
   e.preventDefault();
   $(this).closest('.jsSaveFilter').find('.jsSaveFilterContent').slideToggle().find('.jsSaveFilterField').focus();
@@ -7001,6 +7000,8 @@ $('.jsDateBtn').click(function (e) {
   $(this).addClass('_active').siblings().removeClass('_active');
   $(this).closest('.jsDate').find('.jsDateValue').val(dateSel);
 });
+
+
 // Зададим стартовую дату
 var start = new Date(),
     prevDay,
@@ -7044,7 +7045,6 @@ $dp.datepicker(dpOptns);
 // console.log($dp.data('datepicker').el.value);
 // // $('.datepicker-here').data('datepicker').selectDate();
 // $dp.data('datepicker').selectDate(new Date(Date.parse($dp.data('datepicker').el.value)));
-
 
 
 
@@ -7175,6 +7175,8 @@ if ($('*').is('.jsChangeCostArea')) {
 
 
 
+
+
 $('.jsPush').click(function () {
   var $this = $(this);
 
@@ -7201,10 +7203,6 @@ $('.status').click(function () {
     $(this).addClass('_active').html('Статус: Занят');
   }
 });
-
-
-$('#phone_mask').inputmask({"mask": "+7 (999) 999-99-99", "autoUnmask": true, "removeMaskOnSubmit": true});
-
 $('.jsTabsControlItem').click(function () {
   var $this = $(this),
       indexTab = $this.index();
@@ -7213,3 +7211,8 @@ $('.jsTabsControlItem').click(function () {
 
   $this.closest('.jsTabs').find('.jsTabsContent').find('.jsTabsContentItem').eq(indexTab).addClass('_active').siblings().removeClass('_active');
 });
+
+
+
+
+$('#phone_mask').inputmask({"mask": "+7 (999) 999-99-99", "autoUnmask": true, "removeMaskOnSubmit": true});
