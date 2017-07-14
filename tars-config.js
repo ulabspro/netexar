@@ -25,7 +25,10 @@ module.exports = {
         "jsPathsToConcatBeforeModulesJs": [
             'node_modules/air-datepicker/dist/js/datepicker.js',
             'node_modules/jquery-sticky/jquery.sticky.js',
-            'node_modules/dropzone/dist/dropzone.js'
+            'node_modules/dropzone/dist/dropzone.js',
+            // 'node_modules/inputmask-multi/js/jquery.inputmask-multi.js'
+            'node_modules/jquery.inputmask/dist/jquery.inputmask.bundle.js',
+            'node_modules/jquery.kladr/jquery.kladr.min.js'
         ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],

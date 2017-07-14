@@ -1,8 +1,8 @@
 $('.jsCard').click(function () {
   var $this = $(this);
 
-  $this.addClass('_active');
-  $this.find('.jsCardHidden').addClass('_active');
+  $this.toggleClass('_active');
+  $this.find('.jsCardHidden').toggleClass('_active');
 });
 
 $('.jsParentReviewsControlOk').click(function (e) {

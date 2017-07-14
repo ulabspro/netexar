@@ -431,29 +431,31 @@
 .card-interest {
   line-height: 40px;
 
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  width: 220px;
-  height: 40px;
-  margin: 30px auto 0;
-  padding-left: 25px;
+  width: 30px;
+  height: 30px;
+
+  text-indent: -9999px;
 
   @extend .button;
   @extend .button._blue;
   &:before {
-    position: absolute;
-    left: 20px;
-
     content: '';
 
     @include bg($interest);
-    @include vertical-center;
+    @include absolute-center;
   }
   &._active {
     @extend .button._green;
     &:before {
       @include bg($interest_active);
     }
+  }
+  &:hover {
+
   }
 }
 

@@ -231,6 +231,7 @@ mixin cardPerformer(cardControl)
   - var modiffer = attributes.class || ''
   .card(class="#{modiffer} jsCard")
     .card__hovered Кликните для просмотра подробностей заказа
+    a(href="#" title="Сохранить в интересные").card-interest Сохранить в интересные
     .card-small
       .card-center
         .card-meta id4113222  |  Размещено: 14.03.2017  16:00
@@ -322,6 +323,3 @@ mixin cardPerformer(cardControl)
                 span Facebook не привязан
               .customer-card-confirm__item._vk
                 span Vkontakte не привязан
-
-      .card__row
-        a(href="#" title="").card-interest Сохранить в интересные

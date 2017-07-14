@@ -21,4 +21,6 @@ var areaSize = function() {
   $('.jsChangeCostArea').attr('size', textSize);
 }
 
-areaSize();
+if ($('*').is('.jsChangeCostArea')) {
+  areaSize();
+}

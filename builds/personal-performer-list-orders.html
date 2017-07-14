@@ -18,6 +18,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <meta property="og:title" content="default title">
         <meta property="og:title" content="">
         <meta property="og:url" content="">
@@ -138,14 +139,13 @@
                                         <input type="text" value="" placeholder="Дата размещения заказа" class="datepicker-here form-group__field">
                                     </div>
                                 </div>
-                                <div class="tabs-content__item jsTabsContentItem">
+                                <div class="tabs-content__item jsTabsContentItem jsDate">
                                     <div class="form-group">
-                                        <input type="text" value="" placeholder="Дата подачи машины" class="datepicker-here form-group__field">
+                                        <input type="text" value="" placeholder="Дата подачи машины" class="datepicker-here jsDateValue form-group__field">
                                     </div>
                                     <div class="filter-date-buttons">
-                                        <div class="filter-date-buttons__item _active jsToggle">Сегодня</div>
-                                        <div class="filter-date-buttons__item jsToggle">Завтра</div>
-                                        <div class="filter-date-buttons__item jsToggle">Все</div>
+                                        <div data-date="13.07.2017" class="filter-date-buttons__item jsDateBtn">Сегодня</div>
+                                        <div data-date="14.07.2017" class="filter-date-buttons__item jsDateBtn">Завтра</div>
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@
                             <div class="tabs-content__item jsTabsContentItem _active">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -417,13 +417,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -529,13 +527,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -641,13 +637,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -753,8 +747,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -763,7 +755,7 @@
                             <div class="tabs-content__item jsTabsContentItem">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -869,13 +861,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -981,13 +971,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1093,13 +1081,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1205,8 +1191,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -1215,7 +1199,7 @@
                             <div class="tabs-content__item jsTabsContentItem">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1321,13 +1305,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1433,13 +1415,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1545,13 +1525,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1657,8 +1635,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -1667,7 +1643,7 @@
                             <div class="tabs-content__item jsTabsContentItem">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1773,13 +1749,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1885,13 +1859,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -1997,13 +1969,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2109,8 +2079,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -2119,7 +2087,7 @@
                             <div class="tabs-content__item jsTabsContentItem">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2225,13 +2193,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2337,13 +2303,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2449,13 +2413,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2561,8 +2523,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -2571,7 +2531,7 @@
                             <div class="tabs-content__item jsTabsContentItem">
                                 <div class="list-orders__cards">
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2677,13 +2637,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2789,13 +2747,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -2901,13 +2857,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card _performer jsCard">
-                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div>
+                                        <div class="card__hovered">Кликните для просмотра подробностей заказа</div><a href="#" title="Сохранить в интересные" class="card-interest">Сохранить в интересные</a>
                                         <div class="card-small">
                                             <div class="card-center">
                                                 <div class="card-meta">id4113222 | Размещено: 14.03.2017 16:00</div>
@@ -3013,8 +2967,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row"><a href="#" title="" class="card-interest">Сохранить в интересные</a>
                                             </div>
                                         </div>
                                     </div><a href="#" title="" class="show-more">Загрузить еще</a>
@@ -3099,23 +3051,85 @@
                     <div class="modal-order-row _start">
                         <div class="modal-order-column _half">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field">
+                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field jsKladr">
                             </div>
                         </div>
                         <div class="modal-order-column _half">
-                            <div class="form-group _iconed _date">
-                                <input type="text" value="" placeholder="Дата и время подачи машины" class="datepicker-here form-group__field">
+                            <div class="modal-order-row _inside">
+                                <div class="modal-order-column _half">
+                                    <div class="form-group _iconed _date">
+                                        <input type="text" value="" placeholder="Дата подачи" data-timepicker="false" class="datepicker-here alt-datepicker form-group__field">
+                                    </div>
+                                </div>
+                                <div class="modal-order-column _fourth">
+                                    <div class="form-select _iconed _time">
+                                        <select class="form-select__field">
+                                            <option>C</option>
+                                            <option>00:00</option>
+                                            <option>01:00</option>
+                                            <option>02:00</option>
+                                            <option>03:00</option>
+                                            <option>04:00</option>
+                                            <option>05:00</option>
+                                            <option>06:00</option>
+                                            <option>07:00</option>
+                                            <option>08:00</option>
+                                            <option>09:00</option>
+                                            <option>10:00</option>
+                                            <option>11:00</option>
+                                            <option>12:00</option>
+                                            <option>13:00</option>
+                                            <option>14:00</option>
+                                            <option>15:00</option>
+                                            <option>16:00</option>
+                                            <option>17:00</option>
+                                            <option>18:00</option>
+                                            <option>19:00</option>
+                                            <option>20:00</option>
+                                            <option>21:00</option>
+                                            <option>22:00</option>
+                                            <option>23:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-order-column _fourth">
+                                    <div class="form-select _iconed _time">
+                                        <select class="form-select__field">
+                                            <option>До</option>
+                                            <option>00:00</option>
+                                            <option>01:00</option>
+                                            <option>02:00</option>
+                                            <option>03:00</option>
+                                            <option>04:00</option>
+                                            <option>05:00</option>
+                                            <option>06:00</option>
+                                            <option>07:00</option>
+                                            <option>08:00</option>
+                                            <option>09:00</option>
+                                            <option>10:00</option>
+                                            <option>11:00</option>
+                                            <option>12:00</option>
+                                            <option>13:00</option>
+                                            <option>14:00</option>
+                                            <option>15:00</option>
+                                            <option>16:00</option>
+                                            <option>17:00</option>
+                                            <option>18:00</option>
+                                            <option>19:00</option>
+                                            <option>20:00</option>
+                                            <option>21:00</option>
+                                            <option>22:00</option>
+                                            <option>23:00</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="modal-order-row">
-                        <div class="modal-order-column"><a href="#" title="" class="modal-order__add-address">Добавить промежуточный адрес</a>
                         </div>
                     </div>
                     <div class="modal-order-row _finish">
                         <div class="modal-order-column _half">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field">
+                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field jsKladr">
                             </div>
                         </div>
                         <div class="modal-order-column _half">

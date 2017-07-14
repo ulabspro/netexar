@@ -1,78 +1,222 @@
+// .top-baner {
+//   box-sizing: border-box;
+//   width: 100%;
+//   min-height: 600px;
+//   padding-top: 100px;
+
+//   background: url(%=static=%assets/top-baner/bg.jpg) no-repeat center;
+//   background-size: cover;
+//   &__wrapper {
+//     display: flex;
+
+//     @extend .wrapper;
+//     justify-content: center;
+//     align-items: flex-start;
+//   }
+//   &__title {
+//     font-family: $ProximaNova-Semibold;
+//     font-size: rem-calc(25);
+//     line-height: 33px;
+
+//     text-align: center;
+//     text-transform: uppercase;
+
+//     color: $white;
+//   }
+//   &__column {
+//     position: relative;
+
+//     width: 100%;
+//     max-width: 370px;
+//     margin: 0 50px;
+//     &:last-child {
+//       &:after {
+//         display: none;
+//       }
+//     }
+//     &:after {
+//       right: -55px;
+
+//       width: 1px;
+//       height: 120%;
+
+//       content: '';
+
+//       background-color: rgba($white, .3);
+
+//       @include vertical-center;
+//     }
+//   }
+
+// }
+
+// .top-baner-list {
+//   width: 100%;
+//   max-width: 230px;
+//   margin: 50px auto;
+//   &__item {
+//     font-family: $ProximaNova-Regular;
+//     font-size: rem-calc(19);
+
+//     position: relative;
+
+//     margin-bottom: 15px;
+//     padding-left: 33px;
+
+//     color: $white;
+//     &:before {
+//       left: 0;
+
+//       content: '';
+
+//       @include vertical-center;
+//       @include bg($check-baner);
+//     }
+//   }
+// }
+
 .top-baner {
   box-sizing: border-box;
   width: 100%;
   min-height: 600px;
-  padding-top: 100px;
 
   background: url(%=static=%assets/top-baner/bg.jpg) no-repeat center;
   background-size: cover;
   &__wrapper {
-    display: flex;
-
     @extend .wrapper;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  &__title {
-    font-family: $ProximaNova-Semibold;
-    font-size: rem-calc(25);
-    line-height: 33px;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: $white;
-  }
-  &__column {
-    position: relative;
-
-    width: 100%;
-    max-width: 370px;
-    margin: 0 50px;
-    &:last-child {
-      &:after {
-        display: none;
-      }
-    }
-    &:after {
-      right: -55px;
-
-      width: 1px;
-      height: 120%;
-
-      content: '';
-
-      background-color: rgba($white, .3);
-
-      @include vertical-center;
-    }
   }
   &__button {
     margin: auto;
   }
 }
 
-.top-baner-list {
+.top-baner-top {
+  display: flex;
+
+  box-sizing: border-box;
   width: 100%;
-  max-width: 230px;
-  margin: 50px auto;
-  &__item {
-    font-family: $ProximaNova-Regular;
-    font-size: rem-calc(19);
+  padding: 60px 36px 50px;
+
+  border-bottom: 2px solid rgba($white, .3);
+
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(25);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+  &__left,
+  &__right {
+    font-size: rem-calc(17);
+    line-height: rem-calc(28);
 
     position: relative;
 
-    margin-bottom: 15px;
-    padding-left: 33px;
-
     color: $white;
     &:before {
+      position: absolute;
       left: 0;
 
       content: '';
 
       @include vertical-center;
-      @include bg($check-baner);
+    }
+  }
+  &__left {
+    padding-left: 55px;
+    &:before {
+      @include bg($place-header);
+    }
+  }
+  &__right {
+    padding-left: 70px;
+    &:before {
+      @include bg($car-header);
+    }
+  }
+}
+
+.top-baner-steps {
+  display: flex;
+
+  padding-top: 75px;
+  padding-bottom: 65px;
+
+  justify-content: space-between;
+  align-items: stretch;
+  &__item {
+    font-size: rem-calc(19);
+
+    position: relative;
+
+    width: 100%;
+    max-width: 150px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+    &:before {
+      display: block;
+
+      margin: 0 auto 20px;
+
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      top: 20px;
+      right: -30px;
+
+      content: '';
+
+      @include bg($next-header);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    span {
+      font-size: rem-calc(14);
+
+      display: block;
+
+      padding-top: 10px;
+
+      text-transform: none;
+
+      opacity: .5;
+    }
+    &._step-1 {
+      &:before {
+        @include bg($step-1);
+      }
+    }
+    &._step-2 {
+      &:before {
+        @include bg($step-2);
+      }
+    }
+    &._step-3 {
+      &:before {
+        @include bg($step-3);
+      }
+    }
+    &._step-4 {
+      &:before {
+        @include bg($step-4);
+      }
+    }
+    &._step-5 {
+      &:before {
+        @include bg($step-5);
+      }
     }
   }
 }

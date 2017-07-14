@@ -7,8 +7,10 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "dropzone": "^4.3.0",
+    "inputmask-multi": "^1.2.0",
     "jquery": "^3.2.1",
-    "jquery-sticky": "^1.0.4"
+    "jquery-sticky": "^1.0.4",
+    "jquery.kladr": "^2.1.4"
   },
   "devDependencies": {
     "gulp": "^3.9.1"

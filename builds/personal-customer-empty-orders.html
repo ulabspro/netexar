@@ -18,6 +18,7 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <meta property="og:title" content="default title">
         <meta property="og:title" content="">
         <meta property="og:url" content="">
@@ -207,23 +208,85 @@
                     <div class="modal-order-row _start">
                         <div class="modal-order-column _half">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field">
+                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field jsKladr">
                             </div>
                         </div>
                         <div class="modal-order-column _half">
-                            <div class="form-group _iconed _date">
-                                <input type="text" value="" placeholder="Дата и время подачи машины" class="datepicker-here form-group__field">
+                            <div class="modal-order-row _inside">
+                                <div class="modal-order-column _half">
+                                    <div class="form-group _iconed _date">
+                                        <input type="text" value="" placeholder="Дата подачи" data-timepicker="false" class="datepicker-here alt-datepicker form-group__field">
+                                    </div>
+                                </div>
+                                <div class="modal-order-column _fourth">
+                                    <div class="form-select _iconed _time">
+                                        <select class="form-select__field">
+                                            <option>C</option>
+                                            <option>00:00</option>
+                                            <option>01:00</option>
+                                            <option>02:00</option>
+                                            <option>03:00</option>
+                                            <option>04:00</option>
+                                            <option>05:00</option>
+                                            <option>06:00</option>
+                                            <option>07:00</option>
+                                            <option>08:00</option>
+                                            <option>09:00</option>
+                                            <option>10:00</option>
+                                            <option>11:00</option>
+                                            <option>12:00</option>
+                                            <option>13:00</option>
+                                            <option>14:00</option>
+                                            <option>15:00</option>
+                                            <option>16:00</option>
+                                            <option>17:00</option>
+                                            <option>18:00</option>
+                                            <option>19:00</option>
+                                            <option>20:00</option>
+                                            <option>21:00</option>
+                                            <option>22:00</option>
+                                            <option>23:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-order-column _fourth">
+                                    <div class="form-select _iconed _time">
+                                        <select class="form-select__field">
+                                            <option>До</option>
+                                            <option>00:00</option>
+                                            <option>01:00</option>
+                                            <option>02:00</option>
+                                            <option>03:00</option>
+                                            <option>04:00</option>
+                                            <option>05:00</option>
+                                            <option>06:00</option>
+                                            <option>07:00</option>
+                                            <option>08:00</option>
+                                            <option>09:00</option>
+                                            <option>10:00</option>
+                                            <option>11:00</option>
+                                            <option>12:00</option>
+                                            <option>13:00</option>
+                                            <option>14:00</option>
+                                            <option>15:00</option>
+                                            <option>16:00</option>
+                                            <option>17:00</option>
+                                            <option>18:00</option>
+                                            <option>19:00</option>
+                                            <option>20:00</option>
+                                            <option>21:00</option>
+                                            <option>22:00</option>
+                                            <option>23:00</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="modal-order-row">
-                        <div class="modal-order-column"><a href="#" title="" class="modal-order__add-address">Добавить промежуточный адрес</a>
                         </div>
                     </div>
                     <div class="modal-order-row _finish">
                         <div class="modal-order-column _half">
                             <div class="form-group">
-                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field">
+                                <input type="text" value="" placeholder="Улица, дом, строение, корпус" class="form-group__field jsKladr">
                             </div>
                         </div>
                         <div class="modal-order-column _half">
@@ -486,6 +549,10 @@
                     </div>
                 </div>
             </form>
+        </div>
+        <div id="modal-map" class="modal modal-map">
+            <div class="modal__title">Выберите адрес</div>
+            <div id="map" class="modal-map-container"></div>
         </div>
         <div class="mask"></div>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

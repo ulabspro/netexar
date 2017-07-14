@@ -1,0 +1,53 @@
+.how-page-iconed-list {
+  display: flex;
+
+  margin-bottom: 25px;
+
+  justify-content: space-between;
+  align-items: stretch;
+  &__text {
+    font-size: rem-calc(18);
+    line-height: rem-calc(30);
+
+    padding-top: 10px;
+
+    text-align: center;
+  }
+  &__item {
+    font-family: $ProximaNova-Semibold;
+    font-size: rem-calc(18);
+
+    width: 25%;
+
+    text-align: center;
+
+    color: $gray;
+    &:before {
+      display: block;
+
+      margin: 0 auto 15px;
+
+      content: '';
+    }
+    &._route {
+      &:before {
+        @include bg($route);
+      }
+    }
+    &._cargo {
+      &:before {
+        @include bg($cargo);
+      }
+    }
+    &._auto {
+      &:before {
+        @include bg($auto);
+      }
+    }
+    &._pay {
+      &:before {
+        @include bg($pay);
+      }
+    }
+  }
+}

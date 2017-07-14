@@ -1,3 +1,10 @@
+mixin modal-map(data)
+  .modal.modal-map#modal-map
+    .modal__title Выберите адрес
+
+    .modal-map-container#map
+
+
 mixin modal-delete(data)
   .modal.modal-delete#modal-delete
     .modal__title Вы уверены, что хотите удалить свое предложение безвозвратно?
@@ -18,20 +25,40 @@ mixin modal-order(data)
         .modal-order-row._start
           .modal-order-column._half
             .form-group
-              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field
+              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field.jsKladr
           
           .modal-order-column._half
-            .form-group._iconed._date
-              input(type="text" value="" placeholder="Дата и время подачи машины" class="datepicker-here").form-group__field
+            .modal-order-row._inside
+              .modal-order-column._half
+                .form-group._iconed._date
+                  input(type="text" value="" placeholder="Дата подачи" class="datepicker-here alt-datepicker" data-timepicker="false").form-group__field
+          
+              .modal-order-column._fourth
+                .form-select._iconed._time
+                  select.form-select__field
+                    option C
+                    - for (var i = 0; i < 10; i++)
+                      option 0#{i}:00
+                    - for (var i = 10; i < 24; i++)
+                      option #{i}:00
 
-        .modal-order-row
-          .modal-order-column
-            a(href="#" title="").modal-order__add-address Добавить промежуточный адрес
+              .modal-order-column._fourth
+                .form-select._iconed._time
+                  select.form-select__field
+                    option До
+                    - for (var i = 0; i < 10; i++)
+                      option 0#{i}:00
+                    - for (var i = 10; i < 24; i++)
+                      option #{i}:00
+
+        //- .modal-order-row
+        //-   .modal-order-column
+        //-     a(href="#" title="").modal-order__add-address Добавить промежуточный адрес
 
         .modal-order-row._finish
           .modal-order-column._half
             .form-group
-              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field
+              input(type="text" value="" placeholder="Улица, дом, строение, корпус").form-group__field.jsKladr
           
           .modal-order-column._half
             .modal-order-row._inside

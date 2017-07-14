@@ -19,6 +19,7 @@
   &__logo {
     text-indent: -9999px;
 
-    @include bg($logo-header);
+    // @include bg($logo);
+    @include bg($logo-test);
   }
 }

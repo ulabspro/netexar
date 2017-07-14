@@ -9,13 +9,13 @@ mixin time-filter(data)
       .tabs-content__item(class="jsTabsContentItem")._active
         .form-group
           input(type="text" value="" placeholder="Дата размещения заказа" class="datepicker-here").form-group__field
-      .tabs-content__item(class="jsTabsContentItem")
+      .tabs-content__item(class="jsTabsContentItem jsDate")
         .form-group
-          input(type="text" value="" placeholder="Дата подачи машины" class="datepicker-here").form-group__field
+          input(type="text" value="" placeholder="Дата подачи машины" class="datepicker-here jsDateValue").form-group__field
         .filter-date-buttons
-          .filter-date-buttons__item._active(class="jsToggle") Сегодня
-          .filter-date-buttons__item(class="jsToggle") Завтра
-          .filter-date-buttons__item(class="jsToggle") Все 
+          .filter-date-buttons__item(class="jsDateBtn" data-date="13.07.2017") Сегодня
+          .filter-date-buttons__item(class="jsDateBtn" data-date="14.07.2017") Завтра
+          //- .filter-date-buttons__item(class="jsToggle") Все 
 
     input(type="submit" value="Показать").filter__submit
 

@@ -4,20 +4,40 @@
 		"selected_items":
 		[
 			[
-				"pad",
-				"padding-right"
-			],
-			[
-				"margin",
-				"margin-right"
+				"base",
+				"baseUrl"
 			],
 			[
 				"text",
-				"text-decoration"
+				"text-transform"
 			],
 			[
 				"marign",
-				"margin-right"
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"js",
+				"jsChangeCostArea"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"margn",
+				"margin-left"
 			],
 			[
 				"no",
@@ -80,10 +100,6 @@
 				"performer-success"
 			],
 			[
-				"js",
-				"jsChangeAccItemToggle"
-			],
-			[
 				"paddin",
 				"padding-left"
 			],
@@ -114,10 +130,6 @@
 			[
 				"card",
 				"card-order-row"
-			],
-			[
-				"inl",
-				"inline-block"
 			],
 			[
 				"Prox",
@@ -502,23 +514,29 @@
 			[
 				"cata",
 				"catalog-content-item"
-			],
-			[
-				"ta",
-				"table-cell"
-			],
-			[
-				"cli",
-				"clients-list__item"
-			],
-			[
-				"ho",
-				"how__item"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "markup/components/modals/modals.jade",
+			"settings":
+			{
+				"buffer_size": 11862,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/modals/modal-map.js",
+			"settings":
+			{
+				"buffer_size": 347,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -593,16 +611,36 @@
 	[
 		"/Users/extiser/git/1studio/netexar/markup",
 		"/Users/extiser/git/1studio/netexar/markup/components",
-		"/Users/extiser/git/1studio/netexar/markup/components/card",
-		"/Users/extiser/git/1studio/netexar/markup/components/list-orders",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals",
 		"/Users/extiser/git/1studio/netexar/markup/pages",
 		"/Users/extiser/git/1studio/netexar/markup/static",
 		"/Users/extiser/git/1studio/netexar/markup/static/images",
-		"/Users/extiser/git/1studio/netexar/markup/static/images/sprite",
 		"/Users/extiser/git/1studio/netexar/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/1studio/netexar/node_modules/jquery.kladr/examples/js/one_string.js",
+		"/Users/extiser/git/1studio/netexar/markup/pages/personal-customer-empty-orders.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/head/head.jade",
+		"/Users/extiser/MAMP/netexar/web/.htaccess",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.js",
+		"/Users/extiser/MAMP/netexar/.htaccess",
+		"/Users/extiser/MAMP/netexar/config/web.php",
+		"/Users/extiser/git/1studio/netexar/tars-config.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.js",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/modals/modal-delete.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.jade",
+		"/Users/extiser/git/1studio/netexar/markup/static/scss/common.scss",
+		"/Users/extiser/git/1studio/netexar/markup/pages/order-page-customer.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/order-page-perfomer.jade",
+		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.scss",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer.jade",
+		"/Users/extiser/git/1studio/netexar/markup/components/order-page-customer-content/order-page-content.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/header/header.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/login.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/login.jade",
@@ -611,11 +649,9 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/header/header.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/modals/modals.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/status/status.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/status/status.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/status/status.scss",
-		"/Users/extiser/git/1studio/netexar/markup/pages/layout.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card/card.js",
 		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs-control.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/list-orders/list-orders.jade",
@@ -627,10 +663,8 @@
 		"/Users/extiser/git/netexar/builds/static/js/main.js",
 		"/Users/extiser/git/netexar/tars-config.js",
 		"/Users/extiser/git/1studio/netexar/markup/pages/login.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/userboard.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/form-group.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/jsExtraRadio.js",
-		"/Users/extiser/git/1studio/netexar/tars-config.js",
 		"/Users/extiser/git/netexar/package.json",
 		"/Users/extiser/git/1studio/netexar/markup/components/login-form/login-form.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/gui-dropzone/dropzone.js",
@@ -664,15 +698,10 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-attention/order-attention.js",
-		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/selected-performer/selected-performer.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/selected-performer/selected-performer.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/order-comments/order-comments.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/order-page-content/order-page-content.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/card-order/card-order.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer-success.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/order-customer/order-customer.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/account-success/account-success.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/account-success/account-success.jade",
@@ -710,7 +739,6 @@
 		"/Users/extiser/git/1studio/netexar/node_modules/air-datepicker/src/sass/_datepicker-config.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/push-notifications/push-notifications.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/push-notifications/push-notifications.js",
-		"/Users/extiser/git/1studio/netexar/markup/static/scss/common.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/footer/footer.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.scss",
 		"/Users/extiser/git/1studio/netexar/markup/components/empty-orders/empty-orders.scss",
@@ -718,19 +746,7 @@
 		"/Users/extiser/git/1studio/netexar/markup/components/warning-pushes/warning-pushes.jade",
 		"/Users/extiser/git/1studio/netexar/markup/pages/thanks.jade",
 		"/Users/extiser/git/1studio/netexar/markup/components/login/logined.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/gui-form/sms-input.js",
-		"/Users/extiser/git/1studio/netexar/markup/pages/check-number.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/check-number-form.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/customer-registration-form.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/userboard/.customer-registration-form.scss.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/registration-form/registration-form.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/card/card-login.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/footer/footer.jade",
-		"/Users/extiser/git/1studio/netexar/markup/pages/index.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/main-list/main-list.scss",
-		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.jade",
-		"/Users/extiser/git/1studio/netexar/markup/components/jsHint/jsHint.scss"
+		"/Users/extiser/git/1studio/netexar/markup/components/tabs/tabs.jade"
 	],
 	"find":
 	{
@@ -750,6 +766,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"1",
+			"baseUrl",
+			"base",
 			"hint",
 			".dropzone",
 			"performer-passport-form",
@@ -874,10 +893,7 @@
 			"migrate",
 			"jquery",
 			".show_me_the_map",
-			"jquery",
-			"uslugi3",
-			"top-orange",
-			"sidebar"
+			"jquery"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1023,8 +1039,69 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "markup/components/modals/modals.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								892,
+								884
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2363.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/modals/modal-map.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
