@@ -9,6 +9,9 @@
   box-shadow: 0 3px 3px rgba($black, .05);
 
   @include transition;
+  @media screen and (max-width: 760px) {
+    margin-top: 30px;
+  }
   &:hover {
     cursor: pointer;
 
@@ -65,9 +68,17 @@
 
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 760px) {
+    padding: 20px;
+
+    flex-wrap: wrap;
+  }
 }
 
 .card-map {
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
   &__zoom {
     font-size: rem-calc(11);
 
@@ -107,6 +118,9 @@
   width: 100%;
   max-width: 460px;
   padding-left: 40px;
+  @media screen and (max-width: 760px) {
+    padding-left: 0;
+  }
 }
 
 .card-meta {
@@ -164,6 +178,9 @@
   line-height: rem-calc(21);
 
   color: #7b7b7b;
+  @media screen and (max-width: 760px) {
+    margin-bottom: 20px;
+  }
 }
 
 .card-control {
@@ -171,6 +188,11 @@
   width: 100%;
   max-width: 185px;
   padding-left: 20px;
+  @media screen and (max-width: 760px) {
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
 }
 
 .card-express {
@@ -230,6 +252,9 @@
 
   @extend .button;
   @extend .button._green;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
 }
 
 .card-count-answers {
@@ -453,9 +478,6 @@
     &:before {
       @include bg($interest_active);
     }
-  }
-  &:hover {
-
   }
 }
 

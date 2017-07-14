@@ -1,4 +1,7 @@
 .top-menu {
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
   &__item {
     font-family: $ProximaNova-Regular;
     font-size: rem-calc(13);

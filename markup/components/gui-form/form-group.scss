@@ -45,6 +45,9 @@
   &._check-number {
     width: 60%;
     margin: 0 10px;
+    @media screen and (max-width: 760px) {
+      width: 100%;
+    }
     .form-group__field {
       font-family: $ProximaNova-Semibold;
       font-size: rem-calc(20);
@@ -85,32 +88,7 @@
       box-shadow: 0 0 3px $red;
     }
     .help-block {
-      font-size: rem-calc(13);
-
-      position: absolute;
-      right: -270px;
-
-      width: 240px;
-      padding: 10px;
-
-      color: $red;
-      border-radius: 3px;
-      background-color: $white;
-      box-shadow: 0 0 3px rgba($black, .26);
-
-      @include vertical-center;
-      &:before {
-        position: absolute;
-        left: -5px;
-
-        content: '';
-
-        border-top: 5px solid transparent;
-        border-right: 5px solid rgba($black, .16);
-        border-bottom: 5px solid transparent;
-
-        @include vertical-center;
-      }
+      display: none !important;
     }
   }
 }

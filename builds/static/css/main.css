@@ -452,7 +452,13 @@ blockquote {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.11);
 }
 
-.button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .card-interest, .account-success-item__button, .user-settings-personal__success-button, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .order-comments-answer-control__delete, .save-cost, .user-settings-save, .form-registration-link {
+@media screen and (max-width: 760px) {
+  .gr-button._big, ._big.card-login-info__button, ._big.form-reg-submit {
+    width: 90%;
+  }
+}
+
+.button, .account-success-item__button, .user-settings-personal__success-button, .card-response, .card-cancel__button, .card-finished-buttons__control, .card-finished-reviews-buttons__control, .card-interest, .filter__submit, .save-filter__button, .save-filter__submit, .saved-filters__item, .modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, .modal-order__dismiss, .modal-passport__submit, .modal__close-button, .order-comments__submit, .order-comments-answer-control__choose, .order-comments-answer-control__delete, .save-cost, .user-settings-save, .form-registration-link {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -462,39 +468,39 @@ blockquote {
   transition: all 0.2s ease-in-out;
 }
 
-.button._green, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, ._green.card-interest, .card-interest._active, .account-success-item__button, .user-settings-personal__success-button, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, ._green.modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.order-comments-answer-control__delete, .save-cost, ._green.user-settings-save, ._green.form-registration-link {
+.button._green, .account-success-item__button, .user-settings-personal__success-button, .card-response, ._green.card-cancel__button, ._green.card-finished-buttons__control, .card-finished-buttons__control._ok, ._green.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._ok, ._green.card-interest, .card-interest._active, .filter__submit, ._green.save-filter__button, ._green.save-filter__submit, .saved-filters__item, ._green.modal-delete-buttons__yes, .modal-delete-buttons__no, .modal-order__submit, ._green.modal-order__dismiss, .modal-passport__submit, .modal__close-button, ._green.order-comments__submit, .order-comments-answer-control__choose, ._green.order-comments-answer-control__delete, .save-cost, ._green.user-settings-save, ._green.form-registration-link {
   color: #fff;
   background-color: #b0cb1f;
 }
 
-.button._green:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, ._green.card-interest:hover, .card-interest._active:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, ._green.modal-delete-buttons__yes:hover, .modal-delete-buttons__no:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.order-comments-answer-control__delete:hover, .save-cost:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
+.button._green:hover, .account-success-item__button:hover, .user-settings-personal__success-button:hover, .card-response:hover, ._green.card-cancel__button:hover, ._green.card-finished-buttons__control:hover, .card-finished-buttons__control._ok:hover, ._green.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._ok:hover, ._green.card-interest:hover, .card-interest._active:hover, .filter__submit:hover, ._green.save-filter__button:hover, ._green.save-filter__submit:hover, .saved-filters__item:hover, ._green.modal-delete-buttons__yes:hover, .modal-delete-buttons__no:hover, .modal-order__submit:hover, ._green.modal-order__dismiss:hover, .modal-passport__submit:hover, .modal__close-button:hover, ._green.order-comments__submit:hover, .order-comments-answer-control__choose:hover, ._green.order-comments-answer-control__delete:hover, .save-cost:hover, ._green.user-settings-save:hover, ._green.form-registration-link:hover {
   background-color: #c1dc30;
 }
 
-.button._blue, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, .card-interest, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-delete-buttons__yes, ._blue.modal-delete-buttons__no, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, ._blue.order-comments-answer-control__delete, ._blue.save-cost, .user-settings-save, ._blue.form-registration-link {
+.button._blue, ._blue.account-success-item__button, ._blue.user-settings-personal__success-button, ._blue.card-response, ._blue.card-cancel__button, ._blue.card-finished-buttons__control, ._blue.card-finished-reviews-buttons__control, .card-interest, ._blue.filter__submit, ._blue.save-filter__button, .save-filter__submit, ._blue.saved-filters__item, ._blue.modal-delete-buttons__yes, ._blue.modal-delete-buttons__no, ._blue.modal-order__submit, ._blue.modal-order__dismiss, ._blue.modal-passport__submit, ._blue.modal__close-button, .order-comments__submit, ._blue.order-comments-answer-control__choose, ._blue.order-comments-answer-control__delete, ._blue.save-cost, .user-settings-save, ._blue.form-registration-link {
   color: #fff;
   background-color: #076681;
 }
 
-.button._blue:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, .card-interest:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-delete-buttons__yes:hover, ._blue.modal-delete-buttons__no:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, ._blue.order-comments-answer-control__delete:hover, ._blue.save-cost:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
+.button._blue:hover, ._blue.account-success-item__button:hover, ._blue.user-settings-personal__success-button:hover, ._blue.card-response:hover, ._blue.card-cancel__button:hover, ._blue.card-finished-buttons__control:hover, ._blue.card-finished-reviews-buttons__control:hover, .card-interest:hover, ._blue.filter__submit:hover, ._blue.save-filter__button:hover, .save-filter__submit:hover, ._blue.saved-filters__item:hover, ._blue.modal-delete-buttons__yes:hover, ._blue.modal-delete-buttons__no:hover, ._blue.modal-order__submit:hover, ._blue.modal-order__dismiss:hover, ._blue.modal-passport__submit:hover, ._blue.modal__close-button:hover, .order-comments__submit:hover, ._blue.order-comments-answer-control__choose:hover, ._blue.order-comments-answer-control__delete:hover, ._blue.save-cost:hover, .user-settings-save:hover, ._blue.form-registration-link:hover {
   background-color: #187792;
 }
 
-.button._gray, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.card-interest, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-delete-buttons__yes, ._gray.modal-delete-buttons__no, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.order-comments-answer-control__delete, ._gray.save-cost, ._gray.user-settings-save, .form-registration-link {
+.button._gray, ._gray.account-success-item__button, ._gray.user-settings-personal__success-button, ._gray.card-response, ._gray.card-cancel__button, ._gray.card-finished-buttons__control, ._gray.card-finished-reviews-buttons__control, ._gray.card-interest, ._gray.filter__submit, .save-filter__button, ._gray.save-filter__submit, ._gray.saved-filters__item, ._gray.modal-delete-buttons__yes, ._gray.modal-delete-buttons__no, ._gray.modal-order__submit, .modal-order__dismiss, ._gray.modal-passport__submit, ._gray.modal__close-button, ._gray.order-comments__submit, ._gray.order-comments-answer-control__choose, ._gray.order-comments-answer-control__delete, ._gray.save-cost, ._gray.user-settings-save, .form-registration-link {
   color: #fff;
   background-color: #e0e0e0;
 }
 
-.button._gray:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.card-interest:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-delete-buttons__yes:hover, ._gray.modal-delete-buttons__no:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.order-comments-answer-control__delete:hover, ._gray.save-cost:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
+.button._gray:hover, ._gray.account-success-item__button:hover, ._gray.user-settings-personal__success-button:hover, ._gray.card-response:hover, ._gray.card-cancel__button:hover, ._gray.card-finished-buttons__control:hover, ._gray.card-finished-reviews-buttons__control:hover, ._gray.card-interest:hover, ._gray.filter__submit:hover, .save-filter__button:hover, ._gray.save-filter__submit:hover, ._gray.saved-filters__item:hover, ._gray.modal-delete-buttons__yes:hover, ._gray.modal-delete-buttons__no:hover, ._gray.modal-order__submit:hover, .modal-order__dismiss:hover, ._gray.modal-passport__submit:hover, ._gray.modal__close-button:hover, ._gray.order-comments__submit:hover, ._gray.order-comments-answer-control__choose:hover, ._gray.order-comments-answer-control__delete:hover, ._gray.save-cost:hover, ._gray.user-settings-save:hover, .form-registration-link:hover {
   background-color: #cfcfcf;
 }
 
-.button._red, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.card-interest, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, .modal-delete-buttons__yes, ._red.modal-delete-buttons__no, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, .order-comments-answer-control__delete, ._red.save-cost, ._red.user-settings-save, ._red.form-registration-link {
+.button._red, ._red.account-success-item__button, ._red.user-settings-personal__success-button, ._red.card-response, .card-cancel__button, ._red.card-finished-buttons__control, .card-finished-buttons__control._not, ._red.card-finished-reviews-buttons__control, .card-finished-reviews-buttons__control._not, ._red.card-interest, ._red.filter__submit, ._red.save-filter__button, ._red.save-filter__submit, ._red.saved-filters__item, .modal-delete-buttons__yes, ._red.modal-delete-buttons__no, ._red.modal-order__submit, ._red.modal-order__dismiss, ._red.modal-passport__submit, ._red.modal__close-button, ._red.order-comments__submit, ._red.order-comments-answer-control__choose, .order-comments-answer-control__delete, ._red.save-cost, ._red.user-settings-save, ._red.form-registration-link {
   color: #fff;
   background-color: #f43333;
 }
 
-.button._red:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.card-interest:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, .modal-delete-buttons__yes:hover, ._red.modal-delete-buttons__no:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, .order-comments-answer-control__delete:hover, ._red.save-cost:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
+.button._red:hover, ._red.account-success-item__button:hover, ._red.user-settings-personal__success-button:hover, ._red.card-response:hover, .card-cancel__button:hover, ._red.card-finished-buttons__control:hover, .card-finished-buttons__control._not:hover, ._red.card-finished-reviews-buttons__control:hover, .card-finished-reviews-buttons__control._not:hover, ._red.card-interest:hover, ._red.filter__submit:hover, ._red.save-filter__button:hover, ._red.save-filter__submit:hover, ._red.saved-filters__item:hover, .modal-delete-buttons__yes:hover, ._red.modal-delete-buttons__no:hover, ._red.modal-order__submit:hover, ._red.modal-order__dismiss:hover, ._red.modal-passport__submit:hover, ._red.modal__close-button:hover, ._red.order-comments__submit:hover, ._red.order-comments-answer-control__choose:hover, .order-comments-answer-control__delete:hover, ._red.save-cost:hover, ._red.user-settings-save:hover, ._red.form-registration-link:hover {
   background-color: #ff4444;
 }
 
@@ -736,10 +742,23 @@ body._active {
   background-size: cover;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-top {
+    padding: 20px 15px;
+  }
+}
+
 .about-page-top p {
   font-size: 1.125rem;
   line-height: 1.875rem;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .about-page-top p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 .about-page-top a {
@@ -760,6 +779,13 @@ body._active {
   padding: 60px 0 30px;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-list {
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+}
+
 .about-page-list:after {
   bottom: 0;
   width: 60%;
@@ -778,6 +804,14 @@ body._active {
   text-align: center;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-list h2 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+
 .about-page-list-numeral {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,6 +826,14 @@ body._active {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-list-numeral {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .about-page-list-numeral__item {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
@@ -803,6 +845,12 @@ body._active {
   margin-bottom: 30px;
   padding-left: 75px;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .about-page-list-numeral__item {
+    max-width: 90%;
+  }
 }
 
 .about-page-list-numeral__item span {
@@ -846,12 +894,27 @@ body._active {
   text-indent: 0;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-who ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .about-page-who ul li {
   font-size: 1.125rem;
   line-height: 1.875rem;
   width: 48%;
   margin: 15px 0;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .about-page-who ul li {
+    width: 90%;
+    margin: 10px;
+  }
 }
 
 .about-page-who ul li:before {
@@ -869,12 +932,26 @@ body._active {
   background-size: cover;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-advantages {
+    margin-top: 30px;
+    padding: 30px 0;
+  }
+}
+
 .about-page-advantages h2,
 .about-page-advantages h3 {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.875rem;
   margin: 0;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .about-page-advantages h2,
+  .about-page-advantages h3 {
+    font-size: 22px;
+  }
 }
 
 .about-page-advantages h3 {
@@ -884,12 +961,26 @@ body._active {
   margin: 20px auto 0;
 }
 
+@media screen and (max-width: 760px) {
+  .about-page-advantages h3 {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
 .about-page-advantages__item {
   font-size: 1.125rem;
   line-height: 1.875rem;
   width: 40%;
   margin: 35px auto;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .about-page-advantages__item {
+    width: 90%;
+  }
 }
 
 .about-page-advantages__item span {
@@ -905,6 +996,124 @@ body._active {
   background-color: #fff;
 }
 
+.account-success {
+  margin-bottom: 30px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.account-success__title {
+  font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
+  color: #404040;
+}
+
+.account-success__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-success-item, .order-customer-success-item, .selected-performer-card-contacts__item {
+  font-size: 0.875rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  padding-left: 30px;
+  color: #6c6c6c;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-success-item:last-child, .order-customer-success-item:last-child, .selected-performer-card-contacts__item:last-child {
+  margin-right: 0;
+}
+
+.account-success-item:before, .order-customer-success-item:before, .selected-performer-card-contacts__item:before {
+  left: 0;
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.account-success-item._phone:before, ._phone.order-customer-success-item:before, ._phone.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -388px -66px;
+  width: 17px;
+  height: 17px;
+  background-size: 468px, 366px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._email:before, ._email.order-customer-success-item:before, ._email.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -411px -266px;
+  width: 19px;
+  height: 19px;
+  background-size: 468px, 366px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._fb:before, ._fb.order-customer-success-item:before, ._fb.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -457px -176px;
+  width: 11px;
+  height: 20px;
+  background-size: 468px, 366px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item._vk:before, ._vk.order-customer-success-item:before, ._vk.selected-performer-card-contacts__item:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -433px -334px;
+  width: 23px;
+  height: 13px;
+  background-size: 468px, 366px;
+  background-repeat: no-repeat;
+}
+
+.account-success-item__button, .user-settings-personal__success-button {
+  font-size: 0.6875rem;
+  line-height: 27px;
+  position: relative;
+  box-sizing: border-box;
+  width: 103px;
+  height: 27px;
+  margin-left: 15px;
+  padding-left: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+.account-success-item__button:after, .user-settings-personal__success-button:after {
+  font-size: 16px;
+  position: absolute;
+  right: 15px;
+  content: '+';
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .card-full {
   display: none;
   margin: 0 40px;
@@ -916,6 +1125,15 @@ body._active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media screen and (max-width: 760px) {
+  .card-full {
+    margin: 0;
+    padding: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .card-full._active {
@@ -947,9 +1165,26 @@ body._active {
   border-right: 1px solid #f0f0f0;
 }
 
+@media screen and (max-width: 760px) {
+  .card-column {
+    max-width: 100%;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
 .card-column:last-child {
   margin-right: 0;
   border-right: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .card-column:last-child {
+    border-bottom: 0;
+  }
 }
 
 .card-column__title {
@@ -1332,6 +1567,12 @@ body._active {
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 760px) {
+  .card {
+    margin-top: 30px;
+  }
+}
+
 .card:hover {
   cursor: pointer;
   border: 1px solid rgba(142, 142, 142, 0.44);
@@ -1389,6 +1630,20 @@ body._active {
           align-items: center;
 }
 
+@media screen and (max-width: 760px) {
+  .card-small {
+    padding: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .card-map {
+    display: none;
+  }
+}
+
 .card-map__zoom {
   font-size: 0.6875rem;
   display: block;
@@ -1425,6 +1680,12 @@ body._active {
   width: 100%;
   max-width: 460px;
   padding-left: 40px;
+}
+
+@media screen and (max-width: 760px) {
+  .card-center {
+    padding-left: 0;
+  }
 }
 
 .card-meta {
@@ -1497,11 +1758,25 @@ body._active {
   color: #7b7b7b;
 }
 
+@media screen and (max-width: 760px) {
+  .card-text {
+    margin-bottom: 20px;
+  }
+}
+
 .card-control {
   box-sizing: border-box;
   width: 100%;
   max-width: 185px;
   padding-left: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .card-control {
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
 }
 
 .card-express {
@@ -1559,6 +1834,12 @@ body._active {
   display: block;
   width: 165px;
   height: 55px;
+}
+
+@media screen and (max-width: 760px) {
+  .card-response {
+    width: 100%;
+  }
 }
 
 .card-count-answers {
@@ -1791,124 +2072,6 @@ body._active {
   color: #076681;
 }
 
-.account-success {
-  margin-bottom: 30px;
-  padding: 40px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.account-success__title {
-  font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
-  font-size: 0.9375rem;
-  line-height: 1.0625rem;
-  color: #404040;
-}
-
-.account-success__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 23px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account-success-item, .order-customer-success-item, .selected-performer-card-contacts__item {
-  font-size: 0.875rem;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 30px;
-  padding-left: 30px;
-  color: #6c6c6c;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account-success-item:last-child, .order-customer-success-item:last-child, .selected-performer-card-contacts__item:last-child {
-  margin-right: 0;
-}
-
-.account-success-item:before, .order-customer-success-item:before, .selected-performer-card-contacts__item:before {
-  left: 0;
-  content: '';
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.account-success-item._phone:before, ._phone.order-customer-success-item:before, ._phone.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -388px -66px;
-  width: 17px;
-  height: 17px;
-  background-size: 468px, 366px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._email:before, ._email.order-customer-success-item:before, ._email.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -411px -266px;
-  width: 19px;
-  height: 19px;
-  background-size: 468px, 366px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._fb:before, ._fb.order-customer-success-item:before, ._fb.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -457px -176px;
-  width: 11px;
-  height: 20px;
-  background-size: 468px, 366px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item._vk:before, ._vk.order-customer-success-item:before, ._vk.selected-performer-card-contacts__item:before {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -433px -334px;
-  width: 23px;
-  height: 13px;
-  background-size: 468px, 366px;
-  background-repeat: no-repeat;
-}
-
-.account-success-item__button, .user-settings-personal__success-button {
-  font-size: 0.6875rem;
-  line-height: 27px;
-  position: relative;
-  box-sizing: border-box;
-  width: 103px;
-  height: 27px;
-  margin-left: 15px;
-  padding-left: 15px;
-  text-align: left;
-  color: #fff;
-}
-
-.account-success-item__button:after, .user-settings-personal__success-button:after {
-  font-size: 16px;
-  position: absolute;
-  right: 15px;
-  content: '+';
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .card-order {
   box-sizing: border-box;
   width: 100%;
@@ -1917,6 +2080,12 @@ body._active {
   border: 1px solid #e9e9e9;
   background: rgba(249, 249, 249, 0.5);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 760px) {
+  .card-order {
+    padding: 20px;
+  }
 }
 
 .card-order__meta {
@@ -1944,6 +2113,12 @@ body._active {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 760px) {
+  .card-order__way:before {
+    display: none;
+  }
+}
+
 .card-order-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1954,6 +2129,12 @@ body._active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .card-order-row {
+    display: block;
+  }
 }
 
 .card-order-row._center {
@@ -1977,14 +2158,34 @@ body._active {
   padding-left: 50px;
 }
 
+@media screen and (max-width: 760px) {
+  .card-order-row__left {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
 .card-order-row__right {
   width: 100%;
   max-width: 250px;
 }
 
+@media screen and (max-width: 760px) {
+  .card-order-row__right {
+    max-width: 100%;
+  }
+}
+
 .card-order-payment {
   width: 100%;
   padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .card-order-payment {
+    padding: 10px 0 !important;
+    text-align: left !important;
+  }
 }
 
 .card-order-info {
@@ -1998,6 +2199,13 @@ body._active {
 
 .card-order-map {
   position: relative;
+}
+
+@media screen and (max-width: 760px) {
+  .card-order-map img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .card-order-map__layout:before {
@@ -2237,6 +2445,13 @@ body._active {
   background: #042f3b;
 }
 
+@media screen and (max-width: 760px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
 .footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2249,22 +2464,63 @@ body._active {
           align-items: flex-start;
 }
 
+@media screen and (max-width: 760px) {
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .footer__row._top {
   margin-bottom: 45px;
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(6, 104, 132, 0.1);
 }
 
+@media screen and (max-width: 760px) {
+  .footer__row._top {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .footer__column._first {
   width: 355px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__column._first {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .footer__column._second {
   width: 280px;
 }
 
+@media screen and (max-width: 760px) {
+  .footer__column._second {
+    width: 90%;
+    margin: 20px auto 0;
+  }
+}
+
 .footer__column._third {
   width: 210px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__column._third {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer br {
+    display: none;
+  }
 }
 
 .footer__logo {
@@ -2277,10 +2533,22 @@ body._active {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 760px) {
+  .footer__logo {
+    margin: 0 auto 20px;
+  }
+}
+
 .footer__copyright, .footer__text, .footer-social__title {
   font-size: 0.75rem;
   line-height: 1.25rem;
   color: #c5c3c3;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__copyright, .footer__text, .footer-social__title {
+    text-align: center;
+  }
 }
 
 .footer__copyright p:first-child, .footer__text p:first-child, .footer-social__title p:first-child {
@@ -2378,6 +2646,12 @@ body._active {
   border-bottom: 1px solid #b0cb1f;
 }
 
+@media screen and (max-width: 760px) {
+  .footer-menu {
+    text-align: center;
+  }
+}
+
 .footer-menu__item {
   font-size: 0.875rem;
   margin-bottom: 8px;
@@ -2395,8 +2669,26 @@ body._active {
   border-bottom: 1px solid #fff;
 }
 
+@media screen and (max-width: 760px) {
+  .footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer-social__title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer-social__title {
+    display: none;
+  }
 }
 
 .footer-social__links {
@@ -2466,6 +2758,12 @@ body._active {
   font-size: 0.75rem;
   margin-top: 30px;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .footer-created {
+    text-align: center;
+  }
 }
 
 .footer-created a {
@@ -3922,6 +4220,12 @@ body._active {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 760px) {
+  .form-group._check-number, ._check-number.form-select {
+    width: 100%;
+  }
+}
+
 .form-group._check-number .form-group__field, ._check-number.form-select .form-group__field, .form-group._check-number .save-filter__field, ._check-number.form-select .save-filter__field, .form-group._check-number .form-select__field, ._check-number.form-select .form-select__field {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
@@ -3962,32 +4266,7 @@ body._active {
 }
 
 .form-group.has-error .help-block, .has-error.form-select .help-block {
-  font-size: 0.8125rem;
-  position: absolute;
-  right: -270px;
-  width: 240px;
-  padding: 10px;
-  color: #f43333;
-  border-radius: 3px;
-  background-color: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.form-group.has-error .help-block:before, .has-error.form-select .help-block:before {
-  position: absolute;
-  left: -5px;
-  content: '';
-  border-top: 5px solid transparent;
-  border-right: 5px solid rgba(0, 0, 0, 0.16);
-  border-bottom: 5px solid transparent;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  display: none !important;
 }
 
 .jsChangeAccItemToggle {
@@ -4072,11 +4351,26 @@ body._active {
   margin: 30px auto;
 }
 
+@media screen and (max-width: 760px) {
+  .form-reg-submit {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
 .form-privacy, .form-forget, .modal__privacy, .modal__text {
   font-size: 0.875rem;
   line-height: 1.125rem;
   text-align: center;
   color: #958d8d;
+}
+
+@media screen and (max-width: 760px) {
+  .form-privacy, .form-forget, .modal__privacy, .modal__text {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    margin-top: 15px;
+  }
 }
 
 .form-privacy a, .form-forget a, .modal__privacy a, .modal__text a {
@@ -4158,6 +4452,12 @@ body._active {
   box-shadow: none;
 }
 
+@media screen and (max-width: 760px) {
+  .header._inside {
+    margin-bottom: 0;
+  }
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4170,6 +4470,16 @@ body._active {
           align-items: center;
 }
 
+@media screen and (max-width: 760px) {
+  .header__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header__logo {
   text-indent: -9999px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
@@ -4178,6 +4488,12 @@ body._active {
   height: 40px;
   background-size: 468px, 366px;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 760px) {
+  .header__logo {
+    margin-bottom: 10px;
+  }
 }
 
 .how-page-iconed-list {
@@ -4193,11 +4509,29 @@ body._active {
           align-items: stretch;
 }
 
+@media screen and (max-width: 760px) {
+  .how-page-iconed-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .how-page-iconed-list__text {
   font-size: 1.125rem;
   line-height: 1.875rem;
   padding-top: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .how-page-iconed-list__text {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    padding: 0 15px;
+  }
 }
 
 .how-page-iconed-list__item {
@@ -4206,6 +4540,13 @@ body._active {
   width: 25%;
   text-align: center;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .how-page-iconed-list__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .how-page-iconed-list__item:before {
@@ -4488,6 +4829,12 @@ body._active {
   margin-bottom: 50px;
   padding-top: 40px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 760px) {
+  .main-list__top {
+    display: none;
+  }
 }
 
 .main-list__wrapper {
@@ -4971,12 +5318,25 @@ body._active {
   padding-top: 40px;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+}
+
 .order-comments__title {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.75rem;
   position: relative;
   margin-bottom: 50px;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .order-comments__title {
+    font-size: 1.375rem;
+  }
 }
 
 .order-comments__title span {
@@ -5033,6 +5393,12 @@ body._active {
   margin-left: 70px;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-myform._inside {
+    margin-left: 10px;
+  }
+}
+
 .order-comments-myform._inside:after, .order-comments-myform._inside:before {
   display: none;
 }
@@ -5061,6 +5427,12 @@ body._active {
   max-width: 55px;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-myform__photo {
+    display: none;
+  }
+}
+
 .order-comments-myform__msg {
   width: 100%;
   max-width: 610px;
@@ -5087,6 +5459,14 @@ body._active {
   margin-left: 70px;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-answer._inside {
+    margin-left: 10px;
+    padding-top: 15px;
+    border-left: 2px solid #e9e9e9;
+  }
+}
+
 .order-comments-answer._inside .order-comments-answer__photo {
   max-width: 30px;
 }
@@ -5107,6 +5487,12 @@ body._active {
   width: 100%;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-answer__photo {
+    display: none;
+  }
+}
+
 .order-comments-answer__content {
   box-sizing: border-box;
   width: 100%;
@@ -5114,6 +5500,12 @@ body._active {
   padding: 20px;
   border: 1px solid #e9e9e9;
   background: rgba(249, 249, 249, 0.5);
+}
+
+@media screen and (max-width: 760px) {
+  .order-comments-answer__content {
+    padding: 15px;
+  }
 }
 
 .order-comments-answer__top {
@@ -5128,10 +5520,24 @@ body._active {
           align-items: flex-start;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-answer__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .order-comments-answer__time {
   font-size: 0.6875rem;
   position: relative;
   color: #a9a9a9;
+}
+
+@media screen and (max-width: 760px) {
+  .order-comments-answer__time {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }
 
 .order-comments-answer__time:before {
@@ -5196,6 +5602,12 @@ body._active {
   background-color: #b0cb1f;
 }
 
+@media screen and (max-width: 760px) {
+  .order-comments-answer-user__name span {
+    margin-left: 5px;
+  }
+}
+
 .order-comments-answer-user__name._customer span {
   background-color: #076681;
 }
@@ -5203,6 +5615,12 @@ body._active {
 .order-comments-answer-user__status {
   position: relative;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 760px) {
+  .order-comments-answer-user__status {
+    display: none;
+  }
 }
 
 .order-comments-answer-user__status._busy {
@@ -5373,14 +5791,33 @@ body._active {
           align-items: center;
 }
 
+@media screen and (max-width: 760px) {
+  .order-page-content-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .order-page-content-top__left {
   width: 100%;
   max-width: 720px;
 }
 
+@media screen and (max-width: 760px) {
+  .order-page-content-top__left {
+    max-width: 100%;
+  }
+}
+
 .order-page-content-top__right {
   width: 100%;
   max-width: 270px;
+}
+
+@media screen and (max-width: 760px) {
+  .order-page-content-top__right {
+    max-width: 100%;
+  }
 }
 
 .order-page-content-bottom {
@@ -5396,9 +5833,22 @@ body._active {
           align-items: flex-start;
 }
 
+@media screen and (max-width: 760px) {
+  .order-page-content-bottom {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
 .order-page-content-bottom__left {
   width: 100%;
   max-width: 720px;
+}
+
+@media screen and (max-width: 760px) {
+  .order-page-content-bottom__left {
+    max-width: 100%;
+  }
 }
 
 .order-page-content-bottom__right {
@@ -5407,6 +5857,12 @@ body._active {
   max-width: 270px;
   padding-top: 40px;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .order-page-content-bottom__right {
+    display: none;
+  }
 }
 
 .order-page-content-first-comment {
@@ -5419,11 +5875,24 @@ body._active {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
+@media screen and (max-width: 760px) {
+  .order-page-content-first-comment {
+    padding: 25px 20px 20px;
+  }
+}
+
 .order-page-content-first-comment__title {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.75rem;
   margin-bottom: 20px;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .order-page-content-first-comment__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 }
 
 .performer-my {
@@ -5655,8 +6124,8 @@ body._active {
 }
 
 .question-list {
-  padding-bottom: 40px;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .question-list-item {
@@ -5932,6 +6401,15 @@ body._active {
   background-color: #b0cb1f;
 }
 
+@media screen and (max-width: 760px) {
+  .status {
+    overflow: hidden;
+    width: 45px;
+    margin-right: 0;
+    padding-left: 5px;
+  }
+}
+
 .status._active {
   background-color: #076681;
 }
@@ -6022,6 +6500,12 @@ body._active {
   background-size: cover;
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner {
+    padding-bottom: 30px;
+  }
+}
+
 .top-baner__button {
   margin: auto;
 }
@@ -6042,12 +6526,31 @@ body._active {
           align-items: center;
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner-top {
+    padding: 30px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .top-baner-top__title {
   font-family: "ProximaNova-Semibold", Helvetica, Arial, sans-serif;
   font-size: 1.5625rem;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-top__title {
+    font-size: 1.25rem;
+    width: 100%;
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .top-baner-top__left, .top-baner-top__right {
@@ -6057,8 +6560,15 @@ body._active {
   color: #fff;
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner-top__left, .top-baner-top__right {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}
+
 .top-baner-top__left:before, .top-baner-top__right:before {
-  position: absolute;
   left: 0;
   content: '';
   position: absolute;
@@ -6067,8 +6577,28 @@ body._active {
           transform: translateY(-50%);
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner-top__left:before, .top-baner-top__right:before {
+    position: relative;
+    top: 0;
+    display: block;
+    margin: 0 auto 10px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .top-baner-top__left {
   padding-left: 55px;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-top__left {
+    padding-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .top-baner-top__left:before {
@@ -6082,6 +6612,15 @@ body._active {
 
 .top-baner-top__right {
   padding-left: 70px;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-top__right {
+    padding-left: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .top-baner-top__right:before {
@@ -6107,6 +6646,15 @@ body._active {
           align-items: stretch;
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner-steps {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .top-baner-steps__item {
   font-size: 1.1875rem;
   position: relative;
@@ -6115,6 +6663,14 @@ body._active {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-steps__item {
+    width: 100%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
 }
 
 .top-baner-steps__item:before {
@@ -6134,6 +6690,18 @@ body._active {
   height: 32px;
   background-size: 468px, 366px;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-steps__item:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner-steps__item:last-child {
+    margin: auto;
+  }
 }
 
 .top-baner-steps__item:last-child:after {
@@ -6191,6 +6759,12 @@ body._active {
   height: 73px;
   background-size: 468px, 366px;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 960px) {
+  .top-menu {
+    display: none;
+  }
 }
 
 .top-menu__item {
@@ -6461,6 +7035,12 @@ body._active {
   margin: 30px 0;
 }
 
+@media screen and (max-width: 760px) {
+  .check-number-form {
+    margin-bottom: 0;
+  }
+}
+
 .customer-registration-form {
   margin-top: 20px;
 }
@@ -6469,6 +7049,12 @@ body._active {
   padding: 50px 0;
   background: url(../images/assets/top-baner/bg.jpg) no-repeat center;
   background-size: cover;
+}
+
+@media screen and (max-width: 760px) {
+  .userboard {
+    padding: 30px 0;
+  }
 }
 
 .userboard-modal {
@@ -6481,6 +7067,13 @@ body._active {
   background: #fff;
 }
 
+@media screen and (max-width: 760px) {
+  .userboard-modal {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
 .userboard-modal__title {
   font-size: 1.625rem;
   margin-bottom: 10px;
@@ -6488,11 +7081,23 @@ body._active {
   color: #404040;
 }
 
+@media screen and (max-width: 760px) {
+  .userboard-modal__title {
+    font-size: 1.375rem;
+  }
+}
+
 .userboard-modal__subtitle {
   font-size: 0.8125rem;
   text-align: center;
   text-transform: uppercase;
   color: #404040;
+}
+
+@media screen and (max-width: 760px) {
+  .userboard-modal__subtitle {
+    text-transform: none;
+  }
 }
 
 .userboard-modal__subtitle a {
@@ -6587,6 +7192,16 @@ body._active {
   width: 200px;
   height: 37px;
   margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 760px) {
+  .form-registration-link {
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .warning-pushes {

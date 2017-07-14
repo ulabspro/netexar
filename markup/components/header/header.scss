@@ -8,6 +8,9 @@
 
     border-bottom: 1px solid $blue;
     box-shadow: none;
+    @media screen and (max-width: 760px) {
+      margin-bottom: 0;
+    }
   }
   &__wrapper {
     display: flex;
@@ -15,11 +18,18 @@
     @extend .wrapper;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 760px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__logo {
     text-indent: -9999px;
-
     // @include bg($logo);
+
     @include bg($logo-test);
+    @media screen and (max-width: 760px) {
+      margin-bottom: 10px;
+    }
   }
 }

@@ -8,6 +8,12 @@
 
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 760px) {
+    margin: 0;
+    padding: 20px;
+
+    flex-wrap: wrap;
+  }
   &._active {
     display: flex;
   }
@@ -30,10 +36,23 @@
   margin-right: 40px;
 
   border-right: 1px solid $light-gray;
+  
+  @media screen and (max-width: 760px) {
+    max-width: 100%;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-right: 0;
+    border-bottom: 1px solid $light-gray;
+  }
   &:last-child {
     margin-right: 0;
 
     border-right: 0;
+    @media screen and (max-width: 760px) {
+      border-bottom: 0;
+    }
   }
   &__title {
     font-family: $ProximaNova-Semibold;

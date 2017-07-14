@@ -17,6 +17,10 @@
 
   @extend .gr-button;
   @extend .gr-button._green;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .form-privacy {
@@ -26,6 +30,12 @@
   text-align: center;
 
   color: #958d8d;
+  @media screen and (max-width: 760px) {
+    font-size: rem-calc(12);
+    line-height: rem-calc(14);
+
+    margin-top: 15px;
+  }
   a {
     text-decoration: none;
 

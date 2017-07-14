@@ -40,6 +40,9 @@
     height: 65px;
 
     box-shadow: 0 3px 9px rgba($black, .11);
+    @media screen and (max-width: 760px) {
+      width: 90%;
+    }
   }
 }
 

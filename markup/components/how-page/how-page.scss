@@ -5,6 +5,10 @@
 
   justify-content: space-between;
   align-items: stretch;
+  @media screen and (max-width: 760px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__text {
     font-size: rem-calc(18);
     line-height: rem-calc(30);
@@ -12,6 +16,12 @@
     padding-top: 10px;
 
     text-align: center;
+    @media screen and (max-width: 760px) {
+      font-size: rem-calc(16);
+      line-height: rem-calc(25);
+
+      padding: 0 15px;
+    }
   }
   &__item {
     font-family: $ProximaNova-Semibold;
@@ -22,6 +32,10 @@
     text-align: center;
 
     color: $gray;
+    @media screen and (max-width: 760px) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
     &:before {
       display: block;
 

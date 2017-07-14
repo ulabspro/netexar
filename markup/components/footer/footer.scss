@@ -6,6 +6,10 @@
   padding-bottom: 100px;
 
   background: #042f3b;
+  @media screen and (max-width: 760px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
   &__wrapper {
     @extend .wrapper;
   }
@@ -14,35 +18,65 @@
 
     justify-content: space-between;
     align-items: flex-start;
+    @media screen and (max-width: 760px) {
+      flex-wrap: wrap;
+    }
     &._top {
       margin-bottom: 45px;
       padding-bottom: 35px;
 
       border-bottom: 1px solid rgba(#066884, .10);
+      @media screen and (max-width: 760px) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
     }
   }
   &__column {
     &._first {
       width: 355px;
+      @media screen and (max-width: 760px) {
+        width: 90%;
+        margin: auto;
+      }
     }
     &._second {
       width: 280px;
+      @media screen and (max-width: 760px) {
+        width: 90%;
+        margin: 20px auto 0;
+      }
     }
     &._third {
       width: 210px;
+      @media screen and (max-width: 760px) {
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+  br {
+    @media screen and (max-width: 760px) {
+      display: none;
     }
   }
   &__logo {
     margin-bottom: 30px;
-
     // @include bg($logo);
+
     @include bg($logo-test);
+    @media screen and (max-width: 760px) {
+      margin: 0 auto 20px;
+    }
   }
   &__copyright {
     font-size: rem-calc(12);
     line-height: rem-calc(20);
 
     color: #c5c3c3;
+    @media screen and (max-width: 760px) {
+      text-align: center;
+    }
     p {
       &:first-child {
         margin-top: 0;
@@ -139,6 +173,9 @@
 }
 
 .footer-menu {
+  @media screen and (max-width: 760px) {
+    text-align: center;
+  }
   &__item {
     font-size: rem-calc(14);
 
@@ -158,10 +195,20 @@
 }
 
 .footer-social {
+  @media screen and (max-width: 760px) {
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: center;
+  }
   &__title {
     margin-bottom: 20px;
 
     @extend .footer__copyright;
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }
   &__links {
     display: flex;
@@ -213,6 +260,9 @@
   margin-top: 30px;
 
   color: $white;
+  @media screen and (max-width: 760px) {
+    text-align: center;
+  }
   a {
     position: relative;
     top: -3px;

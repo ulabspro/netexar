@@ -4,9 +4,12 @@
   padding: 40px;
   padding-bottom: 20px;
 
-   border: 1px solid #e9e9e9;
+  border: 1px solid #e9e9e9;
   background: rgba(#f9f9f9, .5);
   box-shadow: 0 3px 3px rgba($black, .05);
+  @media screen and (max-width: 760px) {
+    padding: 20px;
+  }
   &__meta {
     font-size: rem-calc(15);
 
@@ -27,6 +30,9 @@
       content: '';
 
       @include bg($card-order-pic);
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
     }
   }
 }
@@ -36,6 +42,9 @@
 
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 760px) {
+    display: block;
+  }
   &._center {
     margin-top: 15px;
 
@@ -51,16 +60,28 @@
     width: 100%;
     max-width: 340px;
     padding-left: 50px;
+    @media screen and (max-width: 760px) {
+      max-width: 100%;
+      padding-left: 0;
+    }
   }
   &__right {
     width: 100%;
     max-width: 250px;
+    @media screen and (max-width: 760px) {
+      max-width: 100%;
+    }
   }
 }
 
 .card-order-payment {
   width: 100%;
   padding: 0;
+  @media screen and (max-width: 760px) {
+    padding: 10px 0!important;
+
+    text-align: left !important;
+  }
 }
 
 .card-order-info {
@@ -74,6 +95,13 @@
 
 .card-order-map {
   position: relative;
+  img {
+    @media screen and (max-width: 760px) {
+      display: block;
+
+      width: 100%;
+    }
+  }
   &__layout {
     &:before {
       position: absolute;
